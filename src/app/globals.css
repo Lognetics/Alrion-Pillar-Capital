@@ -1,26 +1,197 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ============================================================
+   ALRION PILLAR CAPITAL — Institutional Design System
+   ============================================================ */
+
+@theme {
+  /* — Brand palette ————————————————————————————— */
+  --color-ink: #070b14;
+  --color-ink-soft: #0c1322;
+
+  --color-navy-950: #060f1f;
+  --color-navy-900: #0a1a33;
+  --color-navy-800: #0e2447;
+  --color-navy-700: #143055;
+  --color-navy-600: #1d4373;
+  --color-navy-500: #2c5d96;
+
+  --color-gold-300: #ecd9a6;
+  --color-gold-400: #ddc079;
+  --color-gold-500: #c8a45c;
+  --color-gold-600: #ad8842;
+
+  --color-paper: #f6f4ee;
+  --color-cloud: #ece9e1;
+  --color-line: #e2ddd2;
+
+  --color-mist-400: #8b94a4;
+  --color-mist-500: #6c7587;
+  --color-slate-strong: #2b3240;
+
+  /* — Typography ————————————————————————————————— */
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  /* — Layout ————————————————————————————————————— */
+  --spacing-gutter: clamp(1.25rem, 4vw, 4rem);
+
+  /* — Easing ————————————————————————————————————— */
+  --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* — Animations ————————————————————————————————— */
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-shimmer: shimmer 2.4s linear infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  ::selection {
+    background: var(--color-gold-500);
+    color: var(--color-navy-950);
+  }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  /* Refined scrollbar */
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-track { background: var(--color-cloud); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-navy-700);
+    border: 3px solid var(--color-cloud);
+    border-radius: 999px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================================================
+   Utilities & component helpers
+   ============================================================ */
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: 84rem;
+    margin-inline: auto;
+    padding-inline: var(--spacing-gutter);
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  /* Thin animated gold rule used under eyebrows */
+  .hairline {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      var(--color-gold-500),
+      transparent
+    );
+  }
+
+  .display {
+    font-family: var(--font-serif);
+    font-weight: 300;
+    letter-spacing: -0.015em;
+    line-height: 1.02;
+  }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  /* Gold gradient text */
+  .text-gilt {
+    background: linear-gradient(
+      100deg,
+      var(--color-gold-300),
+      var(--color-gold-500) 55%,
+      var(--color-gold-600)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Frosted card on dark backgrounds */
+  .glass {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+  }
+
+  /* Shimmering underline link */
+  .link-quiet { position: relative; }
+  .link-quiet::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s var(--ease-luxe);
+  }
+  .link-quiet:hover::after { transform: scaleX(1); }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(10, 26, 51, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 26, 51, 0.06) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
