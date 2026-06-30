@@ -18,7 +18,7 @@ export default function NotFound() {
           <Eyebrow light>Error 404</Eyebrow>
         </div>
 
-        <p className="mt-8 font-serif text-[8rem] font-light leading-none text-gilt md:text-[12rem]">
+        <p className="mt-8 font-serif text-[6.4rem] font-light leading-none text-gilt md:text-[12rem]">
           404
         </p>
 
