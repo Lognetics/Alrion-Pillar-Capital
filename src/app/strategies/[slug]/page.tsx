@@ -12,6 +12,7 @@ import {
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
 import { STRATEGIES } from "@/lib/site";
+import { strategyImage } from "@/lib/imagery";
 
 /* — Original per-strategy criteria & FAQ ——————————————————————— */
 const DETAIL: Record<
@@ -243,6 +244,7 @@ export default async function StrategyDetailPage({
         eyebrow={strategy.kicker}
         title={strategy.name}
         intro={strategy.summary}
+        image={strategyImage(strategy.slug)}
         crumbs={[
           { label: "Strategies", href: "/strategies" },
           { label: strategy.name },

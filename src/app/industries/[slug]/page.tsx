@@ -12,6 +12,8 @@ import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
 import { Counter } from "@/components/ui/Counter";
 import { SECTORS, type Sector } from "@/lib/site";
+import { sectorImage } from "@/lib/imagery";
+import { FeatureImage } from "@/components/ui/media";
 
 export function generateStaticParams() {
   return SECTORS.map((s) => ({ slug: s.slug }));
@@ -93,6 +95,7 @@ export default async function SectorPage({
         eyebrow={sector.group}
         title={sector.name}
         intro={sector.blurb}
+        image={sectorImage(sector.slug)}
         crumbs={[
           { label: "Industries", href: "/industries" },
           { label: sector.name },
@@ -101,11 +104,19 @@ export default async function SectorPage({
 
       {/* Overview — why this matters */}
       <Section tone="paper">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-16">
+          <FeatureImage
+            src={sectorImage(sector.slug)}
+            alt={sector.name}
+            ratio="aspect-[4/3]"
+            className="lg:order-2"
+          />
+          <div className="lg:order-1">
         <SectionHeading
           eyebrow="Why this matters"
           title={<>A structural shift, not a passing cycle.</>}
         />
-        <div className="mt-8 max-w-3xl space-y-5 text-lg leading-relaxed text-slate-strong/85">
+        <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-strong/85">
           <p>
             {sector.name} sits within {sector.group} —{" "}
             {GROUP_CONTEXT[sector.group] ?? "a defining vector of the next economy"}.
@@ -126,6 +137,8 @@ export default async function SectorPage({
             where our combination of quantitative intelligence and patient,
             impact-aligned capital is built to compound.
           </p>
+            </div>
+          </div>
         </div>
       </Section>
 

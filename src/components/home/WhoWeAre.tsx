@@ -1,5 +1,7 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow, Button } from "@/components/ui/primitives";
+import { FeatureImage } from "@/components/ui/media";
+import { IMG } from "@/lib/imagery";
 
 const PILLARS = [
   { k: "01", t: "Public Markets", d: "Liquid, AI-driven strategies positioned at the leading edge of innovation." },
@@ -64,6 +66,14 @@ export function WhoWeAre() {
           ))}
         </div>
       </div>
+
+      <Reveal className="shell mt-16 md:mt-24">
+        <FeatureImage
+          src={IMG.boardroom}
+          alt="Inside ALRION Pillar Capital"
+          ratio="aspect-[16/7]"
+        />
+      </Reveal>
     </section>
   );
 }

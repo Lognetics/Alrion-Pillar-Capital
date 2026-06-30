@@ -29,9 +29,15 @@
   --color-mist-500: #6c7587;
   --color-slate-strong: #2b3240;
 
-  /* — Typography ————————————————————————————————— */
-  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+  /* — Typography —————————————————————————————————
+     Sans is the neo-grotesque body face (BLK Fort analog).
+     "serif" is intentionally mapped to a tight grotesque so the
+     site reads all-sans with thin display headlines, matching the
+     BlackRock reference. The token name is kept for compatibility
+     with existing `font-serif` / `.display` usages. */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-inter-tight), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter-tight), var(--font-inter), sans-serif;
 
   /* — Layout ————————————————————————————————————— */
   --spacing-gutter: clamp(1.25rem, 4vw, 4rem);
@@ -68,7 +74,8 @@
     background: var(--color-paper);
     color: var(--color-ink);
     font-family: var(--font-sans);
-    font-feature-settings: "ss01", "cv01";
+    font-feature-settings: "cv05", "cv08", "cv11";
+    letter-spacing: -0.011em;
   }
 
   ::selection {
