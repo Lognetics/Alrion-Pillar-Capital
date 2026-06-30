@@ -22,6 +22,11 @@ export function Header() {
 
   const active = NAV.find((s) => s.label === open);
 
+  // At the very top of every page the header floats over a dark navy hero.
+  // In that state the bar is transparent and must use light text; once the
+  // background turns to paper (scrolled or a mega-menu is open) text goes dark.
+  const onDark = !scrolled && !open;
+
   return (
     <header
       className={cn(
@@ -33,21 +38,35 @@ export function Header() {
       onMouseLeave={() => setOpen(null)}
     >
       {/* Slim top utility bar */}
-      <div className="hidden border-b border-navy-950/5 lg:block">
-        <div className="shell flex h-9 items-center justify-end gap-6 text-[0.72rem] tracking-wide text-mist-500">
-          <Link href="/global" className="link-quiet hover:text-navy-900">Global Presence</Link>
-          <Link href="/insights/newsletter" className="link-quiet hover:text-navy-900">Newsletter</Link>
-          <Link href="/investors/portal" className="link-quiet font-medium text-navy-900">
+      <div className={cn("hidden border-b lg:block", onDark ? "border-white/10" : "border-navy-950/5")}>
+        <div
+          className={cn(
+            "shell flex h-9 items-center justify-end gap-6 text-[0.72rem] tracking-wide",
+            onDark ? "text-paper/60" : "text-mist-500",
+          )}
+        >
+          <Link href="/global" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>Global Presence</Link>
+          <Link href="/insights/newsletter" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>Newsletter</Link>
+          <Link href="/investors/portal" className={cn("link-quiet font-medium", onDark ? "text-paper" : "text-navy-900")}>
             Investor Portal ↗
           </Link>
         </div>
       </div>
 
       <div className="shell flex h-[4.5rem] items-center justify-between">
-        <Logo />
+        <Logo light={onDark} />
 
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 lg:flex">
+          <Link
+            href="/"
+            className={cn(
+              "px-4 py-2 text-sm font-medium transition-colors",
+              onDark ? "text-paper/90 hover:text-gold-300" : "text-navy-900 hover:text-gold-600",
+            )}
+          >
+            Home
+          </Link>
           {NAV.map((section) => (
             <button
               key={section.label}
@@ -55,7 +74,11 @@ export function Header() {
               onFocus={() => setOpen(section.label)}
               className={cn(
                 "relative px-4 py-2 text-sm font-medium transition-colors",
-                open === section.label ? "text-gold-600" : "text-navy-900 hover:text-gold-600",
+                open === section.label
+                  ? "text-gold-600"
+                  : onDark
+                    ? "text-paper/90 hover:text-gold-300"
+                    : "text-navy-900 hover:text-gold-600",
               )}
             >
               {section.label}
@@ -72,19 +95,27 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="hidden bg-navy-900 px-5 py-2.5 text-sm font-semibold text-paper transition-colors hover:bg-gold-500 hover:text-navy-950 lg:inline-flex"
+            className={cn(
+              "hidden px-5 py-2.5 text-sm font-semibold transition-colors lg:inline-flex",
+              onDark
+                ? "border border-white/25 text-paper hover:border-gold-400 hover:text-gold-300"
+                : "bg-navy-900 text-paper hover:bg-gold-500 hover:text-navy-950",
+            )}
           >
             Connect
           </Link>
           <button
             onClick={() => setMobileOpen(true)}
-            className="flex h-10 w-10 items-center justify-center text-navy-900 lg:hidden"
+            className={cn(
+              "flex h-10 w-10 items-center justify-center lg:hidden",
+              onDark ? "text-paper" : "text-navy-900",
+            )}
             aria-label="Open menu"
           >
             <span className="space-y-1.5">
-              <span className="block h-px w-6 bg-navy-900" />
-              <span className="block h-px w-6 bg-navy-900" />
-              <span className="block h-px w-4 bg-navy-900" />
+              <span className={cn("block h-px w-6", onDark ? "bg-paper" : "bg-navy-900")} />
+              <span className={cn("block h-px w-6", onDark ? "bg-paper" : "bg-navy-900")} />
+              <span className={cn("block h-px w-4", onDark ? "bg-paper" : "bg-navy-900")} />
             </span>
           </button>
         </div>
