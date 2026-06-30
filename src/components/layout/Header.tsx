@@ -73,7 +73,7 @@ export function Header() {
               onMouseEnter={() => setOpen(section.label)}
               onFocus={() => setOpen(section.label)}
               className={cn(
-                "relative px-4 py-2 text-sm font-medium transition-colors",
+                "relative flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-colors",
                 open === section.label
                   ? "text-gold-600"
                   : onDark
@@ -82,6 +82,16 @@ export function Header() {
               )}
             >
               {section.label}
+              {/* "+" signals that this item reveals a sub-menu */}
+              <span
+                aria-hidden
+                className={cn(
+                  "text-[0.7em] leading-none text-gold-500 transition-transform duration-300",
+                  open === section.label && "rotate-45",
+                )}
+              >
+                +
+              </span>
               <span
                 className={cn(
                   "absolute inset-x-4 -bottom-px h-px origin-left bg-gold-500 transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]",
