@@ -14,7 +14,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Corporate Governance",
   description:
-    "ALRION Pillar Capital is built on institutional governance — independent oversight, robust risk management, rigorous compliance and transparent reporting that give our partners the assurance their capital deserves.",
+    "ALRION Pillar Capital is built on institutional governance: independent oversight, robust risk management, rigorous compliance and transparent reporting that give our partners the assurance their capital deserves.",
 };
 
 const GOVERNANCE_FAQ = [
@@ -51,7 +51,7 @@ export default function GovernancePage() {
             <span className="text-gilt"> can rely on.</span>
           </>
         }
-        intro="Long-term capital deserves more than performance — it deserves assurance. ALRION Pillar Capital is built on independent oversight, robust controls and transparency at every level of the firm."
+        intro="Long-term capital deserves more than performance. It deserves assurance. ALRION Pillar Capital is built on independent oversight, robust controls and transparency at every level of the firm."
         crumbs={[{ label: "Governance" }]}
       />
 
@@ -70,8 +70,8 @@ export default function GovernancePage() {
                 The trust our partners place in {FIRM.name} is earned through
                 structure, not statements. We have built the firm around a system
                 of independent oversight, clear accountability and transparent
-                reporting — the institutional foundations that allow conviction to
-                be exercised responsibly and at scale.
+                reporting, the institutional foundations that allow conviction to
+                be exercised responsibly across every strategy.
               </p>
               <p>
                 Authority is deliberately distributed and checked. The teams that
@@ -82,7 +82,7 @@ export default function GovernancePage() {
               </p>
               <p>
                 What follows is an overview of the bodies, controls and policies
-                that govern ALRION Pillar Capital — the mechanisms that turn our
+                that govern ALRION Pillar Capital, the mechanisms that turn our
                 principles into practice every day.
               </p>
             </div>
@@ -121,7 +121,7 @@ export default function GovernancePage() {
               },
               {
                 title: "Compliance Committee",
-                body: "Maintains the firm's regulatory program, code of conduct and conflicts framework across all jurisdictions of activity.",
+                body: "Maintains the firm's regulatory program, code of conduct and conflicts framework across every strategy.",
               },
               {
                 title: "ESG & Impact Committee",
@@ -147,8 +147,8 @@ export default function GovernancePage() {
           <p className="text-paper/80">
             Our risk framework is engineered for the speed of modern markets.
             Proprietary quantitative models monitor exposure, correlation and
-            volatility continuously, while an independent risk function — separate
-            from the investing teams — enforces limits and validates models.
+            volatility continuously, while an independent risk function, separate
+            from the investing teams, enforces limits and validates models.
           </p>
           <p className="text-paper/80">
             Because risk reports directly to governance rather than to the desks it
@@ -165,7 +165,7 @@ export default function GovernancePage() {
           <SectionHeading
             eyebrow="Compliance & Ethics"
             title={<>A culture of integrity, codified and enforced.</>}
-            intro="Strong compliance is not a constraint on our business — it is a precondition for earning the trust of long-term institutional partners."
+            intro="Strong compliance is not a constraint on our business. It is a precondition for earning the trust of long-term institutional partners."
           />
         </Reveal>
         <div className="mt-14">
@@ -182,7 +182,7 @@ export default function GovernancePage() {
               },
               {
                 title: "Regulatory program",
-                body: "An active compliance program maintained against evolving regulatory standards across every jurisdiction in which we operate.",
+                body: "An active compliance program maintained against evolving regulatory standards across every strategy.",
               },
               {
                 title: "Whistleblower protection",
@@ -214,7 +214,7 @@ export default function GovernancePage() {
             },
             {
               title: "Policy framework",
-              body: "A documented suite of policies — from valuation and cybersecurity to data protection and ESG — codifies how the firm operates.",
+              body: "A documented suite of policies, from valuation and cybersecurity to data protection and ESG, codifies how the firm operates.",
             },
           ].map((it, i) => (
             <Reveal key={it.title} delay={i * 0.07} className="bg-paper p-8">
@@ -242,7 +242,7 @@ export default function GovernancePage() {
           <p className="text-paper/80">
             Transparency is the natural expression of good governance. Our partners
             receive timely, granular reporting across exposure, attribution,
-            performance, risk and impact — delivered on a consistent institutional
+            performance, risk and impact, delivered on a consistent institutional
             cadence and complemented by audited annual reports.
           </p>
           <p className="text-paper/80">

@@ -47,7 +47,7 @@ export function CapitalRequestForm() {
         <p className="mx-auto mt-4 max-w-md text-sm leading-relaxed text-slate-strong/80">
           Your interest has been logged confidentially. Our investor relations
           desk reviews each request against mandate and capacity and typically
-          responds within two business days. This is a demo — no information was
+          responds within two business days. This is a demo, no information was
           transmitted.
         </p>
         <button

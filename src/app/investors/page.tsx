@@ -14,19 +14,19 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Investor Center",
   description:
-    "A dedicated home for the institutional partners of ALRION Pillar Capital — secure reporting, transparent processes and a relationship built on long-term alignment.",
+    "A dedicated home for the institutional partners of ALRION Pillar Capital: secure reporting, transparent processes and a relationship built on long-term alignment.",
 };
 
 const SUBSCRIPTION_STEPS = [
   {
     no: "01",
     title: "Introduction & alignment",
-    body: "We begin with a confidential conversation to understand your mandate, horizon and objectives, and to confirm that our platforms align with your allocation strategy.",
+    body: "We begin with a confidential conversation to understand your mandate, horizon and objectives, and to confirm that our strategies align with your allocation strategy.",
   },
   {
     no: "02",
     title: "Due diligence & access",
-    body: "Qualified investors receive secure access to our data room — strategy documentation, audited performance, governance policies and risk frameworks for independent review.",
+    body: "Qualified investors receive secure access to our data room: strategy documentation, governance policies and risk frameworks for independent review.",
   },
   {
     no: "03",
@@ -56,11 +56,11 @@ export default function InvestorsPage() {
             <span className="text-gilt"> transparency and alignment.</span>
           </>
         }
-        intro="The investors who entrust capital to ALRION Pillar Capital are long-term partners, not passive accounts. The Investor Center brings together everything that relationship requires — secure reporting, clear processes and direct access to the people managing your capital."
+        intro="The investors who entrust capital to ALRION Pillar Capital are long-term partners, not passive accounts. The Investor Center brings together everything that relationship requires: secure reporting, clear processes and direct access to the people managing your capital."
         crumbs={[{ label: "Investor Center" }]}
       />
 
-      {/* Intro — partnership & transparency */}
+      {/* Intro, partnership & transparency */}
       <Section tone="paper">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
@@ -72,18 +72,19 @@ export default function InvestorsPage() {
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                Ninety-two percent of the capital we manage is sourced from
-                long-term institutional partners. That trust is earned through
-                discipline and sustained through transparency — granular
-                reporting, independent governance and a standard of communication
-                that treats every partner as a co-owner of the outcome.
+                Alrion Pillar Capital serves long-term institutional partners. That
+                trust is earned through discipline and sustained through
+                transparency: monthly reporting for liquid strategies, quarterly
+                deep-dive reviews for private markets, independent governance and a
+                standard of communication that treats every partner as a co-owner of
+                the outcome.
               </p>
               <p>
                 We built the Investor Center to remove friction from that
                 relationship. From a first conversation through years of
-                stewardship, our partners can access the documents, performance
-                data and dedicated support they need, when they need it — held to
-                the institutional standard their capital expects.
+                stewardship, our partners can access the documents, reporting and
+                dedicated support they need, when they need it, held to the
+                institutional standard their capital expects.
               </p>
             </div>
           </Reveal>
@@ -94,9 +95,9 @@ export default function InvestorsPage() {
       <Section tone="cloud">
         <Reveal>
           <SectionHeading
-            eyebrow="Who we serve"
-            title={<>Built for the world's most discerning allocators.</>}
-            intro="Our platforms are designed for sophisticated, long-horizon investors who value research-led conviction and institutional-grade governance."
+            eyebrow="Who we are built to serve"
+            title={<>Built for allocators who ask the harder questions.</>}
+            intro="Our four strategies are designed for sophisticated, long-horizon investors who value research-led conviction and institutional-grade governance."
           />
         </Reveal>
         <div className="mt-14">
@@ -105,7 +106,7 @@ export default function InvestorsPage() {
             items={[
               {
                 title: "Institutional Investors",
-                body: "Asset managers and institutions seeking differentiated exposure to frontier technology through a single, disciplined research partner.",
+                body: "Asset managers and institutions seeking differentiated exposure across liquid and private markets through a single, disciplined platform.",
               },
               {
                 title: "Pension Funds",
@@ -154,7 +155,7 @@ export default function InvestorsPage() {
             },
             {
               title: "Document Center",
-              body: "A controlled repository for subscription agreements, audited reports, tax documents and governance policies — versioned and time-stamped.",
+              body: "A controlled repository for subscription agreements, audited reports, tax documents and governance policies, versioned and time-stamped.",
             },
             {
               title: "Capital Requests",
@@ -162,7 +163,7 @@ export default function InvestorsPage() {
             },
             {
               title: "Institutional Reporting",
-              body: "Consistent, granular reporting on exposure, attribution, risk and impact — built to the cadence and standard our partners expect.",
+              body: "Consistent, granular reporting on exposure, attribution, risk and impact, built to the cadence and standard our partners expect.",
             },
             {
               title: "Direct Access",
@@ -186,7 +187,7 @@ export default function InvestorsPage() {
           <SectionHeading
             eyebrow="The subscription process"
             title={<>A clear path from first conversation to commitment.</>}
-            intro="Every partnership begins the same way — with diligence, alignment and complete transparency. Here is how capital is committed at ALRION Pillar Capital."
+            intro="Every partnership begins the same way, with diligence, alignment and complete transparency. Here is how capital is committed at ALRION Pillar Capital."
           />
         </Reveal>
         <div className="mt-16 border-l border-line pl-8 md:pl-12">
@@ -217,22 +218,22 @@ export default function InvestorsPage() {
           eyebrow="Reporting & oversight"
           title={<>Reporting our partners can rely on.</>}
           bullets={[
-            "Quarterly capital-account and performance statements",
-            "Detailed exposure, attribution and risk reporting",
-            "Audited annual impact metrics aligned to the UN SDGs",
-            "Independent governance separate from investing teams",
+            "Monthly reporting for liquid strategies",
+            "Quarterly deep-dive reviews for private markets",
+            "Annual Big Four audits and third-party administration",
+            "Independent governance on every Delaware LP",
           ]}
         >
           <p>
             Long-term institutional capital deserves an institutional standard of
-            communication. Our reporting is timely, granular and consistent —
-            delivered through the portal and reviewed by an oversight function
-            that operates independently of our investing teams.
+            communication. Our reporting is timely, granular and consistent,
+            delivered through the portal, with independent valuation committees on
+            illiquid positions.
           </p>
           <p>
-            We report on impact with the same rigor as performance, quantifying
-            social and environmental outcomes alongside financial return — so our
-            partners can see, in detail, exactly how their capital is at work.
+            We report on impact through three qualitative indicators, Wealth
+            Equity, Employment Quality and the Capital Multiplier, so our partners
+            can see how the Community Equity Fund's capital is at work.
           </p>
         </SplitContent>
       </Section>
@@ -253,16 +254,16 @@ export default function InvestorsPage() {
                 a: "Our funds are available exclusively to qualified institutional and professional investors as defined by applicable regulation in their jurisdiction. Eligibility is confirmed during onboarding through investor classification and verification.",
               },
               {
-                q: "What is the minimum commitment?",
-                a: "Minimums vary by platform and vehicle. Our hedge fund, private equity, venture and community equity strategies each carry distinct terms, which our investor relations team will review with you in the context of your mandate.",
+                q: "What is the minimum investment?",
+                a: "The Hedge Fund LP carries a $1M minimum investment, at a 2.0% management fee and 20% performance fee. Terms for the private-market strategies are set out in the relevant limited partnership agreement, which our investor relations team will review with you.",
               },
               {
                 q: "How do you report performance and impact?",
-                a: "Partners receive quarterly capital-account and performance statements alongside detailed exposure, attribution and risk reporting through the secure portal. Impact metrics are reported annually, audited and aligned to the UN Sustainable Development Goals.",
+                a: "Liquid strategies carry monthly reporting protocols and private markets receive quarterly deep-dive reviews, with real-time access through the secure portal. Community Equity Fund impact is reported through three qualitative indicators: Wealth Equity, Employment Quality and the Capital Multiplier.",
               },
               {
                 q: "How is my capital protected and governed?",
-                a: "An independent oversight function — separate from our investing teams — enforces position limits, validates models and reports directly to governance. Robust compliance, third-party administration and audited reporting underpin every figure we share.",
+                a: "Each strategy is a separate Delaware Limited Partnership with its own investment committee and risk framework. Annual Big Four audits, comprehensive third-party administration and independent valuation committees on illiquid positions underpin every figure we share.",
               },
               {
                 q: "How do I begin the subscription process?",
@@ -275,7 +276,7 @@ export default function InvestorsPage() {
 
       <CtaBand
         title={<>Begin a conversation with our investor relations team.</>}
-        body={`Connect with us to explore how ALRION Pillar Capital's platforms align with your mandate. Reach our investor relations desk at ${FIRM.email}.`}
+        body={`Connect with us to explore how ALRION Pillar Capital's four strategies align with your mandate. Reach our investor relations desk at ${FIRM.email}.`}
         primary={{ href: "/contact", label: "Contact investor relations" }}
         secondary={{ href: "/strategies", label: "Explore our strategies" }}
       />

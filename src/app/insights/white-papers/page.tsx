@@ -31,7 +31,7 @@ export default function WhitePapersPage() {
           <SectionHeading
             eyebrow="Library"
             title="The white-paper catalog"
-            intro="Download affordances are illustrative placeholders. Figures within each paper are illustrative."
+            intro="Papers are available to qualified institutional partners. Downloads open through our investor relations team."
           />
           <span className="text-sm font-semibold text-slate-strong/55">
             {WHITE_PAPERS.length} papers

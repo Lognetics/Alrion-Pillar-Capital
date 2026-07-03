@@ -1,7 +1,7 @@
 /* ============================================================
    Curated royalty-free imagery (Unsplash). All URLs verified to
    resolve. To use owned brand photography later, replace the URLs
-   here — nothing else needs to change.
+   here, nothing else needs to change.
    ============================================================ */
 
 const U = (id: string, w = 1600, q = 80) =>
@@ -59,27 +59,14 @@ export function heroImageFor(pathname: string): string {
 /* Image per industry slug (falls back to a tech image). */
 export function sectorImage(slug: string): string {
   const map: Record<string, ImgKey> = {
+    // Frontier Technology (Venture Capital LP)
     "artificial-intelligence": "aiData",
-    "machine-learning": "aiData",
-    robotics: "circuit",
-    semiconductors: "circuit",
-    "quantum-computing": "circuit",
-    cybersecurity: "dataCenter",
     biotechnology: "lab",
-    healthcare: "lab",
-    "climate-technology": "windFarm",
-    "renewable-energy": "solar",
-    agriculture: "forest",
-    fintech: "charts",
-    "space-technology": "earthNight",
-    "defense-technology": "dataCenter",
-    infrastructure: "bridge",
-    manufacturing: "glassFacade",
-    energy: "solar",
-    transportation: "bridge",
-    "smart-cities": "skylineNight",
-    "autonomous-systems": "circuit",
-    "fintech-infra": "circuit",
+    "defense-space": "earthNight",
+    // Infrastructure Growth (Private Equity LP)
+    "nuclear-lifecycle": "dataCenter",
+    "grid-modernization": "solar",
+    "ot-cybersecurity": "dataCenter",
   };
   return IMG[map[slug] ?? "circuit"];
 }

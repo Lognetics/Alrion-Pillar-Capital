@@ -8,9 +8,9 @@ export function WhyAlrion() {
       <div className="shell">
         <Reveal>
           <SectionHeading
-            eyebrow="The Alrion Difference"
-            title={<>Institutional excellence, engineered into every decision.</>}
-            intro="The advantages that let us see further, move earlier and underwrite with confidence at the frontier."
+            eyebrow="The Alrion Standard"
+            title={<>What independence looks like, in practice.</>}
+            intro="Four commitments hold every strategy to the same institutional standard, regardless of the market it invests in."
           />
         </Reveal>
 

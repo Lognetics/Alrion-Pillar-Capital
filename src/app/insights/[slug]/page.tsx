@@ -74,11 +74,11 @@ export default async function InsightPage({
                 At ALRION Pillar Capital, every allocation begins as a research
                 problem long before it becomes a capital decision. This view from
                 our desk examines {topic} not as a headline but as a structural
-                force — one we underwrite with the same discipline we apply across
-                our hedge fund, private equity, venture and community equity
-                platforms. The conclusions here are shaped by primary technical
-                diligence, proprietary quantitative models and the conviction that
-                durable returns accrue to those who do the deep work early.
+                force, one we approach with the same discipline across our Hedge
+                Fund, Private Equity, Venture Capital and Community Equity Fund
+                strategies. The conclusions here are shaped by primary diligence,
+                a disciplined risk framework and the conviction that durable
+                outcomes accrue to those who do the deep work early.
               </p>
             </Reveal>
 
@@ -91,7 +91,7 @@ export default async function InsightPage({
               <p>
                 The dynamics we describe are secular, not cyclical. Demand is
                 driven by the deep currents reshaping how the world computes,
-                builds and allocates capital — currents that compound across
+                builds and allocates capital, currents that compound across
                 multiple market regimes. Where consensus sees a single trend, our
                 research desk maps an entire value chain: the enabling layers, the
                 infrastructure dependencies and the second-order beneficiaries
@@ -105,7 +105,7 @@ export default async function InsightPage({
                 identify the points along the value chain where defensibility is
                 strongest and where our combination of patient capital and
                 quantitative intelligence is built to compound. The thesis is only
-                as good as the rigor behind it — and rigor, for us, means
+                as good as the rigor behind it, and rigor, for us, means
                 adversarial review before conviction.
               </p>
             </Reveal>
@@ -119,7 +119,7 @@ export default async function InsightPage({
                   meets structural demand.&rdquo;
                 </p>
                 <footer className="mt-4 text-sm font-semibold tracking-wide text-gold-600">
-                  ALRION Pillar Capital — Investment Philosophy
+                  ALRION Pillar Capital, Investment Philosophy
                 </footer>
               </blockquote>
             </Reveal>
@@ -148,7 +148,7 @@ export default async function InsightPage({
                 same theme may be expressed through risk-managed positions in
                 public markets, conviction checks into high-growth private
                 companies, or control investments in the physical infrastructure
-                that underpins it. The instrument follows the opportunity — never
+                that underpins it. The instrument follows the opportunity, never
                 the other way around.
               </p>
             </Reveal>
@@ -165,7 +165,7 @@ export default async function InsightPage({
                 subject to pre-committed exposure limits and monitored
                 continuously by an oversight function that operates independently
                 of our investing teams. Daily risk attribution and systematic
-                hedging are not constraints on the strategy — they are the
+                hedging are not constraints on the strategy, they are the
                 foundation that lets us pursue asymmetric returns without
                 sacrificing capital preservation.
               </p>
@@ -174,7 +174,7 @@ export default async function InsightPage({
               <p>
                 Impact, too, is intrinsic rather than incidental. The advances we
                 back create tangible value in the real world, and we measure those
-                outcomes alongside financial return with the same rigor — reporting
+                outcomes alongside financial return with the same rigor, reporting
                 both transparently to the institutional partners whose capital is
                 at work. That alignment of prosperity and progress is, we believe,
                 itself a source of durable advantage.
@@ -189,9 +189,9 @@ export default async function InsightPage({
             <Reveal>
               <p>
                 The picture will continue to evolve, and so will our positioning.
-                Our research desk treats every thesis as a living hypothesis —
+                Our research desk treats every thesis as a living hypothesis,
                 stress-tested against new evidence, recalibrated as risk migrates
-                and exited deliberately once the asymmetry has played out. For the
+                and revisited deliberately as conditions change. For the
                 investors who partner with us, this is the through-line: capital
                 that follows insight rather than sentiment, governed with
                 institutional discipline and reported with complete transparency.

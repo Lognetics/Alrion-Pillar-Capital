@@ -1,12 +1,12 @@
 /* ============================================================
    Governance sub-page content. Copy is original and faithful
-   to ALRION Pillar Capital's positioning: AI-driven quant
-   models, systematic hedging, institutional governance,
-   transparency and the four investment divisions.
-   Figures marked "Illustrative" are representative only.
+   to ALRION Pillar Capital's positioning: a 2024 New York
+   platform of four independent Delaware Limited Partnerships,
+   with institutional governance, transparency and independent
+   oversight. Figures are limited to the firm's verifiable facts.
    ============================================================ */
 
-/* — Risk Management ————————————————————————————————————————— */
+/* Risk Management */
 
 export type RiskType = {
   name: string;
@@ -19,11 +19,11 @@ export const RISK_TYPES: RiskType[] = [
   {
     name: "Market Risk",
     scope: "Public Markets · Liquid Alpha",
-    body: "Exposure to moves in prices, rates, spreads and volatility across our global equity, credit and derivatives books.",
+    body: "Exposure to moves in prices, rates, spreads and volatility across the liquid strategy's cross-asset relative-value book.",
     controls: [
+      "Daily 95% Value-at-Risk monitoring",
+      "Maximum 300% gross exposure limit",
       "Factor and beta decomposition",
-      "Value-at-Risk and expected-shortfall limits",
-      "Systematic volatility targeting",
     ],
   },
   {
@@ -31,7 +31,7 @@ export const RISK_TYPES: RiskType[] = [
     scope: "Counterparty & Issuer",
     body: "The risk that a borrower, issuer or trading counterparty fails to meet its obligations across our financing relationships.",
     controls: [
-      "Internal credit scoring",
+      "Internal credit assessment",
       "Concentration and tenor limits",
       "Collateral and margin governance",
     ],
@@ -52,14 +52,14 @@ export const RISK_TYPES: RiskType[] = [
     body: "Loss arising from failed internal processes, human error, system outages or external events across the platform.",
     controls: [
       "Segregation of duties",
-      "Business continuity and DR testing",
+      "Business continuity and recovery testing",
       "Vendor and cyber resilience review",
     ],
   },
   {
     name: "Model Risk",
-    scope: "AI & Quantitative Models",
-    body: "The risk that our AI-driven quantitative models are mis-specified, mis-used or degrade as market regimes shift.",
+    scope: "Quantitative Models",
+    body: "The risk that our quantitative models are mis-specified, mis-used or degrade as market regimes shift.",
     controls: [
       "Independent model validation",
       "Out-of-sample and drift monitoring",
@@ -67,13 +67,13 @@ export const RISK_TYPES: RiskType[] = [
     ],
   },
   {
-    name: "ESG & Climate Risk",
-    scope: "Transition & Physical",
-    body: "Financial risk from environmental, social and governance factors, including transition and physical climate exposure.",
+    name: "Valuation Risk",
+    scope: "Private & Illiquid Positions",
+    body: "The risk that illiquid holdings are mis-valued in the absence of observable market prices.",
     controls: [
-      "Climate scenario analysis",
-      "ESG screening at diligence",
-      "Portfolio carbon attribution",
+      "Independent valuation committees",
+      "Documented valuation methodology",
+      "Third-party administration",
     ],
   },
 ];
@@ -89,41 +89,24 @@ export const DEFENSE_LINES: DefenseLine[] = [
   {
     no: "01",
     line: "First Line",
-    owner: "Investment & Trading Desks",
+    owner: "Investment Teams",
     body: "Portfolio managers own the risks they originate. They operate within pre-committed mandates, position limits and drawdown thresholds, and are accountable for the day-to-day management of exposure.",
   },
   {
     no: "02",
     line: "Second Line",
     owner: "Independent Risk & Compliance",
-    body: "A risk function structurally separate from the desks sets the framework, validates models, monitors limits in real time and reports directly to governance — never to the teams it oversees.",
+    body: "A risk function structurally separate from the investment teams sets the framework, validates models, monitors limits and reports directly to governance, never to the teams it oversees.",
   },
   {
     no: "03",
     line: "Third Line",
-    owner: "Internal & External Audit",
-    body: "Independent audit provides objective assurance over the design and effectiveness of controls, escalating findings to the Audit Committee and the Board.",
+    owner: "Independent Audit",
+    body: "Independent audit provides objective assurance over the design and effectiveness of controls, escalating findings to the relevant governance committee.",
   },
 ];
 
-export type RiskMetric = {
-  value: number;
-  prefix?: string;
-  suffix?: string;
-  decimals?: number;
-  label: string;
-  sub: string;
-};
-
-/* Illustrative monitoring metrics */
-export const RISK_METRICS: RiskMetric[] = [
-  { value: 24, suffix: "/7", label: "Real-time monitoring", sub: "Exposure and correlation surveillance" },
-  { value: 1.0, prefix: "<", suffix: "%", decimals: 0, label: "Daily VaR ceiling", sub: "Of capital, 99% confidence · illustrative" },
-  { value: 18, label: "Stress scenarios", sub: "Run across portfolios each cycle · illustrative" },
-  { value: 100, suffix: "%", label: "Models independently validated", sub: "Before deployment to capital" },
-];
-
-/* — Compliance & Ethics ————————————————————————————————————— */
+/* Compliance & Ethics */
 
 export type Policy = {
   code: string;
@@ -136,13 +119,13 @@ export const POLICIES: Policy[] = [
   {
     code: "C-01",
     title: "Code of Conduct",
-    body: "The ethical foundation for every employee, partner and counterparty relationship — defining the standard of integrity we hold ourselves to without exception.",
+    body: "The ethical foundation for every employee, partner and counterparty relationship, defining the standard of integrity we hold ourselves to without exception.",
     cadence: "Annual attestation",
   },
   {
     code: "C-02",
     title: "Regulatory Adherence",
-    body: "An active program maintained against evolving rules in every jurisdiction of activity, from securities regulation to fund-marketing and reporting obligations.",
+    body: "An active program maintained against evolving rules across securities regulation, fund-marketing and reporting obligations.",
     cadence: "Continuous",
   },
   {
@@ -172,7 +155,7 @@ export const POLICIES: Policy[] = [
   {
     code: "C-07",
     title: "Personal Account Dealing",
-    body: "Pre-clearance, restricted lists and holding periods govern employee investing to ensure firm and client interests always come first.",
+    body: "Pre-clearance, restricted lists and holding periods govern employee investing to ensure firm and partner interests always come first.",
     cadence: "Pre-trade clearance",
   },
   {
@@ -183,7 +166,7 @@ export const POLICIES: Policy[] = [
   },
 ];
 
-/* — Transparency ———————————————————————————————————————————— */
+/* Transparency */
 
 export type Disclosure = {
   title: string;
@@ -191,91 +174,67 @@ export type Disclosure = {
 };
 
 export const DISCLOSURES: Disclosure[] = [
-  { title: "Exposure & Positioning", body: "Granular breakdowns of net and gross exposure by strategy, geography, sector and factor." },
+  { title: "Exposure & Positioning", body: "Breakdowns of net and gross exposure by strategy, geography, sector and factor." },
   { title: "Performance & Attribution", body: "Returns decomposed by source, with clear separation of alpha, beta and fee impact." },
-  { title: "Risk Metrics", body: "Value-at-Risk, stress results, liquidity coverage and concentration against pre-set limits." },
+  { title: "Risk Metrics", body: "Value-at-Risk, liquidity coverage and concentration measured against pre-set limits." },
   { title: "Fees & Expenses", body: "Full, plain-language disclosure of management fees, performance fees and fund-level expenses." },
-  { title: "ESG & Impact", body: "Climate, carbon and impact metrics aligned to recognized frameworks and the UN SDGs." },
+  { title: "ESG & Governance", body: "How governance and impact considerations are integrated across each strategy." },
   { title: "Valuations", body: "Independent valuation methodology and governance for private and illiquid positions." },
 ];
 
 export type CadenceItem = {
   cadence: string;
-  window: string;
+  audience: string;
   reports: string[];
 };
 
 export const REPORTING_CADENCE: CadenceItem[] = [
   {
     cadence: "Monthly",
-    window: "Within 10 business days",
+    audience: "Liquid strategies",
     reports: ["Estimated performance", "Exposure snapshot", "Liquidity summary"],
   },
   {
     cadence: "Quarterly",
-    window: "Within 45 days",
-    reports: ["Full performance & attribution", "Risk and stress dashboard", "Investor letter & commentary"],
-  },
-  {
-    cadence: "Semi-Annual",
-    window: "Within 60 days",
-    reports: ["ESG & impact update", "Portfolio review", "Capital activity statement"],
+    audience: "Private markets",
+    reports: ["Deep-dive review", "Portfolio commentary", "Capital activity statement"],
   },
   {
     cadence: "Annual",
-    window: "Within 120 days",
-    reports: ["Audited financial statements", "Annual report", "Full ESG & impact report"],
+    audience: "All strategies",
+    reports: ["Audited financial statements", "Annual report", "ESG report"],
+  },
+  {
+    cadence: "Real-time",
+    audience: "Institutional partners",
+    reports: ["Portal access", "Named IR contact", "Material-event disclosure"],
   },
 ];
 
-/* — Annual Reports archive ——————————————————————————————————— */
+/* Report library. Report types only, no invented figures. Each
+   strategy is an independent Delaware LP audited by a Big Four firm
+   with comprehensive third-party administration. */
 
-export type ReportYear = {
-  year: number;
-  theme: string;
-  summary: string;
-  documents: { label: string; type: string; size: string }[];
+export type ReportDoc = {
+  label: string;
+  type: string;
+  description: string;
 };
 
-export const REPORT_ARCHIVE: ReportYear[] = [
+export const REPORT_LIBRARY: ReportDoc[] = [
   {
-    year: 2025,
-    theme: "Discipline at the frontier",
-    summary: "A year of measured growth across all four platforms, with continued institutional inflows and expanded climate and impact mandates.",
-    documents: [
-      { label: "Annual Report 2025", type: "PDF", size: "8.4 MB" },
-      { label: "Audited Financial Statements", type: "PDF", size: "3.1 MB" },
-      { label: "ESG & Impact Report", type: "PDF", size: "5.7 MB" },
-    ],
+    label: "Annual Report",
+    type: "PDF",
+    description: "The firm's yearly account of governance, activity and stewardship across the four strategies.",
   },
   {
-    year: 2024,
-    theme: "Building the platform",
-    summary: "Capital under management crossed new thresholds as the venture and private equity platforms deepened their frontier-technology exposure.",
-    documents: [
-      { label: "Annual Report 2024", type: "PDF", size: "7.9 MB" },
-      { label: "Audited Financial Statements", type: "PDF", size: "2.9 MB" },
-      { label: "ESG & Impact Report", type: "PDF", size: "5.2 MB" },
-    ],
+    label: "Audited Financial Statements",
+    type: "PDF",
+    description: "Financial statements for each Limited Partnership, audited annually by a Big Four firm.",
   },
   {
-    year: 2023,
-    theme: "Scaling research-led conviction",
-    summary: "The research desk expanded across intelligence, life sciences and the real economy, sharpening the firm's thematic edge.",
-    documents: [
-      { label: "Annual Report 2023", type: "PDF", size: "7.2 MB" },
-      { label: "Audited Financial Statements", type: "PDF", size: "2.6 MB" },
-      { label: "ESG & Impact Report", type: "PDF", size: "4.8 MB" },
-    ],
-  },
-  {
-    year: 2022,
-    theme: "Foundations of governance",
-    summary: "The firm formalized its three-lines-of-defense model and committed to an institutional reporting cadence across every fund.",
-    documents: [
-      { label: "Annual Report 2022", type: "PDF", size: "6.5 MB" },
-      { label: "Audited Financial Statements", type: "PDF", size: "2.4 MB" },
-      { label: "ESG & Impact Report", type: "PDF", size: "4.1 MB" },
-    ],
+    label: "ESG Report",
+    type: "PDF",
+    description: "How governance and impact considerations are integrated across the platform, including the Community Equity Fund.",
   },
 ];

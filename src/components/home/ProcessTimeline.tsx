@@ -12,7 +12,7 @@ export function ProcessTimeline() {
             light
             eyebrow="The Investment Process"
             title={<>A disciplined path from thesis to realized value.</>}
-            intro="Every commitment moves through the same rigorous, repeatable lifecycle — designed to protect capital and compound conviction."
+            intro="Every commitment moves through the same rigorous, repeatable lifecycle, designed to protect capital and compound conviction."
           />
         </Reveal>
 

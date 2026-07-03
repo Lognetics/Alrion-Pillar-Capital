@@ -23,7 +23,7 @@ export default function DocumentsPage() {
             <span className="text-gilt"> versioned and secure.</span>
           </>
         }
-        intro="A controlled repository for subscription agreements, audited reports, tax documents and governance policies — time-stamped, permissioned and available on demand."
+        intro="A controlled repository for subscription agreements, audited reports, tax documents and governance policies, time-stamped, permissioned and available on demand."
         crumbs={[
           { label: "Investor Center", href: "/investors" },
           { label: "Document Center" },
@@ -76,7 +76,7 @@ export default function DocumentsPage() {
 
       <CtaBand
         title={<>Access the full document vault.</>}
-        body="Partners reach the complete, downloadable repository through the secure investor portal — available 24/7 from any device."
+        body="Partners reach the complete, downloadable repository through the secure investor portal, available 24/7 from any device."
         primary={{ href: "/investors/portal", label: "Sign in to the portal" }}
         secondary={{ href: "/investors/faqs", label: "Investor FAQs" }}
       />

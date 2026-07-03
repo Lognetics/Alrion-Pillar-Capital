@@ -8,66 +8,66 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Media Center",
   description:
-    "Press releases, media resources and news from ALRION Pillar Capital — the official source for journalists, partners and the public.",
+    "Press releases, media resources and news from ALRION Pillar Capital, the official source for journalists, partners and the public.",
 };
 
 const PRESS_RELEASES = [
   {
-    date: "June 2026",
-    category: "Capital",
+    date: "September 2024",
+    category: "Firm",
     title:
-      "ALRION Pillar Capital surpasses $14 billion in capital under management",
-    body: "The firm marks a milestone across its four investment platforms, driven by continued institutional demand for disciplined exposure to frontier technology.",
+      "ALRION Pillar Capital launches as a four-strategy New York platform",
+    body: "The firm is established in New York as an institutional alternative investment platform of four autonomous Delaware Limited Partnerships, united by one rigorous framework of governance and fiduciary care.",
   },
   {
-    date: "May 2026",
-    category: "Fund Launch",
+    date: "October 2024",
+    category: "Governance",
     title:
-      "Alrion announces expansion of its Community Equity Fund into three new regions",
-    body: "The impact-led platform broadens its mandate to channel inclusive capital into underserved communities across the Americas, EMEA and APAC.",
+      "Firm appoints independent third-party administration and commits to annual audits",
+    body: "The platform engages comprehensive third-party fund administration and Big Four audits, with independent valuation committees on illiquid positions.",
   },
   {
-    date: "April 2026",
-    category: "Research",
+    date: "November 2024",
+    category: "Community Equity",
     title:
-      "Alrion research desk publishes 2026 Frontier Outlook on the AI capital supercycle",
-    body: "The firm's flagship economic outlook examines how compute, energy and capital are converging into a once-in-a-generation buildout.",
+      "Community Equity Fund formalizes its MWBE mandate",
+    body: "The impact strategy commits a majority of its capital to Minority- and Women-Owned Business Enterprises, seeded by carried interest from the institutional strategies.",
   },
   {
-    date: "March 2026",
+    date: "December 2024",
     category: "Appointment",
     title:
-      "ALRION Pillar Capital strengthens quantitative research leadership in New York",
-    body: "The firm deepens its AI-driven research capability with senior additions to the team building its proprietary allocation and risk models.",
+      "Venture strategy convenes its Technical Advisory Board",
+    body: "The Frontier Technology strategy assembles an advisory board of former government and military leaders to inform diligence across AI, biotechnology and defense and space.",
   },
   {
-    date: "February 2026",
-    category: "Impact",
-    title: "Alrion releases its 2026 impact methodology and annual outcomes report",
-    body: "The transparent framework details how the firm quantifies social and environmental outcomes alongside financial performance, aligned to the UN SDGs.",
+    date: "March 2025",
+    category: "Governance",
+    title: "Firm publishes its transparency and reporting standards",
+    body: "The platform sets monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets and real-time access for institutional partners.",
   },
 ];
 
 const IN_THE_NEWS = [
   {
-    outlet: "Global Capital Review",
+    outlet: "Global Capital Forum",
     type: "Feature",
-    title: "How a research-led firm is rewriting the playbook for frontier investing",
+    title: "A platform, not a product: inside the case for four autonomous strategies",
   },
   {
     outlet: "The Allocator",
     type: "Interview",
-    title: "Alrion's CIO on quantitative discipline in volatile technology markets",
+    title: "On independent governance and fiduciary care for the allocators who ask harder questions",
   },
   {
-    outlet: "Impact Finance Today",
+    outlet: "The Capital Dialogue",
     type: "Profile",
-    title: "Proving that performance and progress can compound together",
+    title: "Why underserved markets can offer some of the most compelling risk-adjusted opportunity",
   },
   {
-    outlet: "Frontier Markets Podcast",
+    outlet: "Frontier Builders",
     type: "Podcast",
-    title: "Inside the investment process behind the AI capital supercycle",
+    title: "Partnering with founders at the inflection point of validation and deployment",
   },
 ];
 
@@ -149,11 +149,11 @@ export default function MediaPage() {
             },
             {
               title: "Firm fact sheet",
-              body: "Key facts, figures and milestones about the firm, our platforms and our global footprint.",
+              body: "Key facts about the firm, its four strategies and its structure as independent Delaware Limited Partnerships.",
             },
             {
               title: "Photography library",
-              body: "High-resolution imagery of our offices and approved firm photography for editorial use.",
+              body: "Approved firm photography and imagery of our New York headquarters for editorial use.",
             },
             {
               title: "Research & publications",

@@ -29,7 +29,7 @@ export function NewsletterForm() {
       setStatus("error");
       return;
     }
-    // Demo submit — no network call.
+    // Demo submit, no network call.
     setStatus("done");
   }
 
@@ -122,7 +122,7 @@ export function NewsletterForm() {
       </button>
 
       <p className="mt-4 text-xs leading-relaxed text-slate-strong/50">
-        Demo form — no email is sent and no data is stored. We never share your address.
+        Demo form, no email is sent and no data is stored. We never share your address.
       </p>
     </form>
   );

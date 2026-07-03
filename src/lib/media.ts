@@ -1,10 +1,10 @@
 /* ============================================================
    Media-section content: news, interviews and brand kit.
-   Original copy faithful to ALRION Pillar Capital. Dates are
-   2026; figures are illustrative where noted.
+   Copy faithful to ALRION Pillar Capital, a New York platform
+   established in 2024. No AUM, returns or track-record claims.
    ============================================================ */
 
-/* — News ————————————————————————————————————————————————————— */
+/* News */
 
 export type NewsItem = {
   date: string;
@@ -15,74 +15,74 @@ export type NewsItem = {
 };
 
 export const FEATURED_NEWS: NewsItem = {
-  date: "June 24, 2026",
+  date: "September 12, 2024",
   category: "Firm",
-  title: "ALRION Pillar Capital crosses $14 billion in capital under management",
+  title: "ALRION Pillar Capital launches as a four-strategy New York platform",
   excerpt:
-    "The firm marks a defining milestone across its four platforms, driven by sustained institutional demand for disciplined, research-led exposure to frontier technology. Leadership outlines the next phase of measured, governance-first growth.",
+    "The firm is established in New York as an institutional alternative investment platform of four autonomous Delaware Limited Partnerships, hedge fund, private equity, venture and community equity, united by one rigorous framework of governance and fiduciary care.",
   readTime: "5 min read",
 };
 
 export const NEWS_ITEMS: NewsItem[] = [
   {
-    date: "June 12, 2026",
-    category: "Quant Research",
-    title: "Inside the model: how Alrion's quant desk adapts to shifting regimes",
+    date: "September 5, 2024",
+    category: "Firm",
+    title: "Four autonomous strategies, one framework: the platform takes shape",
     excerpt:
-      "Our research team details the validation and drift-monitoring discipline that keeps AI-driven signals honest as market conditions change.",
-    readTime: "6 min read",
-  },
-  {
-    date: "May 28, 2026",
-    category: "Community Equity",
-    title: "Community Equity Fund expands into three new regions",
-    excerpt:
-      "The impact-led platform broadens its mandate to channel inclusive capital into underserved communities across the Americas, EMEA and APAC.",
-    readTime: "4 min read",
-  },
-  {
-    date: "May 9, 2026",
-    category: "Venture",
-    title: "Alrion leads growth round in autonomous robotics platform",
-    excerpt:
-      "A new investment from the venture platform backs a category-defining founder building physical AI for industrial automation.",
-    readTime: "3 min read",
-  },
-  {
-    date: "April 21, 2026",
-    category: "Governance",
-    title: "Annual report 2025 published with expanded ESG disclosure",
-    excerpt:
-      "The firm deepens its transparency commitments, broadening climate and impact reporting in line with recognized frameworks.",
-    readTime: "4 min read",
-  },
-  {
-    date: "April 3, 2026",
-    category: "Private Equity",
-    title: "Private equity platform completes infrastructure modernization deal",
-    excerpt:
-      "Control capital and operational expertise combine to modernize critical energy and transportation assets in the real economy.",
+      "Each strategy is structured as a separate Delaware LP with its own investment committee and risk framework, sharing a single standard of transparency and oversight.",
     readTime: "5 min read",
   },
   {
-    date: "March 18, 2026",
-    category: "Global",
-    title: "Alrion opens expanded research presence across APAC",
+    date: "October 3, 2024",
+    category: "Governance",
+    title: "Firm appoints independent third-party administration and audit",
     excerpt:
-      "The firm strengthens its Singapore hub, extending integrated research and risk coverage across the Asia-Pacific region.",
+      "The platform engages comprehensive third-party fund administration and commits to annual Big Four audits, with independent valuation committees on illiquid positions.",
+    readTime: "4 min read",
+  },
+  {
+    date: "November 14, 2024",
+    category: "Community Equity",
+    title: "Community Equity Fund formalizes its MWBE mandate",
+    excerpt:
+      "The impact strategy commits to allocating a majority of capital to Minority- and Women-Owned Business Enterprises, seeded by carried interest from the institutional strategies.",
+    readTime: "4 min read",
+  },
+  {
+    date: "December 10, 2024",
+    category: "Venture",
+    title: "Venture strategy convenes its Technical Advisory Board",
+    excerpt:
+      "The Frontier Technology strategy assembles an advisory board of former government and military leaders to inform diligence across AI, biotechnology and defense and space.",
     readTime: "3 min read",
   },
   {
-    date: "February 27, 2026",
-    category: "Impact",
-    title: "Climate and impact AUM reaches new milestone",
+    date: "January 22, 2025",
+    category: "Private Equity",
+    title: "Infrastructure Growth strategy defines its investment focus",
     excerpt:
-      "Capital aligned to the UN SDGs grows as institutional partners deepen their commitment to returns with measurable progress.",
+      "The private equity LP sets its mandate on mission-critical infrastructure, nuclear lifecycle, grid modernization and operational-technology cybersecurity, targeting investment-grade counterparties.",
+    readTime: "5 min read",
+  },
+  {
+    date: "March 6, 2025",
+    category: "Governance",
+    title: "Firm publishes its transparency and reporting standards",
+    excerpt:
+      "The platform sets monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets and real-time access for institutional partners.",
+    readTime: "4 min read",
+  },
+  {
+    date: "May 15, 2025",
+    category: "Hedge Fund",
+    title: "Global Macro Excellence strategy outlines its risk framework",
+    excerpt:
+      "The hedge fund LP describes a systematic, cross-asset approach governed by a daily 95% Value-at-Risk measure and a defined maximum gross exposure limit.",
     readTime: "4 min read",
   },
 ];
 
-/* — Interviews ———————————————————————————————————————————————— */
+/* Interviews */
 
 export type Interview = {
   topic: string;
@@ -95,64 +95,64 @@ export type Interview = {
 };
 
 export const FEATURED_INTERVIEW: Interview = {
-  topic: "Frontier Investing",
-  title: "Why discipline, not prediction, defines investing at the frontier",
+  topic: "Platform Design",
+  title: "A platform, not a product: why we built four autonomous strategies",
   speaker: "Managing Partner",
   role: "ALRION Pillar Capital",
   outlet: "Global Capital Forum",
   duration: "28:14",
-  date: "June 2026",
+  date: "October 2024",
 };
 
 export const INTERVIEWS: Interview[] = [
   {
-    topic: "Quantitative Models",
-    title: "Human judgment and machine intelligence in modern markets",
-    speaker: "Head of Quantitative Research",
-    role: "Hedge Fund Platform",
+    topic: "Global Macro",
+    title: "Combining quantitative modelling with fundamental analysis",
+    speaker: "Portfolio Manager",
+    role: "Hedge Fund LP",
     outlet: "Markets & Machines",
     duration: "19:42",
-    date: "May 2026",
+    date: "November 2024",
   },
   {
     topic: "Impact",
-    title: "Rejecting the trade-off between returns and progress",
+    title: "Underserved markets as a source of compelling risk-adjusted opportunity",
     speaker: "Head of Impact",
-    role: "Community Equity Fund",
+    role: "Community Equity Fund LP",
     outlet: "The Capital Dialogue",
     duration: "23:05",
-    date: "May 2026",
+    date: "December 2024",
   },
   {
     topic: "Venture",
-    title: "Backing category-defining founders in deep tech",
+    title: "Partnering with founders at the inflection point of validation and deployment",
     speaker: "Partner, Venture",
-    role: "Venture Capital Platform",
+    role: "Venture Capital LP",
     outlet: "Frontier Builders",
     duration: "31:18",
-    date: "April 2026",
+    date: "January 2025",
   },
   {
     topic: "Governance",
-    title: "What institutional governance really requires",
+    title: "What independent governance really requires",
     speaker: "Chief Risk Officer",
-    role: "Risk & Compliance",
+    role: "Risk & Oversight",
     outlet: "Boardroom Briefing",
     duration: "17:50",
-    date: "March 2026",
+    date: "February 2025",
   },
   {
-    topic: "Private Equity",
-    title: "Patient capital and the modernization of the real economy",
+    topic: "Infrastructure",
+    title: "Growth capital for the infrastructure underpinning the modern economy",
     speaker: "Partner, Private Equity",
-    role: "Private Equity Platform",
+    role: "Private Equity LP",
     outlet: "Real Assets Review",
     duration: "26:33",
-    date: "February 2026",
+    date: "March 2025",
   },
 ];
 
-/* — Brand & Media Kit ———————————————————————————————————————— */
+/* Brand & Media Kit */
 
 export type Swatch = {
   name: string;
@@ -212,7 +212,7 @@ export const BRAND_TYPEFACES = [
   {
     name: "Inter",
     role: "Body & Interface",
-    usage: "Body copy, labels and interface text — clear, modern and highly legible at every size.",
+    usage: "Body copy, labels and interface text, clear, modern and highly legible at every size.",
     sample: "Research-led conviction, governed and transparent.",
     serif: false,
   },

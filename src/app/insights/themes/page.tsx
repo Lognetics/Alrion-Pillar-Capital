@@ -3,20 +3,13 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Section, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { cn } from "@/lib/cn";
 import { THEMES } from "@/lib/research";
 
 export const metadata: Metadata = {
   title: "Investment Themes",
   description:
-    "The long-term, secular themes that anchor ALRION Pillar Capital's conviction — from AI infrastructure and the energy transition to longevity, defense, financial access and the space economy.",
+    "The research themes ALRION Pillar Capital watches across its four strategies, from frontier technology in venture to the mission-critical infrastructure behind our private equity work.",
 };
-
-const convictionStyle = {
-  High: "bg-gold-500/15 text-gold-600 border-gold-500/30",
-  Building: "bg-navy-900/8 text-navy-900 border-navy-900/15",
-  Selective: "bg-slate-strong/8 text-slate-strong border-line",
-} as const;
 
 export default function ThemesPage() {
   return (
@@ -29,15 +22,15 @@ export default function ThemesPage() {
             <span className="text-gilt"> the thesis.</span>
           </>
         }
-        intro="Six secular forces that anchor our conviction across all four platforms. Each is a multi-year story about where capital, technology and impact converge."
+        intro="Six research themes that map to our four strategies. Each is a multi-year area we watch, where technology, infrastructure and impact converge."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Investment Themes" }]}
       />
 
       <Section tone="paper">
         <SectionHeading
           eyebrow="Where we look"
-          title="Six convictions, one frontier"
-          intro="We organize our research around durable themes rather than transient trades. Conviction levels and horizons are illustrative."
+          title="Six themes, four strategies"
+          intro="We organize our research around durable themes rather than transient trades. Each theme is anchored to the strategy that expresses it."
         />
 
         <div className="mt-12 grid gap-8 lg:grid-cols-2">
@@ -55,13 +48,8 @@ export default function ThemesPage() {
                         {t.name}
                       </h3>
                     </div>
-                    <span
-                      className={cn(
-                        "shrink-0 rounded-full border px-3 py-1 text-[0.7rem] font-semibold tracking-wide",
-                        convictionStyle[t.conviction].replace("text-gold-600", "text-gold-300").replace("text-navy-900", "text-paper/80").replace("text-slate-strong", "text-paper/70"),
-                      )}
-                    >
-                      {t.conviction}
+                    <span className="shrink-0 rounded-full border border-gold-500/30 bg-gold-500/15 px-3 py-1 text-[0.7rem] font-semibold tracking-wide text-gold-300">
+                      {t.strategy}
                     </span>
                   </div>
                 </div>
@@ -82,13 +70,8 @@ export default function ThemesPage() {
                     <span className="font-semibold uppercase tracking-wider text-slate-strong/55">
                       Horizon · {t.horizon}
                     </span>
-                    <span
-                      className={cn(
-                        "rounded-full border px-3 py-1 font-semibold tracking-wide",
-                        convictionStyle[t.conviction],
-                      )}
-                    >
-                      {t.conviction} conviction
+                    <span className="rounded-full border border-gold-500/30 bg-gold-500/15 px-3 py-1 font-semibold tracking-wide text-gold-600">
+                      {t.strategy}
                     </span>
                   </div>
                 </div>

@@ -9,7 +9,7 @@ import { TAILORED_ACCESS } from "@/lib/investors";
 export const metadata: Metadata = {
   title: "Family Offices",
   description:
-    "ALRION Pillar Capital offers single- and multi-family offices bespoke access to frontier-technology innovation — direct and private deals, multi-generational structuring and a relationship built on discretion.",
+    "ALRION Pillar Capital is built to serve single- and multi-family offices through four autonomous Delaware LP strategies, a long-horizon relationship, aligned interests at the same terms and discretion.",
 };
 
 export default function FamilyOfficesPage() {
@@ -23,7 +23,7 @@ export default function FamilyOfficesPage() {
             <span className="text-gilt"> the strictest confidence.</span>
           </>
         }
-        intro="Single- and multi-family offices do not want a product. They want a relationship — direct access to private innovation, structures shaped to a family's values and horizon, and the discretion that significant wealth requires. That is the relationship we offer."
+        intro="Single- and multi-family offices do not want a product. They want a relationship: access to four autonomous strategies under one rigorous framework, a horizon measured in generations, and the discretion that significant wealth requires. A platform, not a product."
         crumbs={[{ label: "Investor Center", href: "/investors" }, { label: "Family Offices" }]}
       />
 
@@ -31,9 +31,9 @@ export default function FamilyOfficesPage() {
       <Section tone="paper">
         <Reveal>
           <SectionHeading
-            eyebrow="Tailored access"
-            title={<>Four ways the relationship is built around you.</>}
-            intro="Beyond commingled funds, family offices gain direct access to opportunities and structures most allocators never see."
+            eyebrow="The four strategies"
+            title={<>Four ways the platform serves your family.</>}
+            intro="Four autonomous strategies under one rigorous framework, each an independent Delaware Limited Partnership, aligned to the horizon a family plans across."
           />
         </Reveal>
         <div className="mt-14">
@@ -57,7 +57,7 @@ export default function FamilyOfficesPage() {
             A family office answers to people who are not yet in the room. That
             changes everything about how capital should be deployed: patience
             becomes an advantage, and the technologies reshaping the next decade
-            become a way to carry wealth — and purpose — to the next generation.
+            become a way to carry wealth, and purpose, to the next generation.
           </p>
           <p>
             We design allocations for that horizon, with succession, governance and
@@ -73,24 +73,24 @@ export default function FamilyOfficesPage() {
           <Reveal className="lg:col-span-5">
             <SectionHeading
               light
-              eyebrow="Direct & private deals"
+              eyebrow="Frontier & infrastructure"
               title={<>A seat at the frontier, not just a fund line.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-paper/75">
               <p>
-                Our venture and private-equity desks source frontier-technology
-                companies across AI, robotics, biotech, space, climate and deep
-                tech. For family offices, that pipeline becomes a curated stream of
-                direct co-investment opportunities — vetted, diligenced and matched
-                to the themes a family cares about.
+                The Venture Capital LP pursues Frontier Technology, partnering with
+                founders at the inflection between scientific validation and market
+                deployment, across AI, biotech, defense and space at Seed to Series
+                A. The Private Equity LP pursues Infrastructure Growth into energy,
+                grid modernization and operational resilience.
               </p>
               <p>
-                This is measured access, not a firehose. Each opportunity arrives
-                with a full diligence pack and a direct line to the deal team, so a
-                family can engage with the conviction — and the people — behind
-                every investment.
+                This is measured, conviction-led access. Private-market strategies
+                are structured on an 8% preferred return with 20% carried interest,
+                and a family engages with the people and the discipline behind every
+                commitment.
               </p>
             </div>
           </Reveal>
@@ -108,7 +108,7 @@ export default function FamilyOfficesPage() {
         </Reveal>
         <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-line bg-line md:grid-cols-3">
           {[
-            { t: "A named principal", b: "One senior point of contact who knows your family's objectives, constraints and preferences — not a rotating service desk." },
+            { t: "A named principal", b: "One senior point of contact who knows your family's objectives, constraints and preferences, not a rotating service desk." },
             { t: "Controlled information", b: "Strict information-flow controls and need-to-know access keep your holdings, intentions and identity contained." },
             { t: "Privacy by design", b: "Structures, communications and reporting are designed to protect the family's privacy at every stage of the relationship." },
           ].map((x, i) => (
@@ -130,12 +130,12 @@ export default function FamilyOfficesPage() {
           <FaqList
             items={[
               {
-                q: "Can we co-invest directly into individual companies?",
-                a: "Yes. Beyond our commingled funds, our venture and private-equity desks offer family offices direct co-investment into individual frontier-technology companies, each with a full diligence pack and access to the deal team.",
+                q: "Which strategies can our family allocate to?",
+                a: "Four autonomous strategies, each an independent Delaware Limited Partnership: Hedge Fund LP (Global Macro Excellence), Private Equity LP (Infrastructure Growth), Venture Capital LP (Frontier Technology) and Community Equity Fund LP (Impact Through Investment). Allocate to one or blend across several.",
               },
               {
-                q: "Can a mandate reflect our family's values and exclusions?",
-                a: "Absolutely. Segregated mandates are shaped to your values, exclusion lists, liquidity needs and concentration preferences, and reviewed with a named principal who knows your objectives.",
+                q: "How are your interests aligned with ours?",
+                a: "Through significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms. A named principal who knows your objectives reviews the relationship with you.",
               },
               {
                 q: "How do you handle confidentiality?",
@@ -143,7 +143,7 @@ export default function FamilyOfficesPage() {
               },
               {
                 q: "How is the relationship managed day to day?",
-                a: "Through one named principal supported by our investment, risk and reporting teams — a continuous relationship rather than a transactional service, with direct access whenever you need it.",
+                a: "Through one named principal supported by our investment, risk and reporting teams, a continuous relationship rather than a transactional service, with direct access whenever you need it.",
               },
             ]}
           />
@@ -152,7 +152,7 @@ export default function FamilyOfficesPage() {
 
       <CtaBand
         title={<>Begin a confidential conversation.</>}
-        body="We will introduce a principal who can shape a mandate and a co-investment stream around your family's objectives and values."
+        body="We will introduce a principal who can frame an allocation across the four strategies around your family's objectives, horizon and values."
         primary={{ href: "/contact", label: "Arrange an introduction" }}
         secondary={{ href: "/investors", label: "Back to Investor Center" }}
       />

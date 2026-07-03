@@ -1,55 +1,52 @@
-import { Counter } from "@/components/ui/Counter";
 import { Reveal } from "@/components/ui/Reveal";
 import { Eyebrow, Button } from "@/components/ui/primitives";
-import { IMPACT_STATS } from "@/lib/site";
+import { IMPACT_INDICATORS } from "@/lib/site";
 
 export function Impact() {
   return (
     <section className="bg-paper py-24 md:py-32">
-      <div className="shell grid gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
-        <div>
+      <div className="shell grid gap-16 lg:grid-cols-2 lg:items-start lg:gap-24">
+        <div className="lg:sticky lg:top-28">
           <Reveal>
-            <Eyebrow>ESG &amp; Responsible Capital</Eyebrow>
+            <Eyebrow>Impact Through Investment</Eyebrow>
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 font-serif text-4xl font-light leading-[1.08] text-navy-950 md:text-5xl">
-              Returns and responsibility, never a trade-off.
+              Underserved markets, measured honestly.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 text-lg leading-relaxed text-slate-strong/85">
-              We are building a future where financial prosperity aligns with
-              environmental stewardship, social progress and ethical governance.
-              Sustainability and impact are integrated into diligence, ownership and
-              reporting — not appended to them — and measured against the UN Sustainable
-              Development Goals.
+              The Community Equity Fund LP is built on a simple conviction: that
+              underserved markets represent some of the most compelling
+              risk-adjusted opportunities in New York. Seeded by carried interest
+              from our institutional strategies, it operates under a 51%+ Minority-
+              and Women-Owned Business Enterprise mandate.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
+            <p className="mt-5 text-lg leading-relaxed text-slate-strong/85">
+              We hold ourselves to indicators that matter, not vanity metrics.
+            </p>
+          </Reveal>
+          <Reveal delay={0.2}>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button href="/esg" variant="navy">
-                Our ESG framework
+              <Button href="/impact" variant="navy">
+                The impact model
               </Button>
-              <Button href="/insights/reports" variant="outline">
-                Impact reports
+              <Button href="/strategies/community-equity" variant="outline">
+                Community Equity Fund LP
               </Button>
             </div>
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-line bg-line">
-          {IMPACT_STATS.map((stat, i) => (
-            <Reveal key={stat.label} delay={i * 0.08} className="bg-paper p-8">
-              <div className="font-serif text-4xl font-light text-navy-900">
-                <Counter
-                  value={stat.value}
-                  prefix={stat.prefix}
-                  suffix={stat.suffix}
-                  decimals={stat.decimals}
-                />
-              </div>
-              <p className="mt-3 text-sm font-medium text-navy-950">{stat.label}</p>
-              <p className="mt-1 text-xs text-mist-500">{stat.sub}</p>
+        <div className="grid gap-px overflow-hidden rounded-sm border border-line bg-line">
+          {IMPACT_INDICATORS.map((ind, i) => (
+            <Reveal key={ind.title} delay={i * 0.08} className="bg-paper p-8">
+              <span className="font-serif text-2xl text-gold-500">0{i + 1}</span>
+              <h3 className="mt-4 text-xl font-semibold text-navy-950">{ind.title}</h3>
+              <p className="mt-3 leading-relaxed text-slate-strong/80">{ind.body}</p>
             </Reveal>
           ))}
         </div>

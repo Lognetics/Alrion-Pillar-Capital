@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Risk Management",
   description:
-    "The ALRION Pillar Capital risk framework — an architecture spanning market, credit, liquidity, operational, model and ESG risk, governed by a three-lines-of-defense model and powered by AI-driven quantitative monitoring.",
+    "The ALRION Pillar Capital risk framework, an architecture spanning market, credit, liquidity, operational, model and valuation risk, governed by a three-lines-of-defense model and independent oversight.",
 };
 
 export default function RiskPage() {
@@ -27,7 +27,7 @@ export default function RiskPage() {
             <span className="text-gilt"> speed of modern markets.</span>
           </>
         }
-        intro="Conviction is only responsible when it is measured. Our risk framework spans every dimension of exposure, enforced by an independent function and continuous, AI-driven surveillance."
+        intro="Conviction is only responsible when it is measured. Our risk framework spans every dimension of exposure, enforced by an independent function and continuous surveillance."
         crumbs={[{ label: "Governance", href: "/governance" }, { label: "Risk Management" }]}
       />
 
@@ -43,17 +43,17 @@ export default function RiskPage() {
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                At {FIRM.name}, risk management is not a brake on conviction — it is
+                At {FIRM.name}, risk management is not a brake on conviction. It is
                 the discipline that makes conviction defensible. The teams that take
                 risk are deliberately separated from the teams that measure it,
                 creating an architecture of independent challenge across the firm.
               </p>
               <p>
-                Proprietary quantitative and machine-learning models monitor
-                exposure, correlation and volatility continuously, while systematic
-                hedging and drawdown controls preserve capital through the cycle.
-                Every model is independently validated before a dollar is committed
-                to it.
+                Quantitative models monitor exposure, correlation and volatility
+                continuously, while pre-committed limits, including a daily 95%
+                Value-at-Risk discipline and a maximum 300% gross exposure ceiling
+                on the liquid strategy, preserve capital through the cycle. Every
+                model is independently validated before it governs capital.
               </p>
             </div>
           </Reveal>
@@ -66,7 +66,7 @@ export default function RiskPage() {
           <SectionHeading
             eyebrow="Risk Taxonomy"
             title={<>Six dimensions of risk, governed as one framework.</>}
-            intro="We classify, measure and control risk across six interlocking domains — each with dedicated limits, models and oversight."
+            intro="We classify, measure and control risk across six interlocking domains, each with dedicated limits, models and oversight."
           />
         </Reveal>
         <div className="mt-14">
@@ -104,7 +104,7 @@ export default function RiskPage() {
           <p>
             Our risk appetite is defined and approved at board level before capital
             is deployed, translated into concrete limits that the investing desks
-            operate within. These boundaries are systematic and pre-committed —
+            operate within. These boundaries are systematic and pre-committed,
             removing discretion in the moments where discipline matters most.
           </p>
           <p>
@@ -120,20 +120,13 @@ export default function RiskPage() {
         <Reveal>
           <SectionHeading
             eyebrow="Monitoring & Attribution"
-            title={<>Surveillance that never sleeps.</>}
+            title={<>Limits that are set, and enforced.</>}
             intro="Continuous monitoring and rigorous attribution let us understand not just how much risk we carry, but exactly where our returns come from."
           />
         </Reveal>
         <div className="mt-14">
           <RiskMetrics />
         </div>
-        <Reveal delay={0.1}>
-          <p className="mt-8 max-w-3xl text-sm leading-relaxed text-slate-strong/70">
-            Figures marked illustrative are representative of our framework and
-            provided for explanatory purposes only; they do not constitute a
-            performance representation or an offer of any kind.
-          </p>
-        </Reveal>
       </Section>
 
       <CtaBand

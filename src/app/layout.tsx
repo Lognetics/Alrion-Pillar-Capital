@@ -5,14 +5,14 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FIRM } from "@/lib/site";
 
-// Body / UI — a neo-grotesque close in character to BlackRock's BLK Fort.
+// Body / UI, a neo-grotesque close in character to BlackRock's BLK Fort.
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-// Display — Inter Tight gives the tight, thin large-headline feel of BLK Fort.
+// Display, Inter Tight gives the tight, thin large-headline feel of BLK Fort.
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
   subsets: ["latin"],
@@ -23,12 +23,12 @@ const interTight = Inter_Tight({
 export const metadata: Metadata = {
   metadataBase: new URL("https://alrionpillarcapital.com"),
   title: {
-    default: `${FIRM.name} — ${FIRM.tagline}`,
+    default: `${FIRM.name}, ${FIRM.tagline}`,
     template: `%s · ${FIRM.name}`,
   },
   description: FIRM.description,
   openGraph: {
-    title: `${FIRM.name} — ${FIRM.tagline}`,
+    title: `${FIRM.name}, ${FIRM.tagline}`,
     description: FIRM.description,
     type: "website",
   },

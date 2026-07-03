@@ -9,7 +9,7 @@ import { Conviction } from "@/components/home/Conviction";
 import { ProcessTimeline } from "@/components/home/ProcessTimeline";
 import { Impact } from "@/components/home/Impact";
 import { InsightsPreview } from "@/components/home/InsightsPreview";
-import { GlobalPresence } from "@/components/home/GlobalPresence";
+import { Standards } from "@/components/home/Standards";
 import { ImageBand } from "@/components/ui/media";
 import { Button } from "@/components/ui/primitives";
 import { IMG } from "@/lib/imagery";
@@ -24,20 +24,20 @@ export default function Home() {
       <Ecosystem />
       <WhyAlrion />
       <Industries />
-      <ImageBand src={IMG.cityDusk} alt="Global capital markets at dusk" minH="min-h-[34rem]">
+      <ImageBand src={IMG.cityDusk} alt="New York at dusk" minH="min-h-[34rem]">
         <div className="max-w-2xl">
-          <p className="eyebrow text-gold-400">Built for institutions</p>
+          <p className="eyebrow text-gold-400">For the allocators who ask the harder questions</p>
           <h2 className="mt-6 font-serif text-4xl font-light leading-[1.08] md:text-5xl">
-            From the world&rsquo;s capital centers to the frontier of innovation.
+            Institutional standards, without the institutional compromise.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-paper/70">
-            Alrion connects long-term institutional capital with the companies,
-            assets and ideas reshaping the global economy — with the discipline,
-            governance and transparency our partners expect.
+            From our New York base, Alrion holds every strategy to the same standard of
+            fiduciary care, significant GP commitments, independent governance and
+            reporting our partners can rely on.
           </p>
           <div className="mt-8">
             <Button href="/investors" variant="gold">
-              Partner with Alrion
+              Investor relations
             </Button>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
       <ProcessTimeline />
       <Impact />
       <InsightsPreview />
-      <GlobalPresence />
+      <Standards />
     </>
   );
 }

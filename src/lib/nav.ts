@@ -1,7 +1,8 @@
 /* ============================================================
    Global information architecture for ALRION Pillar Capital.
-   Drives the desktop mega-menu, the mobile drawer, and the
-   footer sitemap from a single source of truth.
+   Mirrors the firm's real navigation:
+   About · Strategies · Impact · Insights · Leadership
+   (Contact and Investor Portal live in the header utility bar).
    ============================================================ */
 
 export type NavLink = {
@@ -38,41 +39,40 @@ export const NAV: NavSection[] = [
       {
         heading: "The Firm",
         links: [
-          { href: "/about", label: "Who We Are", desc: "Our purpose and mandate" },
-          { href: "/about/story", label: "Our Story", desc: "Origins and milestones" },
+          { href: "/about", label: "Who We Are", desc: "A platform, not a product" },
+          { href: "/about/story", label: "Our Story" },
           { href: "/about/mission", label: "Mission & Vision" },
           { href: "/about/principles", label: "Founding Principles" },
           { href: "/about/values", label: "Core Values" },
         ],
       },
       {
-        heading: "Leadership",
-        links: [
-          { href: "/about/leadership", label: "Management Team" },
-          { href: "/about/investment-committee", label: "Investment Committee" },
-          { href: "/about/advisors", label: "Global Advisors" },
-          { href: "/careers", label: "Careers" },
-          { href: "/about/awards", label: "Recognition & Awards" },
-        ],
-      },
-      {
-        heading: "Stewardship",
+        heading: "Governance & Standards",
         links: [
           { href: "/governance", label: "Corporate Governance" },
           { href: "/governance/risk", label: "Risk Management" },
           { href: "/governance/compliance", label: "Compliance & Ethics" },
-          { href: "/esg", label: "ESG & Responsibility" },
-          { href: "/contact", label: "Global Offices" },
+          { href: "/governance/transparency", label: "Transparency" },
+          { href: "/governance/reports", label: "Reports & Disclosures" },
+        ],
+      },
+      {
+        heading: "Engage",
+        links: [
+          { href: "/careers", label: "Careers" },
+          { href: "/media", label: "Newsroom" },
+          { href: "/contact", label: "Contact" },
+          { href: "/investors/portal", label: "Investor Portal" },
         ],
       },
     ],
     feature: {
-      eyebrow: "Inside Alrion",
-      title: "A disciplined approach to frontier capital",
+      eyebrow: "Est. 2024 · New York",
+      title: "Independence by design",
       blurb:
-        "How a research-led culture and institutional governance shape every decision we make.",
+        "Four independent Delaware Limited Partnerships, unified by a single standard of institutional discipline.",
       href: "/about",
-      cta: "Read the firm overview",
+      cta: "About the platform",
     },
   },
   {
@@ -80,86 +80,72 @@ export const NAV: NavSection[] = [
     href: "/strategies",
     columns: [
       {
-        heading: "Investment Platforms",
+        heading: "The Four Strategies",
         links: [
-          { href: "/strategies/hedge-fund", label: "Hedge Fund", desc: "Adaptive, frontier-market strategies" },
-          { href: "/strategies/private-equity", label: "Private Equity", desc: "Control and growth capital" },
-          { href: "/strategies/venture-capital", label: "Venture Capital", desc: "Backing category-defining founders" },
-          { href: "/strategies/community-equity", label: "Community Equity Fund", desc: "Inclusive, impact-led capital" },
+          { href: "/strategies/hedge-fund", label: "Hedge Fund LP", desc: "Global Macro Excellence" },
+          { href: "/strategies/private-equity", label: "Private Equity LP", desc: "Infrastructure Growth" },
+          { href: "/strategies/venture-capital", label: "Venture Capital LP", desc: "Frontier Technology" },
+          { href: "/strategies/community-equity", label: "Community Equity Fund LP", desc: "Impact Through Investment" },
         ],
       },
       {
         heading: "How We Invest",
         links: [
-          { href: "/strategies#philosophy", label: "Investment Philosophy" },
-          { href: "/strategies#allocation", label: "Capital Allocation" },
-          { href: "/strategies#construction", label: "Portfolio Construction" },
+          { href: "/strategies", label: "Strategy Overview" },
           { href: "/process", label: "Investment Process" },
-          { href: "/strategies#research", label: "Research Methodology" },
+          { href: "/strategies#philosophy", label: "Investment Philosophy" },
+          { href: "/strategies#risk", label: "Risk Framework" },
+          { href: "/strategies#reporting", label: "Institutional Reporting" },
         ],
       },
       {
-        heading: "Frameworks",
+        heading: "Focus Areas",
         links: [
-          { href: "/strategies#risk", label: "Risk Framework" },
-          { href: "/strategies#lifecycle", label: "Investment Lifecycle" },
-          { href: "/strategies#performance", label: "Performance Framework" },
-          { href: "/strategies#reporting", label: "Institutional Reporting" },
-          { href: "/insights", label: "Market Analysis" },
+          { href: "/industries/artificial-intelligence", label: "Artificial Intelligence & ML" },
+          { href: "/industries/biotechnology", label: "Biotechnology" },
+          { href: "/industries/defense-space", label: "Defense & Space" },
+          { href: "/industries/nuclear-lifecycle", label: "Nuclear Lifecycle" },
+          { href: "/industries", label: "All focus areas →" },
         ],
       },
     ],
     feature: {
-      eyebrow: "Capital at the frontier",
-      title: "Four platforms. One conviction.",
+      eyebrow: "A platform, not a product",
+      title: "Four strategies. One framework.",
       blurb:
-        "Public markets to private innovation — engineered to compound capital across the technology cycle.",
+        "Global macro, infrastructure, frontier technology and community impact, aligned, never entangled.",
       href: "/strategies",
-      cta: "Explore our strategies",
+      cta: "Explore the strategies",
     },
   },
   {
-    label: "Industries",
-    href: "/industries",
+    label: "Impact",
+    href: "/impact",
     columns: [
       {
-        heading: "Intelligence & Compute",
+        heading: "The Model",
         links: [
-          { href: "/industries/artificial-intelligence", label: "Artificial Intelligence" },
-          { href: "/industries/robotics", label: "Robotics & Autonomy" },
-          { href: "/industries/semiconductors", label: "Semiconductors" },
-          { href: "/industries/quantum-computing", label: "Quantum Computing" },
-          { href: "/industries/cybersecurity", label: "Cybersecurity" },
+          { href: "/impact", label: "Impact Through Investment", desc: "The Community Equity thesis" },
+          { href: "/strategies/community-equity", label: "Community Equity Fund LP" },
+          { href: "/esg", label: "ESG & Responsibility" },
         ],
       },
       {
-        heading: "Life & Climate",
+        heading: "How We Measure",
         links: [
-          { href: "/industries/biotechnology", label: "Biotechnology" },
-          { href: "/industries/healthcare", label: "Healthcare" },
-          { href: "/industries/climate-technology", label: "Climate Technology" },
-          { href: "/industries/renewable-energy", label: "Renewable Energy" },
-          { href: "/industries/agriculture", label: "Agriculture" },
-        ],
-      },
-      {
-        heading: "Real Economy",
-        links: [
-          { href: "/industries/fintech", label: "Financial Technology" },
-          { href: "/industries/space-technology", label: "Space Technology" },
-          { href: "/industries/defense-technology", label: "Defense Technology" },
-          { href: "/industries/infrastructure", label: "Digital Infrastructure" },
-          { href: "/industries", label: "View all sectors →" },
+          { href: "/impact#wealth-equity", label: "Wealth Equity" },
+          { href: "/impact#employment-quality", label: "Employment Quality" },
+          { href: "/impact#capital-multiplier", label: "Capital Multiplier" },
         ],
       },
     ],
     feature: {
-      eyebrow: "Thematic conviction",
-      title: "Investing where the future is built",
+      eyebrow: "51%+ MWBE mandate",
+      title: "Catalysis, not just contribution",
       blurb:
-        "Twenty-one frontier sectors mapped to secular demand, durable moats, and real-world impact.",
-      href: "/industries",
-      cta: "See every sector",
+        "A model proving that underserved markets can be some of the most compelling risk-adjusted opportunities in New York.",
+      href: "/impact",
+      cta: "See the impact model",
     },
   },
   {
@@ -173,7 +159,7 @@ export const NAV: NavSection[] = [
           { href: "/insights/economic-outlook", label: "Economic Outlook" },
           { href: "/insights/themes", label: "Investment Themes" },
           { href: "/insights/white-papers", label: "White Papers" },
-          { href: "/insights/reports", label: "Quarterly & Annual Reports" },
+          { href: "/insights/reports", label: "Reports" },
         ],
       },
       {
@@ -192,62 +178,48 @@ export const NAV: NavSection[] = [
           { href: "/media", label: "Press Center" },
           { href: "/media/news", label: "Latest News" },
           { href: "/media/interviews", label: "Interviews" },
-          { href: "/media/resources", label: "Brand & Media Kit" },
           { href: "/insights/downloads", label: "Download Center" },
         ],
       },
     ],
     feature: {
-      eyebrow: "Mid-Year 2026",
-      title: "The Frontier Outlook",
+      eyebrow: "From the desk",
+      title: "Considered, not constant",
       blurb:
-        "Our house view on AI infrastructure, the energy transition, and the next decade of private innovation.",
-      href: "/insights/economic-outlook",
-      cta: "Read the outlook",
+        "Research and commentary in the firm's voice, precise, restrained and free of noise.",
+      href: "/insights",
+      cta: "Read the latest",
     },
   },
   {
-    label: "Investors",
-    href: "/investors",
+    label: "Leadership",
+    href: "/about/leadership",
     columns: [
       {
-        heading: "Who We Serve",
+        heading: "The People",
         links: [
-          { href: "/investors/institutions", label: "Institutional Investors" },
-          { href: "/investors/pension-funds", label: "Pension Funds" },
-          { href: "/investors/sovereign-wealth", label: "Sovereign Wealth Funds" },
-          { href: "/investors/family-offices", label: "Family Offices" },
-          { href: "/investors/foundations", label: "Foundations & Endowments" },
+          { href: "/about/leadership", label: "Management Team" },
+          { href: "/about/investment-committee", label: "Investment Committee" },
+          { href: "/about/advisors", label: "Advisors" },
+          { href: "/about/advisors", label: "Technical Advisory Board", desc: "Former government & military leaders" },
         ],
       },
       {
-        heading: "Investor Center",
+        heading: "Working at Alrion",
         links: [
-          { href: "/investors/portal", label: "Investor Portal" },
-          { href: "/investors/subscription", label: "Subscription Process" },
-          { href: "/investors/documents", label: "Document Center" },
-          { href: "/investors/capital-requests", label: "Capital Requests" },
-          { href: "/investors/faqs", label: "Investor FAQs" },
-        ],
-      },
-      {
-        heading: "Global Reach",
-        links: [
-          { href: "/global", label: "Global Presence" },
-          { href: "/global/network", label: "Institutional Network" },
-          { href: "/governance/reports", label: "Annual Reports" },
-          { href: "/governance/transparency", label: "Transparency" },
-          { href: "/contact", label: "Investor Relations" },
+          { href: "/careers", label: "Careers" },
+          { href: "/about/values", label: "Culture & Values" },
+          { href: "/about/awards", label: "Recognition" },
         ],
       },
     ],
     feature: {
-      eyebrow: "Investor Relations",
-      title: "Partnership built on transparency",
+      eyebrow: "Aligned interests",
+      title: "Skin in every game",
       blurb:
-        "Institutional-grade reporting, secure document access, and a dedicated relations team.",
-      href: "/investors",
-      cta: "Enter the Investor Center",
+        "Significant GP commitments across every fund. We invest where we ask our partners to invest.",
+      href: "/about/leadership",
+      cta: "Meet the team",
     },
   },
 ];

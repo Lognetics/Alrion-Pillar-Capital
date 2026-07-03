@@ -14,7 +14,7 @@ import { STRATEGIES } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Investment Strategies",
   description:
-    "Four disciplined investment platforms — public markets, private equity, venture and inclusive impact — unified by research-led conviction and AI-driven risk management.",
+    "Four autonomous strategies, each a separate Delaware Limited Partnership, unified by one rigorous framework of research, risk discipline and fiduciary governance.",
 };
 
 export default function StrategiesPage() {
@@ -24,11 +24,11 @@ export default function StrategiesPage() {
         eyebrow="Investment Strategies"
         title={
           <>
-            One philosophy expressed across
-            <span className="text-gilt"> four capital platforms.</span>
+            Four autonomous strategies,
+            <span className="text-gilt"> one rigorous framework.</span>
           </>
         }
-        intro="ALRION Pillar Capital allocates across the full technology cycle — from liquid public markets to private innovation and inclusive impact — guided by quantitative research, disciplined risk management and transparent institutional reporting."
+        intro="Alrion Pillar Capital is a platform, not a product. Each strategy is a separate Delaware Limited Partnership with its own investment committee and risk framework, unified by a single standard of institutional discipline and fiduciary care."
         crumbs={[{ label: "Strategies" }]}
       />
 
@@ -38,32 +38,31 @@ export default function StrategiesPage() {
           <Reveal className="lg:col-span-5">
             <SectionHeading
               eyebrow="Overview"
-              title={<>Capital engineered for the frontier.</>}
+              title={<>Independent by design, aligned by discipline.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                Our investment program is built on a single conviction: the
-                technologies redefining the global economy demand capital that is
-                equally rigorous, adaptive and patient. We pair a dedicated
-                research desk of engineers, scientists and analysts with
-                AI-driven quantitative models to translate frontier science into
-                investable theses long before they reach the mainstream.
+                The platform comprises four independent Limited Partnerships:
+                the Hedge Fund LP, the Private Equity LP, the Venture Capital LP
+                and the Community Equity Fund LP. Each pursues a distinct mandate,
+                and each stands on its own governance, so the strengths of one
+                strategy are never a hidden liability of another.
               </p>
               <p>
-                Each platform pursues a distinct mandate, yet all share the same
-                disciplined architecture — thesis-led sourcing, independent risk
-                oversight and impact measured alongside returns. The result is a
-                portfolio designed to compound value across market regimes while
-                advancing measurable social and environmental outcomes.
+                What the strategies share is a framework. Conviction is earned
+                through research and sized to the evidence. Risk is governed
+                independently. Interests are aligned through significant GP
+                commitments across every fund, on the same terms we ask of our
+                partners.
               </p>
             </div>
           </Reveal>
         </div>
       </Section>
 
-      {/* — Platform grid (dark navy cards) ——————————————————— */}
+      {/* — Strategy grid (dark navy cards) ——————————————————— */}
       <section className="relative overflow-hidden bg-navy-950 py-20 text-paper md:py-28">
         <div className="absolute inset-0 bg-grid opacity-40" />
         <div className="absolute left-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-gold-500/40 to-transparent" />
@@ -72,9 +71,9 @@ export default function StrategiesPage() {
             <SectionHeading
               light
               align="center"
-              eyebrow="The Investment Ecosystem"
-              title={<>Four platforms. One disciplined philosophy.</>}
-              intro="Explore each platform to understand its mandate, approach and the criteria that govern how we deploy capital."
+              eyebrow="The Platform"
+              title={<>Four strategies. Four Delaware Limited Partnerships.</>}
+              intro="Explore each strategy to understand its mandate, its approach and the criteria that govern how capital is committed."
             />
           </Reveal>
 
@@ -115,7 +114,7 @@ export default function StrategiesPage() {
                   ))}
                 </div>
                 <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-paper transition-colors group-hover:text-gold-300">
-                  Explore platform
+                  Explore strategy
                   <span className="transition-transform duration-500 group-hover:translate-x-1">
                     →
                   </span>
@@ -131,25 +130,24 @@ export default function StrategiesPage() {
         <div id="philosophy" className="-mt-20 pt-20">
           <SplitContent
             eyebrow="Investment Philosophy"
-            title={<>Research-led conviction, expressed with discipline.</>}
+            title={<>Conviction earned, never assumed.</>}
             bullets={[
-              "Thematic research that anticipates frontier markets",
+              "Research-led theses tested by specialists",
               "Conviction sized to the strength of the evidence",
-              "Impact and returns treated as reinforcing, never opposed",
               "Independent governance over every commitment",
+              "Significant GP commitments on the same terms as our partners",
             ]}
           >
             <p>
-              We invest where rigorous science meets durable demand. Our
-              philosophy rejects the false trade-off between performance and
-              progress: we build portfolios in which financial prosperity and
-              measurable social outcomes compound together.
+              We invest where research supports durable conviction. Every thesis
+              is stress-tested, sized to the quality of the underlying evidence
+              and monitored continuously, so capital follows insight rather than
+              sentiment.
             </p>
             <p>
-              Conviction is earned, not assumed. Every thesis is stress-tested by
-              specialists, sized to the quality of the underlying evidence and
-              monitored continuously — so capital follows insight rather than
-              sentiment.
+              Alignment is structural. We hold significant general-partner
+              commitments across every fund, investing where we ask our partners
+              to invest, and at the same terms.
             </p>
           </SplitContent>
         </div>
@@ -161,25 +159,24 @@ export default function StrategiesPage() {
           <SplitContent
             reverse
             eyebrow="Capital Allocation"
-            title={<>Allocating across the full technology cycle.</>}
+            title={<>Four mandates, each governed on its own terms.</>}
             bullets={[
-              "Top-down regime analysis informs platform weighting",
-              "Bottom-up conviction drives position sizing",
-              "Liquidity matched deliberately to opportunity",
-              "Dynamic rebalancing as theses mature",
+              "Liquid macro exposure through the Hedge Fund LP",
+              "Infrastructure growth capital through the Private Equity LP",
+              "Frontier venture capital from Seed to Series A",
+              "Catalytic community investment under a 51%+ MWBE mandate",
             ]}
           >
             <p>
-              Capital is allocated through a unified framework that balances
-              liquid public exposure against patient private innovation. AI-driven
-              models surface relative value across platforms, while our investment
-              committee governs how conviction translates into commitment.
+              Each strategy allocates within its own mandate, structured and
+              priced by its own investment committee. Liquidity is matched
+              deliberately to the opportunity, from the daily profile of the
+              Hedge Fund LP to the patient horizons of private markets.
             </p>
             <p>
-              We size positions to the asymmetry of the opportunity and the
-              resilience of the thesis — concentrating where the evidence is
-              strongest and diversifying to protect capital through changing
-              market regimes.
+              Positions are sized to the resilience of the thesis, concentrating
+              where the evidence is strongest and structured to protect capital
+              through changing conditions.
             </p>
           </SplitContent>
         </div>
@@ -191,8 +188,8 @@ export default function StrategiesPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Portfolio Construction"
-              title={<>Engineering resilience into every portfolio.</>}
-              intro="We construct portfolios as systems — balancing conviction, correlation and liquidity so that strength in one position never becomes hidden fragility across the whole."
+              title={<>Constructed as systems, not collections.</>}
+              intro="Within each strategy, portfolios are built as systems, balancing conviction, correlation and liquidity so that strength in one position never becomes hidden fragility across the whole."
             />
           </Reveal>
           <div className="mt-14">
@@ -201,27 +198,27 @@ export default function StrategiesPage() {
               items={[
                 {
                   title: "Conviction-weighted sizing",
-                  body: "Positions are scaled to the quality of the evidence and the asymmetry of return, with hard limits that cap single-name and thematic concentration.",
+                  body: "Positions are scaled to the quality of the evidence and the asymmetry of return, with limits that cap single-name and thematic concentration.",
                 },
                 {
                   title: "Correlation discipline",
-                  body: "Quantitative models map cross-asset correlation in real time, ensuring diversification holds when markets are most stressed.",
+                  body: "In liquid strategies, quantitative models map cross-asset correlation, so diversification holds when conditions are most stressed.",
                 },
                 {
-                  title: "Liquidity laddering",
+                  title: "Liquidity matching",
                   body: "Liquidity profiles are matched to mandate and horizon, so capital is available when it is needed and patient where it must be.",
                 },
                 {
-                  title: "Scenario stress-testing",
-                  body: "Every portfolio is tested against historical and synthetic shocks to quantify drawdown potential before capital is committed.",
+                  title: "Scenario testing",
+                  body: "Portfolios are tested against historical and hypothetical shocks to understand drawdown potential before capital is committed.",
                 },
                 {
-                  title: "Thematic balance",
-                  body: "Exposure is spread deliberately across frontier themes to avoid over-reliance on any single technology cycle.",
+                  title: "Exposure discipline",
+                  body: "In the Hedge Fund LP, gross exposure is held to a maximum of 300%, a hard ceiling enforced independently of the desk.",
                 },
                 {
-                  title: "Continuous rebalancing",
-                  body: "As theses mature and risk migrates, positions are recalibrated through a disciplined, evidence-driven rebalancing cadence.",
+                  title: "Deliberate rebalancing",
+                  body: "As theses mature and risk migrates, positions are recalibrated through a disciplined, evidence-driven cadence.",
                 },
               ]}
             />
@@ -236,27 +233,27 @@ export default function StrategiesPage() {
             <SectionHeading
               light
               eyebrow="Research Methodology"
-              title={<>Science before capital.</>}
-              intro="Our research desk pairs deep technical expertise with proprietary data science, translating frontier breakthroughs into investable theses with measurable conviction."
+              title={<>Research before capital.</>}
+              intro="Across the platform, quantitative modelling is integrated with fundamental analysis, translating a mandate into an investable thesis before any commitment is made."
             />
           </Reveal>
           <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                title: "Primary technical diligence",
-                body: "Engineers and scientists evaluate underlying technology, defensibility and the realistic path to industrial scale.",
+                title: "Fundamental analysis",
+                body: "Specialists assess the thesis, the counterparties and the realistic path to durable value within each mandate.",
               },
               {
-                title: "Quantitative signal generation",
-                body: "Machine-learning models distill vast market and alternative datasets into structured, repeatable signals.",
+                title: "Quantitative modelling",
+                body: "In the Hedge Fund LP, models generate and validate cross-asset relative-value signals across multiple timeframes.",
               },
               {
                 title: "Thematic mapping",
-                body: "We chart how frontier technologies converge, identifying value chains before they become consensus.",
+                body: "We chart the focus areas each strategy invests in, from frontier technology to mission-critical infrastructure.",
               },
               {
                 title: "Independent validation",
-                body: "External experts and adversarial review challenge every thesis before it informs an allocation decision.",
+                body: "Each strategy's investment committee challenges every thesis before it informs an allocation decision.",
               },
             ].map((it, i) => (
               <Reveal
@@ -284,25 +281,25 @@ export default function StrategiesPage() {
         <div id="risk" className="-mt-20 pt-20">
           <SplitContent
             eyebrow="Risk Framework"
-            title={<>Risk managed at the speed of modern markets.</>}
+            title={<>Risk governed independently of the investing teams.</>}
             bullets={[
-              "Daily risk attribution across every platform",
-              "Systematic hedging and volatility control",
-              "Pre-committed drawdown and exposure limits",
-              "Independent oversight separate from investing teams",
+              "Daily 95% Value-at-Risk monitoring on the Hedge Fund LP",
+              "A maximum of 300% gross exposure, enforced independently",
+              "Pre-committed position and concentration limits",
+              "Oversight separate from the teams that take the risk",
             ]}
           >
             <p>
-              Risk management is not a constraint on our strategy — it is the
-              foundation of it. Proprietary quantitative models monitor exposure,
-              correlation and volatility continuously, surfacing emerging risk
-              before it becomes loss.
+              Risk discipline is the foundation of every strategy. In the Hedge
+              Fund LP, exposure is monitored through daily 95% Value-at-Risk and
+              held to a maximum of 300% gross exposure, with limits set in
+              advance and enforced independently.
             </p>
             <p>
-              An independent oversight function, separate from the investing
-              teams, enforces position limits, validates models and reports
-              directly to governance — preserving capital through the cycle with
-              institutional discipline.
+              Each strategy operates its own risk framework. An oversight
+              function separate from the investing team validates models,
+              enforces limits and reports directly to governance, preserving
+              capital with institutional discipline.
             </p>
           </SplitContent>
         </div>
@@ -315,7 +312,7 @@ export default function StrategiesPage() {
             <SectionHeading
               eyebrow="Investment Lifecycle"
               title={<>A disciplined path from thesis to realization.</>}
-              intro="Every commitment moves through the same rigorous lifecycle — from sourcing and diligence to active ownership and deliberate exit."
+              intro="Every commitment moves through the same rigorous lifecycle, from sourcing and diligence to active oversight and deliberate realization."
             />
           </Reveal>
           <div className="mt-14">
@@ -324,19 +321,19 @@ export default function StrategiesPage() {
               items={[
                 {
                   title: "Thesis & sourcing",
-                  body: "Thematic research and proprietary networks surface opportunities aligned to our highest-conviction frontier themes.",
+                  body: "Proprietary networks and thematic research surface opportunities aligned to each strategy's mandate.",
                 },
                 {
                   title: "Diligence & structuring",
-                  body: "Technical, commercial, financial and ESG diligence inform the structure and pricing of each commitment.",
+                  body: "Technical, commercial and financial diligence inform the structure and pricing of each commitment.",
                 },
                 {
-                  title: "Active ownership",
-                  body: "Operating expertise, governance and continuous monitoring drive value creation throughout the holding period.",
+                  title: "Active oversight",
+                  body: "Continuous monitoring, including daily risk on liquid strategies, and independent valuation on illiquid positions.",
                 },
                 {
-                  title: "Exit & realization",
-                  body: "Deliberate exit planning maximizes realized value and returns capital to partners with full transparency.",
+                  title: "Realization",
+                  body: "Deliberate exit planning returns capital to partners with full transparency and documented rationale.",
                 },
               ]}
             />
@@ -350,24 +347,24 @@ export default function StrategiesPage() {
           <SplitContent
             reverse
             eyebrow="Performance Framework"
-            title={<>Measuring what compounds, not what flatters.</>}
+            title={<>Measured net of fees, adjusted for risk.</>}
             bullets={[
               "Returns evaluated net of fees and risk",
-              "Attribution that isolates genuine alpha",
-              "Impact outcomes measured alongside performance",
-              "Benchmarks aligned to mandate and horizon",
+              "Attribution that isolates the true source of return",
+              "Independent valuation on illiquid positions",
+              "Benchmarks aligned to each strategy's mandate and horizon",
             ]}
           >
             <p>
-              We hold ourselves to an institutional standard of performance —
+              We hold each strategy to an institutional standard of performance,
               measured net of fees, adjusted for risk and attributed to its true
-              source. Outperformance only matters if it is repeatable, and our
-              framework is built to distinguish skill from chance.
+              source. Outperformance matters only if it is repeatable.
             </p>
             <p>
-              Performance is never assessed in isolation from impact. We track
-              measurable social and environmental outcomes alongside financial
-              return, reporting both with the same rigor to our partners.
+              For illiquid positions, independent valuation committees and
+              comprehensive third-party administration underpin every figure we
+              report, so performance rests on verified numbers rather than
+              self-assessment.
             </p>
           </SplitContent>
         </div>
@@ -381,22 +378,22 @@ export default function StrategiesPage() {
               light
               eyebrow="Institutional Reporting"
               title={<>Transparency our partners can rely on.</>}
-              intro="Long-term institutional capital deserves clarity. Our reporting is timely, granular and consistent — built to the standard our partners expect and our governance demands."
+              intro="Long-term institutional capital deserves clarity. Reporting is timely, granular and consistent, built to the standard our governance demands."
             />
           </Reveal>
           <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-3">
             {[
               {
-                title: "Portfolio transparency",
-                body: "Detailed exposure, attribution and risk reporting delivered on a consistent institutional cadence.",
+                title: "Reporting cadence",
+                body: "Monthly reporting for liquid strategies and quarterly deep-dive reviews for private markets, with real-time access for institutional partners.",
               },
               {
-                title: "Impact accountability",
-                body: "Annual, audited impact metrics aligned to the UN Sustainable Development Goals.",
+                title: "Independent oversight",
+                body: "Annual audits conducted by Big Four firms, comprehensive third-party administration and independent valuation committees on illiquid positions.",
               },
               {
                 title: "Governance assurance",
-                body: "Independent oversight, robust compliance and clear escalation give partners confidence in every figure.",
+                body: "Each strategy operates as a separate Delaware Limited Partnership with its own investment committee, giving partners confidence in every figure.",
               },
             ].map((it, i) => (
               <Reveal key={it.title} delay={i * 0.07} className="bg-ink p-8">
@@ -416,8 +413,8 @@ export default function StrategiesPage() {
       </Section>
 
       <CtaBand
-        title={<>Partner with capital built for the frontier.</>}
-        body="Speak with our investor relations team to explore how ALRION Pillar Capital's platforms align with your mandate."
+        title={<>Explore the platform with our team.</>}
+        body="Speak with our investor relations team to explore how Alrion Pillar Capital's strategies align with your mandate."
         primary={{ href: "/contact", label: "Connect with us" }}
         secondary={{ href: "/about", label: "About the firm" }}
       />

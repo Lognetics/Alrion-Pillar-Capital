@@ -9,7 +9,7 @@ import { DISCLOSURES, REPORTING_CADENCE } from "@/lib/governance";
 export const metadata: Metadata = {
   title: "Transparency",
   description:
-    "ALRION Pillar Capital's transparency commitments — what we disclose, our monthly, quarterly and annual reporting cadence, data integrity standards and direct investor access.",
+    "ALRION Pillar Capital's transparency commitments: what we disclose, our monthly, quarterly and annual reporting cadence, data integrity standards and direct investor access.",
 };
 
 export default function TransparencyPage() {
@@ -23,7 +23,7 @@ export default function TransparencyPage() {
             <span className="text-gilt"> audit, not assume.</span>
           </>
         }
-        intro="Transparency is the natural expression of good governance. We commit to consistent, granular disclosure on a predictable cadence — and to standing behind every figure we report."
+        intro="Transparency is the natural expression of good governance. We commit to consistent, granular disclosure on a predictable cadence, and to standing behind every figure we report."
         crumbs={[{ label: "Governance", href: "/governance" }, { label: "Transparency" }]}
       />
 
@@ -48,7 +48,7 @@ export default function TransparencyPage() {
             light
             eyebrow="Reporting Cadence"
             title={<>A predictable rhythm of disclosure.</>}
-            intro="Our partners always know what to expect and when — from monthly snapshots to fully audited annual reports."
+            intro="Our partners always know what to expect and when, from monthly snapshots to fully audited annual reports."
           />
         </Reveal>
         <div className="mt-14 space-y-px overflow-hidden rounded-sm border border-white/10 bg-white/5">
@@ -57,7 +57,7 @@ export default function TransparencyPage() {
               <div className="grid gap-6 bg-navy-950 p-8 md:grid-cols-12 md:items-center md:p-10">
                 <div className="md:col-span-3">
                   <span className="font-serif text-3xl font-light text-gold-400">{c.cadence}</span>
-                  <p className="mt-2 text-xs uppercase tracking-[0.18em] text-paper/45">{c.window}</p>
+                  <p className="mt-2 text-xs uppercase tracking-[0.18em] text-paper/45">{c.audience}</p>
                 </div>
                 <div className="md:col-span-9">
                   <ul className="flex flex-wrap gap-3">
@@ -108,7 +108,7 @@ export default function TransparencyPage() {
               </h3>
               <p className="mt-4 leading-relaxed text-slate-strong/80">
                 Beyond our secure reporting portal, every partner has direct access
-                to our investor relations team — because the most important
+                to our investor relations team, because the most important
                 disclosures are sometimes the answers to the questions behind the
                 numbers.
               </p>

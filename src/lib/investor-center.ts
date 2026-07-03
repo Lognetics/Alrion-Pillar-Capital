@@ -1,8 +1,9 @@
 /* ============================================================
    Investor-center content for the functional investor tools:
    portal, subscription, document center, capital requests and
-   FAQs. Original, institutionally-faithful copy. Any figures
-   are marked "Illustrative".
+   FAQs. Copy is precise and fiduciary in tone. Only verifiable
+   facts and real fund terms appear here, no AUM, track record,
+   scale or invented timelines.
    ============================================================ */
 
 /* — Portal — assurance + what's inside ————————————————————— */
@@ -28,7 +29,7 @@ export const PORTAL_FEATURES = [
   },
   {
     title: "Performance & exposure",
-    body: "Attribution, exposure and risk reporting across each platform, refreshed to the cadence your mandate requires.",
+    body: "Attribution, exposure and risk reporting across each strategy, refreshed to the cadence your mandate requires.",
   },
   {
     title: "Document vault",
@@ -53,8 +54,8 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
   {
     no: "01",
     title: "Eligibility & alignment",
-    duration: "Week 1",
-    body: "We confirm that our platforms align with your mandate and that you qualify as an eligible institutional or professional investor.",
+    duration: "Stage one",
+    body: "We confirm that our strategies align with your mandate and that you qualify as an eligible institutional or professional investor.",
     detail: [
       "Confidential introductory conversation on horizon and objectives",
       "Investor classification under applicable jurisdiction",
@@ -64,7 +65,7 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
   {
     no: "02",
     title: "Onboarding & KYC",
-    duration: "Weeks 1–2",
+    duration: "Stage two",
     body: "Identity, source-of-funds and anti-money-laundering verification are completed through our secure onboarding workflow.",
     detail: [
       "Entity and beneficial-ownership verification",
@@ -75,18 +76,18 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
   {
     no: "03",
     title: "Subscription documents",
-    duration: "Weeks 2–3",
+    duration: "Stage three",
     body: "Subscription agreements, side letters where applicable and fund terms are reviewed, negotiated and executed digitally.",
     detail: [
       "Review of the private placement memorandum and LPA",
       "Completion of the subscription booklet",
-      "Digital execution with white-glove legal support",
+      "Digital execution with dedicated legal support",
     ],
   },
   {
     no: "04",
     title: "Capital commitment",
-    duration: "Weeks 3–4",
+    duration: "Stage four",
     body: "Your commitment is confirmed against agreed terms, with capital-call and settlement instructions delivered through the portal.",
     detail: [
       "Commitment confirmation and counter-signature",
@@ -97,7 +98,7 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
   {
     no: "05",
     title: "Confirmation",
-    duration: "Week 4",
+    duration: "Stage five",
     body: "Once funded, you receive a welcome pack, portal credentials and an opening capital-account statement.",
     detail: [
       "Secure portal provisioning and single sign-on",
@@ -109,11 +110,11 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
     no: "06",
     title: "Ongoing reporting",
     duration: "Continuous",
-    body: "As a partner you receive continuous, institutional-grade reporting and direct access to our investment and risk teams.",
+    body: "As a partner you receive institutional-grade reporting and direct access to our investment and risk teams.",
     detail: [
-      "Quarterly capital-account and performance statements",
-      "Exposure, attribution and risk reporting",
-      "Audited annual reports and impact metrics",
+      "Monthly reporting for liquid strategies",
+      "Quarterly deep-dive reviews for private markets",
+      "Audited annual reports by a Big Four firm",
     ],
   },
 ];
@@ -121,7 +122,7 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
 export const ELIGIBILITY = [
   "Qualified institutional or professional investor status under applicable regulation",
   "Completed entity formation with verifiable beneficial ownership",
-  "Capacity to meet the minimum commitment for the relevant platform",
+  "Capacity to meet the minimum investment for the relevant strategy",
   "Acceptance of the fund's lock-up, liquidity and reporting terms",
   "Satisfactory KYC, AML and sanctions screening",
 ];
@@ -148,7 +149,7 @@ export const DOCUMENTS: DocItem[] = [
   { title: "Q1 2026 Capital-Account Statement", category: "Fund reports", type: "PDF", date: "2026-04-15", size: "1.2 MB" },
   { title: "Annual Report & Audited Financials 2025", category: "Fund reports", type: "PDF", date: "2026-03-28", size: "4.8 MB" },
   { title: "Q4 2025 Performance & Attribution Review", category: "Fund reports", type: "PDF", date: "2026-01-22", size: "2.1 MB" },
-  { title: "2025 Impact & ESG Report", category: "Fund reports", type: "PDF", date: "2026-02-10", size: "3.4 MB" },
+  { title: "Community Equity Fund Impact Review", category: "Fund reports", type: "PDF", date: "2026-02-10", size: "3.4 MB" },
   { title: "Limited Partnership Agreement", category: "Legal", type: "PDF", date: "2025-11-04", size: "2.9 MB" },
   { title: "Private Placement Memorandum", category: "Legal", type: "PDF", date: "2025-11-04", size: "3.7 MB" },
   { title: "Subscription Agreement Template", category: "Legal", type: "DOCX", date: "2025-11-04", size: "640 KB" },
@@ -158,7 +159,7 @@ export const DOCUMENTS: DocItem[] = [
   { title: "Withholding Tax Statement 2025", category: "Tax", type: "PDF", date: "2026-02-28", size: "520 KB" },
   { title: "Q1 2026 Investor Update Deck", category: "Presentations", type: "PDF", date: "2026-04-18", size: "5.6 MB" },
   { title: "Annual Investor Meeting Presentation", category: "Presentations", type: "PDF", date: "2026-05-12", size: "8.2 MB" },
-  { title: "Strategy Overview — Frontier Platforms", category: "Presentations", type: "PDF", date: "2026-01-30", size: "4.0 MB" },
+  { title: "Strategy Overview, Four Delaware LPs", category: "Presentations", type: "PDF", date: "2026-01-30", size: "4.0 MB" },
 ];
 
 /* — Capital Requests — form options ————————————————————————— */
@@ -173,11 +174,11 @@ export const INVESTOR_TYPES = [
 ];
 
 export const STRATEGY_OPTIONS = [
-  "Hedge Fund — Liquid alpha",
-  "Private Equity — Real assets",
-  "Venture Capital — Frontier innovation",
-  "Community Equity Fund — Impact",
-  "Multi-platform allocation",
+  "Hedge Fund LP, Global Macro Excellence",
+  "Private Equity LP, Infrastructure Growth",
+  "Venture Capital LP, Frontier Technology",
+  "Community Equity Fund LP, Impact Through Investment",
+  "Multi-strategy allocation",
 ];
 
 export const TICKET_RANGES = [
@@ -198,7 +199,7 @@ export const TIMEFRAMES = [
 export const REQUEST_PROCESS = [
   {
     title: "Submission",
-    body: "Your interest is logged confidentially and routed to the investor relations desk for the relevant platform.",
+    body: "Your interest is logged confidentially and routed to the investor relations desk for the relevant strategy.",
   },
   {
     title: "Review",
@@ -235,11 +236,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: "What strategies can I allocate to?",
-        a: "We operate four platforms — a multi-strategy hedge fund, private equity in real assets, frontier venture capital and an impact-led Community Equity Fund. Allocations can be made to a single platform or blended across several to match your mandate.",
+        a: "We operate four autonomous strategies, each an independent Delaware Limited Partnership: Hedge Fund LP (Global Macro Excellence), Private Equity LP (Infrastructure Growth), Venture Capital LP (Frontier Technology) and Community Equity Fund LP (Impact Through Investment). Allocations can be made to a single strategy or blended across several to match your mandate.",
       },
       {
-        q: "How is risk managed across the platforms?",
-        a: "Each platform carries daily or periodic risk attribution, position limits and systematic hedging where appropriate. An independent oversight function, separate from the investing teams, validates models and enforces limits before capital is committed.",
+        q: "How is risk managed across the strategies?",
+        a: "Each strategy is a separate Delaware Limited Partnership with its own investment committee and risk framework. The Hedge Fund LP runs to a daily 95% Value-at-Risk and a maximum 300% gross exposure, and independent valuation committees govern illiquid positions across the private-market strategies.",
       },
     ],
   },
@@ -248,11 +249,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: "How often will I receive reporting?",
-        a: "Partners receive quarterly capital-account and performance statements alongside detailed exposure, attribution and risk reporting through the secure portal. Audited annual reports and impact metrics are published each year.",
+        a: "Reporting follows the strategy. Liquid strategies carry monthly reporting protocols, and private markets receive quarterly deep-dive reviews. Institutional partners are given real-time access through the secure portal, with annual audits conducted by a Big Four firm.",
       },
       {
         q: "Can I access my documents at any time?",
-        a: "Yes. The Investor Portal provides 24/7 access to a controlled document vault containing your statements, audited reports, tax records and governance policies — versioned and permissioned to your entity alone.",
+        a: "Yes. The Investor Portal provides 24/7 access to a controlled document vault containing your statements, audited reports, tax records and governance policies, versioned and permissioned to your entity alone.",
       },
     ],
   },
@@ -261,11 +262,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: "What are the fee arrangements?",
-        a: "Fee structures vary by platform and vehicle and are set out in full within the private placement memorandum and limited partnership agreement. Our investor relations team will review the applicable terms with you in the context of your commitment.",
+        a: "The Hedge Fund LP carries a 2.0% management fee and a 20% performance fee. The Private Equity LP is structured on an 8% preferred return with 20% carried interest. Full terms for each strategy are set out in the private placement memorandum and limited partnership agreement.",
+      },
+      {
+        q: "What is the minimum investment?",
+        a: "The Hedge Fund LP carries a $1M minimum investment. Terms for the private-market strategies are set out in the relevant limited partnership agreement, and our investor relations team will review the applicable terms with you.",
       },
       {
         q: "What liquidity should I expect?",
-        a: "Liquidity differs by platform — our hedge fund offers periodic liquidity, while private equity, venture and community equity vehicles carry multi-year lock-ups consistent with their underlying assets. Terms are disclosed before any commitment.",
+        a: "Liquidity differs by strategy. The Hedge Fund LP offers periodic liquidity, while the private equity, venture and community equity strategies carry multi-year lock-ups consistent with their underlying assets. Terms are disclosed before any commitment.",
       },
     ],
   },

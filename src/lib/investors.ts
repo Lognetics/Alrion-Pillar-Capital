@@ -1,9 +1,11 @@
 /* ============================================================
    Investor-audience content for the five client-type pages.
-   Original copy faithful to ALRION Pillar Capital's positioning:
-   impact-driven investing, AI-driven quantitative models, four
-   divisions and a frontier-technology focus. Invented figures are
-   marked "Illustrative" at the point of use.
+   These describe the investor TYPES Alrion Pillar Capital is
+   built to serve, tied to the four independent Delaware LP
+   strategies, the real fund terms, governance standards and
+   alignment. No AUM, track record, scale or global claims:
+   Alrion is a 2024 platform operating from a single New York
+   office. Only verifiable facts appear here.
    ============================================================ */
 
 export type NeedSolution = { need: string; solution: string };
@@ -11,32 +13,25 @@ export type NeedSolution = { need: string; solution: string };
 /* — Institutional Investors ————————————————————————————————— */
 export const INSTITUTIONAL_NEEDS: NeedSolution[] = [
   {
-    need: "A single research partner for differentiated, frontier-technology exposure across public and private markets.",
+    need: "A single relationship spanning liquid and private markets, without a single point of failure.",
     solution:
-      "One relationship spanning four investment platforms — hedge fund, private equity, venture and community equity — underwritten by a shared research desk and a unified investment committee.",
+      "Four autonomous strategies under one rigorous framework: Hedge Fund LP, Private Equity LP, Venture Capital LP and Community Equity Fund LP. Each is a separate Delaware Limited Partnership with its own investment committee.",
   },
   {
     need: "Institutional-grade reporting that satisfies trustees, consultants and internal investment committees.",
     solution:
-      "Granular exposure, attribution and risk reporting on a fixed cadence, reconciled to a third-party administrator and delivered through a secure investor portal.",
+      "Monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets, and comprehensive third-party administration, delivered through a secure investor portal.",
   },
   {
     need: "Independent governance and risk oversight that operates separately from the people deploying capital.",
     solution:
-      "A dedicated oversight function enforces position limits, validates quantitative models and reports directly to governance — never to the investing desks it monitors.",
+      "Each strategy carries its own risk framework. The Hedge Fund LP runs to a daily 95% Value-at-Risk and a maximum 300% gross exposure, with independent valuation committees on illiquid positions.",
   },
   {
-    need: "Mandate flexibility — from commingled funds to segregated, custom-constrained accounts.",
+    need: "Genuine alignment, not a manager paid to gather assets.",
     solution:
-      "Segregated managed accounts with bespoke guidelines, exclusion lists and liquidity terms, alongside our flagship commingled vehicles.",
+      "Significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms.",
   },
-];
-
-export const ASSURANCE_STATS = [
-  { value: "92%", label: "Institutional capital", sub: "Sourced from long-term partners" },
-  { value: "Daily", label: "Risk attribution", sub: "Independent of the investing desks" },
-  { value: "Third-party", label: "Fund administration", sub: "Reconciled, audited, independent" },
-  { value: "22", label: "Countries of activity", sub: "An integrated global footprint" },
 ];
 
 /* — Pension Funds —————————————————————————————————————————— */
@@ -44,43 +39,43 @@ export const LIABILITY_FRAMEWORK = [
   {
     no: "01",
     title: "Liability-aware construction",
-    body: "Portfolios are designed against the shape of your liabilities — duration, indexation and pacing — not against a generic benchmark. Allocation begins with the obligations you must fund.",
+    body: "Portfolios are framed against the shape of your liabilities, duration, indexation and pacing, rather than a generic benchmark. Allocation begins with the obligations you must fund.",
   },
   {
     no: "02",
     title: "Capital preservation first",
-    body: "Systematic hedging, volatility control and drawdown management in our hedge-fund platform are oriented to protect funded status through the cycle, not to chase peak returns.",
+    body: "The Hedge Fund LP runs to a daily 95% Value-at-Risk and a maximum 300% gross exposure, a disciplined risk envelope oriented to protecting funded status through the cycle.",
   },
   {
     no: "03",
     title: "Inflation-aware real assets",
-    body: "Infrastructure, energy and utilities exposure in our private-equity platform provides contractual, often inflation-linked cash flows that help defend real liabilities over decades.",
+    body: "The Private Equity LP deploys growth capital into mission-critical infrastructure, energy, grid and operational resilience, targeting investment-grade counterparties and contractual cash flows.",
   },
   {
     no: "04",
     title: "Steady compounding",
-    body: "Patient capital and multi-year holds compound value deliberately, smoothing the contribution path and reducing reliance on episodic, timing-dependent returns.",
+    body: "Private-market holds are structured on an 8% preferred return with 20% carried interest, compounding value deliberately rather than chasing episodic, timing-dependent returns.",
   },
 ];
 
 export const PENSION_POSITIONING = [
   {
     band: "Liquid · capital-preservation core",
-    platform: "Hedge Fund",
-    risk: "Lower volatility",
-    role: "Drawdown-managed liquid return with daily risk attribution to defend funded status.",
+    platform: "Hedge Fund LP",
+    risk: "Risk-controlled",
+    role: "Global Macro Excellence, run to a daily 95% VaR and a 300% gross exposure cap.",
   },
   {
     band: "Real assets · inflation defense",
-    platform: "Private Equity",
+    platform: "Private Equity LP",
     risk: "Moderate",
-    role: "Infrastructure and energy cash flows that track long-dated, inflation-sensitive liabilities.",
+    role: "Infrastructure Growth into energy, grid and operational resilience with investment-grade counterparties.",
   },
   {
     band: "Growth · measured frontier sleeve",
-    platform: "Venture Capital",
+    platform: "Venture Capital LP",
     risk: "Higher, sized small",
-    role: "A right-sized allocation to frontier innovation for long-horizon real return.",
+    role: "Frontier Technology at Seed to Series A, a right-sized allocation for long-horizon real return.",
   },
 ];
 
@@ -89,91 +84,84 @@ export const COINVEST_MODEL = [
   {
     no: "01",
     title: "Anchor commitment",
-    body: "A cornerstone allocation across one or more of our platforms establishes the partnership and aligns long-term incentives at fund level.",
+    body: "A cornerstone allocation across one or more of the four Delaware LP strategies establishes the partnership and aligns long-term incentives at fund level.",
   },
   {
     no: "02",
-    title: "Co-investment rights",
-    body: "Preferential, fee-advantaged co-investment rights on direct deals let you scale conviction into specific frontier-technology opportunities alongside us.",
+    title: "Alignment at the same terms",
+    body: "We commit significant GP capital across every fund and invest where we ask our partners to invest, at the same terms, so conviction is shared rather than sold.",
   },
   {
     no: "03",
     title: "Strategic theme mandates",
-    body: "Custom mandates target national priorities — semiconductors, energy, AI infrastructure, defense-relevant dual-use technology — within agreed risk and governance bounds.",
+    body: "The strategies map to durable national priorities: energy and grid modernization in Infrastructure Growth, and AI, biotech, defense and space in Frontier Technology.",
   },
   {
     no: "04",
-    title: "Knowledge transfer",
-    body: "Secondments, joint diligence and access to our research desk build internal capability and a durable on-the-ground innovation footprint at home.",
+    title: "Independent governance",
+    body: "Each strategy is a separate Delaware Limited Partnership with its own investment committee, risk framework and independent valuation committees on illiquid positions.",
   },
-];
-
-export const SOVEREIGN_REGIONS = [
-  { region: "Middle East", hub: "Abu Dhabi", focus: "Sovereign capital, energy transition and AI infrastructure." },
-  { region: "Asia-Pacific", hub: "Singapore", focus: "Deep-tech manufacturing, semiconductors and the orbital economy." },
-  { region: "EMEA", hub: "London · Zurich", focus: "Climate technology, industrial scale-up and private wealth." },
-  { region: "Americas", hub: "New York · San Francisco", focus: "Frontier venture, AI compute and advanced manufacturing." },
 ];
 
 /* — Family Offices ——————————————————————————————————————————— */
 export const TAILORED_ACCESS = [
   {
-    title: "Direct & private deals",
-    body: "Co-invest directly into individual frontier-technology companies sourced by our venture and private-equity desks — beyond what any commingled fund can offer.",
+    title: "Four strategies, one framework",
+    body: "Access Global Macro Excellence, Infrastructure Growth, Frontier Technology and Impact Through Investment, each an independent Delaware LP under a single rigorous standard.",
   },
   {
-    title: "Bespoke mandates",
-    body: "Segregated accounts shaped to your family's values, exclusions, liquidity needs and concentration preferences, reviewed with a named principal.",
+    title: "Frontier Technology exposure",
+    body: "The Venture Capital LP partners with founders at the inflection between scientific validation and market deployment, at Seed to Series A, primarily across the Northeast Corridor.",
   },
   {
-    title: "Multi-generational structuring",
-    body: "Allocation designed for horizons measured in generations, with succession, governance and education built into the relationship rather than bolted on.",
+    title: "Multi-generational horizon",
+    body: "Private-market strategies are built for patient capital, structured on an 8% preferred return with 20% carried interest, matched to horizons measured in generations.",
   },
   {
-    title: "Curated co-investment flow",
-    body: "A measured stream of vetted opportunities — not a firehose — matched to your stated themes, with full diligence packs and direct line to the deal team.",
+    title: "Aligned interests",
+    body: "Significant GP commitments across every fund mean we invest where we ask you to invest, and at the same terms. Alignment is designed in, not asserted.",
   },
 ];
 
 /* — Foundations & Endowments ——————————————————————————————— */
 export const IMPACT_RETURNS = [
   {
-    title: "No false trade-off",
-    body: "We reject the premise that mission and return are opposed. Our Community Equity Fund and climate platform are built to compound capital and outcomes together.",
+    title: "Impact through investment",
+    body: "The Community Equity Fund LP is a model proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York, with a 51%+ Minority- and Women-Owned Business Enterprises mandate.",
   },
   {
-    title: "Measured impact",
-    body: "Social and environmental outcomes are reported with the same rigor as performance — audited annually and aligned to the UN Sustainable Development Goals.",
+    title: "Measured, not asserted",
+    body: "Impact is framed around three indicators, Wealth Equity, Employment Quality and the Capital Multiplier, so outcomes are measured qualitatively rather than reduced to headline figures.",
   },
   {
-    title: "Mission-aligned screens",
-    body: "Exclusion lists, thematic tilts and values-based constraints are encoded into segregated mandates so your portfolio reflects your charter.",
+    title: "Seeded by alignment",
+    body: "The fund is seeded by carried interest from the institutional strategies, funding impact from the platform's own economics rather than from a separate marketing budget.",
   },
   {
-    title: "Perpetual-horizon design",
-    body: "Portfolios are constructed for institutions that intend to exist forever, balancing real growth against today's spending obligations.",
+    title: "Independent governance",
+    body: "Like every strategy, it is a separate Delaware Limited Partnership with its own investment committee and risk framework, audited annually by a Big Four firm.",
   },
 ];
 
 export const ENDOWMENT_MODEL = [
   {
     no: "01",
-    title: "Real growth above spending",
-    body: "Target returns are framed to exceed your spending rate plus inflation across a full cycle, preserving real purchasing power for future beneficiaries.",
+    title: "A platform, not a product",
+    body: "Four autonomous strategies span liquid macro, private infrastructure, frontier venture and community impact, diversifying the engines of return under one framework.",
   },
   {
     no: "02",
-    title: "Diversified frontier exposure",
-    body: "Allocation spans liquid public markets, real assets and private innovation, diversifying the engines of return across our four platforms.",
+    title: "Aligned interests",
+    body: "Significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms, aligning the platform with the institutions it serves.",
   },
   {
     no: "03",
-    title: "Liquidity for spending policy",
-    body: "A liquid, drawdown-managed sleeve and predictable distribution planning support a steady annual draw without forcing untimely sales.",
+    title: "Absolute transparency",
+    body: "Monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets, and real-time access for institutional partners.",
   },
   {
     no: "04",
-    title: "Stewardship & transparency",
-    body: "Independent governance, audited reporting and direct access to the investment team give boards the assurance their fiduciary duty demands.",
+    title: "Rigorous oversight",
+    body: "Annual Big Four audits, comprehensive third-party administration and independent valuation committees on illiquid positions give boards the assurance their fiduciary duty demands.",
   },
 ];

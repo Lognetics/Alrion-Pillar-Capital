@@ -9,7 +9,7 @@ import { COMMITTEE, DECISION_STEPS } from "@/lib/about";
 export const metadata: Metadata = {
   title: "Investment Committee",
   description:
-    "The ALRION Pillar Capital Investment Committee is where conviction is contested and capital is committed — a formal, adversarial process that holds every thesis to a standard of evidence.",
+    "Each ALRION Pillar Capital strategy has its own investment committee, a formal, adversarial process that holds every thesis to a standard of evidence before capital is committed.",
 };
 
 export default function CommitteePage() {
@@ -23,7 +23,7 @@ export default function CommitteePage() {
             <span className="text-gilt"> contested, then committed.</span>
           </>
         }
-        intro="No capital leaves the firm without passing through the Investment Committee — a formal body that debates conviction, structure and risk, and where the strongest argument, not the most senior voice, prevails."
+        intro="No capital leaves a strategy without passing through its investment committee, a formal body that debates conviction, structure and risk, and where the strongest argument, not the most senior voice, prevails."
         crumbs={[{ label: "About", href: "/about" }, { label: "Investment Committee" }]}
       />
 
@@ -39,16 +39,16 @@ export default function CommitteePage() {
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                The Investment Committee convenes across all four platforms, applying
-                one consistent methodology to opportunities as different as a liquid
-                quantitative trade and a multi-year infrastructure buyout. Its purpose
-                is not to rubber-stamp conviction but to test it.
+                Each strategy's committee applies one rigorous framework to
+                opportunities as different as a liquid quantitative trade and a
+                multi-year infrastructure investment. Its purpose is not to
+                rubber-stamp conviction but to test it.
               </p>
               <p>
-                Every thesis arrives backed by the diligence of specialists, and every
-                thesis meets an assigned challenger whose job is to argue the bear
-                case. The risk and compliance officer holds an independent voice — and,
-                where warranted, an independent veto — on every decision.
+                Every thesis arrives backed by the diligence of specialists, and
+                every thesis meets an assigned challenger whose job is to argue the
+                bear case. The Chief Risk Officer holds an independent voice, and,
+                where warranted, an independent veto, on every decision.
               </p>
             </div>
           </Reveal>
@@ -82,14 +82,15 @@ export default function CommitteePage() {
           <SectionHeading
             eyebrow="The Committee"
             title={<>The voices in the room.</>}
-            intro="A representative committee drawing on investing, research, quantitative and independent risk perspectives."
+            intro="A committee drawing on each strategy's conviction alongside independent risk and compliance perspectives."
           />
         </Reveal>
         <div className="mt-14">
           <BioGrid items={COMMITTEE} columns={3} />
         </div>
         <p className="mt-12 text-xs text-slate-strong/50">
-          Names, titles and roles shown are representative for illustration.
+          Team members shown are representative and illustrative, pending final
+          disclosure.
         </p>
       </Section>
 

@@ -5,35 +5,33 @@ import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
 import { SECTORS } from "@/lib/site";
 
-export const metadata = { title: "Industries" };
+export const metadata = { title: "Focus Areas" };
 
-const GROUPS = ["Intelligence & Compute", "Life & Climate", "Real Economy"] as const;
+const GROUPS = ["Frontier Technology", "Infrastructure Growth"] as const;
 
 const GROUP_INTROS: Record<(typeof GROUPS)[number], string> = {
-  "Intelligence & Compute":
-    "The computational substrate of the next economy — the models, machines and silicon that turn data into decisions.",
-  "Life & Climate":
-    "Capital aligned to human health and a habitable planet, where scientific breakthroughs meet planetary-scale demand.",
-  "Real Economy":
-    "The physical backbone of modern life — energy, infrastructure and industry rebuilt for a more resilient century.",
+  "Frontier Technology":
+    "The focus areas of the Venture Capital LP, where the strategy backs founders at the inflection point between scientific validation and market deployment.",
+  "Infrastructure Growth":
+    "The focus areas of the Private Equity LP, the mission-critical infrastructure underpinning a resilient, electrified economy.",
 };
 
 const THESES = [
   {
-    title: "Secular demand",
-    body: "We anchor to multi-decade tailwinds — compute, decarbonization, reshoring and longevity — rather than transient market cycles.",
+    title: "Structural demand",
+    body: "We anchor to durable demand, from frontier science reaching deployment to the infrastructure a modern economy cannot run without.",
   },
   {
-    title: "Durable moats",
-    body: "Proprietary technology, hard-science defensibility and network effects compound advantage long after first-mover capital arrives.",
-  },
-  {
-    title: "Real-world impact",
-    body: "We measure outcomes in both returns and consequence — cleaner energy, better care, stronger systems — never trading one for the other.",
+    title: "Defensibility",
+    body: "We favor a genuine, hard-to-replicate edge, whether proprietary technology in venture or contracted demand from investment-grade counterparties.",
   },
   {
     title: "Disciplined entry",
-    body: "AI-driven quantitative models and a research desk price conviction precisely, structuring entries that protect downside and capture asymmetry.",
+    body: "Each commitment is underwritten by the strategy's own investment committee, sized to the evidence and structured to protect capital.",
+  },
+  {
+    title: "Aligned interests",
+    body: "We invest through significant general-partner commitments, on the same terms we ask of our partners.",
   },
 ];
 
@@ -41,24 +39,29 @@ export default function IndustriesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Industries"
-        title={<>We invest where the future is being built.</>}
-        intro="Twenty-one frontier sectors, mapped to secular demand, durable competitive moats and measurable real-world impact — the foundations of the next economy."
-        crumbs={[{ label: "Industries" }]}
+        eyebrow="Focus Areas"
+        title={<>The sectors where our strategies invest.</>}
+        intro="Six focus areas in two groups, mapped to the two strategies that invest directly in sectors: the Venture Capital LP in frontier technology, and the Private Equity LP in mission-critical infrastructure."
+        crumbs={[{ label: "Focus Areas" }]}
       />
 
       <Section tone="paper">
         <SectionHeading
-          eyebrow="A thematic map"
-          title={<>Frontier sectors, organized by conviction.</>}
-          intro="Alrion allocates across the public and private frontier through three thematic pillars. Each maps a distinct vector of change in the global economy, and each is underwritten by the same discipline: research-led conviction, quantitative rigor and impact aligned with returns."
+          eyebrow="A focused map"
+          title={<>Two groups. Six focus areas.</>}
+          intro="Two of Alrion's four strategies invest directly in sectors. The Venture Capital LP concentrates on frontier technology, and the Private Equity LP on infrastructure growth. Each commitment is underwritten by the same framework: research-led conviction, disciplined structuring and independent governance."
         />
         <div className="mt-8 max-w-2xl space-y-5 text-lg leading-relaxed text-slate-strong/85">
           <p>
-            We are sector-specialists by design. Our research professionals — engineers, scientists and analysts — translate frontier science into investable theses before they reach the mainstream, then express them across the right instrument, stage and structure.
+            We are focused by design. The Venture Capital LP backs founders at the
+            inflection point between scientific validation and market deployment,
+            allocating across artificial intelligence, biotechnology, and defense
+            and space.
           </p>
           <p>
-            The result is a portfolio built not on momentum but on understanding: where demand is structural, where moats are durable, and where capital can compound while doing tangible good in the world.
+            The Private Equity LP deploys growth capital into the mission-critical
+            infrastructure underpinning the modern economy: nuclear lifecycle
+            services, grid modernization and operational-technology cybersecurity.
           </p>
         </div>
       </Section>
@@ -90,7 +93,7 @@ export default function IndustriesPage() {
                     {s.blurb}
                   </p>
                   <span className="mt-4 text-xs font-semibold tracking-wide text-gold-600 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-hover:text-gold-300">
-                    Explore sector →
+                    Explore focus area →
                   </span>
                 </Link>
               </Reveal>
@@ -103,9 +106,9 @@ export default function IndustriesPage() {
         <SectionHeading
           light
           align="center"
-          eyebrow="Thematic conviction"
-          title={<>Four theses cut across every sector.</>}
-          intro="However the sector is defined, the underwriting question is the same. These cross-cutting principles govern where Alrion commits capital."
+          eyebrow="Underwriting conviction"
+          title={<>Four principles cut across every focus area.</>}
+          intro="However the focus area is defined, the underwriting question is the same. These principles govern where Alrion commits capital."
         />
         <div className="mt-14">
           <FeatureGrid items={THESES} columns={4} />
@@ -113,8 +116,8 @@ export default function IndustriesPage() {
       </Section>
 
       <CtaBand
-        title={<>Explore a thesis built for the frontier.</>}
-        body="Speak with our investment team about how Alrion is positioned across the sectors defining the next economy."
+        title={<>Explore the strategies behind the focus areas.</>}
+        body="Speak with our investment team about how the Venture Capital LP and Private Equity LP invest across these sectors."
         primary={{ href: "/contact", label: "Contact the team" }}
         secondary={{ href: "/strategies", label: "View strategies" }}
       />

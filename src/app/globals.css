@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ============================================================
-   ALRION PILLAR CAPITAL — Institutional Design System
+   ALRION PILLAR CAPITAL, Institutional Design System
    ============================================================ */
 
 @theme {
@@ -204,7 +204,7 @@
 }
 
 /* ============================================================
-   Mobile typography — scale every font size to 80% (−20%) on
+   Mobile typography: scale every font size to 80% (-20%) on
    phones, while leaving spacing and layout untouched. Works by
    overriding Tailwind's --text-* size tokens (read by text-*
    utilities) plus the custom typographic helpers.

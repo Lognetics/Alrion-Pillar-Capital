@@ -10,7 +10,7 @@ import { MILESTONES } from "@/lib/about";
 export const metadata: Metadata = {
   title: "Our Story",
   description:
-    "From a single research desk in 2019 to a four-division global manager, the story of ALRION Pillar Capital is one of science before capital and conviction earned through evidence.",
+    "ALRION Pillar Capital was conceived and launched in 2024 in New York as four independent Delaware Limited Partnerships, a platform, not a product, built on Independence by Design and Conviction by Discipline.",
 };
 
 export default function StoryPage() {
@@ -20,11 +20,11 @@ export default function StoryPage() {
         eyebrow="Our Story"
         title={
           <>
-            From one research desk to
-            <span className="text-gilt"> capital for the frontier.</span>
+            Conceived and launched
+            <span className="text-gilt"> in 2024.</span>
           </>
         }
-        intro="The history of ALRION Pillar Capital is a chronicle of conviction — a firm built, year by year, on the belief that the world's most consequential technologies demand capital grounded in genuine understanding."
+        intro="ALRION Pillar Capital was designed from the outset as a platform, not a product: four autonomous strategies, one rigorous framework, and a singular standard of fiduciary care."
         crumbs={[{ label: "About", href: "/about" }, { label: "Our Story" }]}
       />
 
@@ -34,29 +34,27 @@ export default function StoryPage() {
           <Reveal className="lg:col-span-5">
             <SectionHeading
               eyebrow="The Origin"
-              title={<>It began with a frustration, and a conviction.</>}
+              title={<>It began with a conviction about structure.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                In {FIRM.established}, a small group of investors, engineers and
-                scientists shared a frustration with how capital was being
-                allocated to the most important technologies of the era. Too much
-                money was chasing narrative; too little was grounded in genuine
-                technical understanding.
+                In {FIRM.established}, {FIRM.short} was conceived in New York
+                around a single conviction: that serious allocators deserve a
+                platform where independence is engineered into the structure and
+                conviction is earned through discipline.
               </p>
               <p>
-                They set out to build a different kind of institution — one where
-                the people evaluating a breakthrough could read the research paper,
-                interrogate the architecture and model the economics with equal
-                fluency. From a single research desk, {FIRM.short} grew into a
-                multi-platform manager spanning public markets, private equity,
-                venture and inclusive impact capital.
+                Rather than a single fund, the platform was designed as four
+                autonomous strategies, each a separate Delaware Limited
+                Partnership with its own investment committee and risk framework,
+                bound together by one rigorous framework of governance and
+                oversight.
               </p>
               <p>
-                What follows is the record of that journey — and of a founding
-                ethos that endures in every mandate the firm manages today.
+                What follows is the record of that founding, and of a logic that
+                endures in every strategy the platform runs today.
               </p>
             </div>
           </Reveal>
@@ -68,8 +66,8 @@ export default function StoryPage() {
         <Reveal>
           <SectionHeading
             eyebrow="Milestones"
-            title={<>A history written in conviction.</>}
-            intro="Each chapter advanced a single methodology — science before capital — into a new corner of the global economy."
+            title={<>A platform, established in 2024.</>}
+            intro="Each step reflected one idea: four autonomous strategies, one rigorous framework of fiduciary care."
           />
         </Reveal>
         <div className="mt-16">
@@ -85,9 +83,9 @@ export default function StoryPage() {
           <Reveal className="mx-auto max-w-3xl text-center">
             <span className="font-serif text-7xl leading-none text-gold-500/40">&ldquo;</span>
             <blockquote className="-mt-6 font-serif text-3xl font-light leading-snug text-paper md:text-4xl">
-              We did not set out to build the largest firm. We set out to build the
-              most disciplined one — a place where conviction is always earned, never
-              assumed.
+              We did not set out to build a product. We set out to build a
+              platform, where independence is by design and conviction is by
+              discipline.
             </blockquote>
             <div className="mt-10 flex items-center justify-center gap-4">
               <span className="h-px w-10 bg-gold-500" />
@@ -101,8 +99,8 @@ export default function StoryPage() {
       </section>
 
       <CtaBand
-        title={<>The next chapter is being written now.</>}
-        body="Explore the principles and people that carry our founding ethos forward — or speak with our team about partnering on what comes next."
+        title={<>The platform is being built now.</>}
+        body="Explore the principles and people behind the four strategies, or speak with our team about partnering with us."
         primary={{ href: "/about/leadership", label: "Meet the team" }}
         secondary={{ href: "/contact", label: "Connect with us" }}
       />

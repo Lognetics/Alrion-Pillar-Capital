@@ -47,7 +47,7 @@ export default function ArticlesPage() {
             <span className="text-gilt"> commentary.</span>
           </>
         }
-        intro="Shorter, more frequent writing from the desk — timely reactions, field notes and the small ideas that often precede a full thesis."
+        intro="Shorter, more frequent writing from the desk: timely reactions, field notes and the small ideas that often precede a full thesis."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Articles" }]}
       />
 

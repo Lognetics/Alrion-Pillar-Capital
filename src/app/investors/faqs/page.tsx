@@ -9,7 +9,7 @@ import { FAQ_CATEGORIES } from "@/lib/investor-center";
 export const metadata: Metadata = {
   title: "Investor FAQs",
   description:
-    "Answers for prospective and current partners of ALRION Pillar Capital — getting started, strategies and risk, reporting, fees and liquidity, and compliance.",
+    "Answers for prospective and current partners of ALRION Pillar Capital: getting started, strategies and risk, reporting, fees and liquidity, and compliance.",
 };
 
 export default function FaqsPage() {
@@ -67,7 +67,7 @@ export default function FaqsPage() {
 
       <CtaBand
         title={<>Still have questions?</>}
-        body="Our investor relations desk is here to help — from eligibility and terms to reporting and compliance."
+        body="Our investor relations desk is here to help, from eligibility and terms to reporting and compliance."
         primary={{ href: "/contact", label: "Contact investor relations" }}
         secondary={{
           href: "/investors/capital-requests",

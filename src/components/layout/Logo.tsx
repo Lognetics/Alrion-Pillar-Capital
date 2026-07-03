@@ -6,7 +6,7 @@ export function Logo({ light = false, className }: { light?: boolean; className?
   return (
     <Link
       href="/"
-      aria-label="ALRION Pillar Capital — home"
+      aria-label="ALRION Pillar Capital, home"
       className={cn("group inline-flex items-center gap-3", className)}
     >
       <svg

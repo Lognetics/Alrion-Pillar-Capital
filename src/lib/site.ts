@@ -1,43 +1,50 @@
 /* ============================================================
-   Firm-level content shared across pages. Copy is original and
-   faithful to ALRION Pillar Capital's stated positioning:
-   impact-driven investing, AI-driven quantitative models,
-   four divisions, and a frontier-technology focus.
+   Firm-level content shared across pages.
+
+   SOURCE OF TRUTH: Alrion Pillar Capital is an institutional
+   alternative investment platform established in 2024 in New York, 
+   "a platform, not a product", comprising four independent Delaware
+   Limited Partnerships. Copy is precise and fiduciary in tone. Only
+   verifiable figures appear here; no AUM, track record, or global
+   footprint is claimed.
    ============================================================ */
 
 export const FIRM = {
   name: "ALRION Pillar Capital",
   short: "Alrion",
-  tagline: "Capital for the frontier.",
-  email: "invest@alrionpillarcapital.com",
-  press: "media@alrionpillarcapital.com",
-  phone: "+1 (212) 555-0114",
-  established: 2019,
+  tagline: "Independence by Design. Conviction by Discipline.",
+  subhead:
+    "Four autonomous strategies. One rigorous framework. A singular standard of fiduciary care for the allocators who ask the harder questions.",
+  email: "info@alrionpillarcapital.com",
+  press: "info@alrionpillarcapital.com",
+  phone: "+1 (347) 988-3366",
+  established: 2024,
+  address: "11 West 118th Street, Suite 6C, New York, NY 10026",
+  city: "New York",
   description:
-    "ALRION Pillar Capital is a global, research-led investment firm allocating capital across public markets and private innovation. We pursue durable returns and measurable impact at the frontier of technology.",
+    "Alrion Pillar Capital is an institutional alternative investment platform, a platform, not a product, comprising four independent Limited Partnerships unified by a single standard of institutional discipline and fiduciary care.",
 };
 
 export type Stat = {
-  value: number;
+  /** Numeric value for an animated counter. Omit when using `text`. */
+  value?: number;
+  /** Pre-formatted display value (used verbatim, no animation). */
+  text?: string;
   prefix?: string;
   suffix?: string;
   decimals?: number;
+  /** Render the counter without thousands separators (e.g. a year). */
+  raw?: boolean;
   label: string;
   sub: string;
 };
 
+/* Only structural, verifiable facts, no scale or track-record claims. */
 export const HERO_STATS: Stat[] = [
-  { value: 14.2, prefix: "$", suffix: "B", decimals: 1, label: "Capital under management", sub: "Across four investment platforms" },
-  { value: 120, suffix: "+", label: "Portfolio companies", sub: "From seed-stage to industrial scale" },
-  { value: 22, label: "Countries of activity", sub: "An integrated global footprint" },
-  { value: 38, label: "Realized exits", sub: "Returned to our investors since inception" },
-];
-
-export const IMPACT_STATS: Stat[] = [
-  { value: 9.4, prefix: "$", suffix: "B", decimals: 1, label: "Private capital deployed", sub: "Into frontier-technology companies" },
-  { value: 64, label: "Research professionals", sub: "Engineers, scientists and analysts" },
-  { value: 4.1, prefix: "$", suffix: "B", decimals: 1, label: "Climate & impact AUM", sub: "Aligned to the UN SDGs" },
-  { value: 92, suffix: "%", label: "Institutional capital", sub: "Sourced from long-term partners" },
+  { text: "4", label: "Autonomous strategies", sub: "Four independent Delaware Limited Partnerships" },
+  { text: "2024", label: "Established", sub: "Headquartered in New York" },
+  { text: "51%+", label: "MWBE mandate", sub: "Community Equity Fund LP" },
+  { text: "Big Four", label: "Annual audits", sub: "Independent third-party administration" },
 ];
 
 export type Strategy = {
@@ -53,86 +60,88 @@ export type Strategy = {
 export const STRATEGIES: Strategy[] = [
   {
     slug: "hedge-fund",
-    name: "Hedge Fund",
-    kicker: "Public Markets · Liquid Alpha",
+    name: "Hedge Fund LP",
+    kicker: "Global Macro Excellence",
     summary:
-      "Adaptive, multi-strategy positioning focused on the frontier-technology markets, powered by proprietary quantitative models.",
+      "A systematic approach to alpha generation across global macroeconomic dislocations, combining quantitative modelling with fundamental analysis.",
     description:
-      "Our hedge fund platform pursues asymmetric, risk-managed returns across global equities, credit and derivatives. AI-driven quantitative models and a dedicated research desk identify dislocations at the leading edge of innovation, while disciplined hedging and diversification preserve capital through the cycle.",
+      "The Hedge Fund LP pursues alpha across global macroeconomic dislocations, applying multi-timeframe, cross-asset relative value. Quantitative modelling is integrated with fundamental analysis, and risk is governed by daily 95% Value-at-Risk monitoring and a disciplined ceiling on gross exposure.",
     bullets: [
-      "AI-driven quantitative and machine-learning signal generation",
-      "Long/short exposure to frontier-technology equities",
-      "Systematic hedging, volatility control and drawdown management",
-      "Daily risk attribution and independent oversight",
+      "Multi-timeframe, cross-asset relative value",
+      "Quantitative modelling integrated with fundamental analysis",
+      "Daily 95% Value-at-Risk monitoring",
+      "Maximum 300% gross exposure discipline",
     ],
     metrics: [
-      { value: "Multi-strat", label: "Mandate" },
-      { value: "Global", label: "Universe" },
-      { value: "Daily", label: "Liquidity profile" },
+      { value: "Daily 95%", label: "Value-at-Risk" },
+      { value: "300%", label: "Max gross exposure" },
+      { value: "$1M", label: "Minimum investment" },
     ],
   },
   {
     slug: "private-equity",
-    name: "Private Equity",
-    kicker: "Control & Growth · Real Assets",
+    name: "Private Equity LP",
+    kicker: "Infrastructure Growth",
     summary:
-      "Control and growth capital for industrial-scale businesses across infrastructure, energy, transportation and utilities.",
+      "Growth capital deployed into the mission-critical infrastructure underpinning the modern economy, energy, grid, and operational resilience.",
     description:
-      "We acquire and build enduring companies in the real economy, partnering with management teams to professionalize operations, accelerate growth and modernize critical infrastructure. Our approach blends operational rigor with patient capital to compound value over multi-year horizons.",
+      "The Private Equity LP provides growth capital to the mission-critical infrastructure underpinning the modern economy. We focus on nuclear lifecycle services, grid modernization and operational-technology cybersecurity, targeting businesses with $10M–$100M in revenue and investment-grade counterparties.",
     bullets: [
-      "Buyouts, growth equity and structured investments",
-      "Infrastructure, energy, transportation and utilities focus",
-      "Operational value creation and governance uplift",
-      "ESG integration across the ownership lifecycle",
+      "Nuclear lifecycle services",
+      "Grid modernization",
+      "Operational-technology (OT) cybersecurity",
+      "$10M–$100M revenue with investment-grade counterparties",
     ],
     metrics: [
-      { value: "Control", label: "Orientation" },
-      { value: "5–8 yr", label: "Hold period" },
-      { value: "Real assets", label: "Core focus" },
+      { value: "8%", label: "Preferred return" },
+      { value: "20%", label: "Carried interest" },
+      { value: "$10–100M", label: "Revenue target" },
     ],
   },
   {
     slug: "venture-capital",
-    name: "Venture Capital",
-    kicker: "Frontier Innovation · Early Growth",
+    name: "Venture Capital LP",
+    kicker: "Frontier Technology",
     summary:
-      "Backing category-defining founders in AI, robotics, biotech, space, climate, cybersecurity and deep tech.",
+      "Partnering with founders at the inflection point between scientific validation and market deployment.",
     description:
-      "Our venture platform empowers founders building the technologies that will define the next decade. From first institutional check to growth rounds, we provide conviction capital, technical diligence and an operating network that helps frontier companies scale responsibly.",
+      "The Venture Capital LP partners with founders at the inflection point between scientific validation and market deployment. Investing from Seed to Series A, primarily across the Northeast Corridor, the strategy concentrates on artificial intelligence, biotechnology, and defense and space, supported by a Technical Advisory Board of former government and military leaders.",
     bullets: [
-      "Seed through growth-stage investments",
-      "AI, robotics, biotech, space, climate and cybersecurity",
-      "Founder-first partnership and technical diligence",
-      "Access to a global commercialization network",
+      "Artificial Intelligence & Machine Learning (40%)",
+      "Biotechnology (35%)",
+      "Defense & Space (25%)",
+      "Seed to Series A, primarily the Northeast Corridor",
     ],
     metrics: [
-      { value: "Seed–Growth", label: "Stage" },
-      { value: "Deep tech", label: "Thesis" },
-      { value: "Founder-first", label: "Approach" },
+      { value: "Seed–Series A", label: "Stage" },
+      { value: "40 / 35 / 25", label: "AI · Biotech · Defense" },
+      { value: "Advisory", label: "Technical Advisory Board" },
     ],
   },
   {
     slug: "community-equity",
-    name: "Community Equity Fund",
-    kicker: "Impact · Inclusive Capital",
+    name: "Community Equity Fund LP",
+    kicker: "Impact Through Investment",
     summary:
-      "Impact-led capital that channels economic opportunity into underserved communities and inclusive enterprises.",
+      "A model proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York.",
     description:
-      "The Community Equity Fund advances our conviction that financial prosperity should align with social progress. We invest in inclusive enterprises, local economic development and community projects, measuring success in both returns and tangible social outcomes.",
+      "The Community Equity Fund LP is built on a conviction that underserved markets represent some of the most compelling risk-adjusted opportunities in New York. Operating under a 51%+ Minority- and Women-Owned Business Enterprise mandate and seeded by carried interest from our institutional strategies, it measures success in local hiring, wealth building and neighborhood stability.",
     bullets: [
-      "Impact investing with measurable social metrics",
-      "Economic development and community-led projects",
-      "Inclusive capital for underserved founders",
-      "Transparent annual impact reporting",
+      "51%+ Minority- and Women-Owned Business Enterprises mandate",
+      "Measurable local hiring and wealth building",
+      "Neighborhood stability and catalytic capital",
+      "Seeded by carried interest from our institutional strategies",
     ],
     metrics: [
-      { value: "Impact-first", label: "Mandate" },
-      { value: "Measured", label: "Outcomes" },
-      { value: "Inclusive", label: "Access" },
+      { value: "51%+", label: "MWBE mandate" },
+      { value: "Catalytic", label: "Capital multiplier" },
+      { value: "Local", label: "Wealth building" },
     ],
   },
 ];
 
+/* Alrion's actual focus areas, mapped to the two strategies that invest
+   directly in sectors. No speculative or unsupported breadth. */
 export type Sector = {
   slug: string;
   name: string;
@@ -141,27 +150,12 @@ export type Sector = {
 };
 
 export const SECTORS: Sector[] = [
-  { slug: "artificial-intelligence", name: "Artificial Intelligence", group: "Intelligence & Compute", blurb: "Foundation models, applied AI and the infrastructure that powers them." },
-  { slug: "machine-learning", name: "Machine Learning", group: "Intelligence & Compute", blurb: "Data platforms and learning systems across the enterprise." },
-  { slug: "robotics", name: "Robotics & Autonomy", group: "Intelligence & Compute", blurb: "Physical AI, automation and autonomous systems." },
-  { slug: "semiconductors", name: "Semiconductors", group: "Intelligence & Compute", blurb: "Advanced chips and the silicon supply chain." },
-  { slug: "quantum-computing", name: "Quantum Computing", group: "Intelligence & Compute", blurb: "Next-generation compute for intractable problems." },
-  { slug: "cybersecurity", name: "Cybersecurity", group: "Intelligence & Compute", blurb: "Securing the digital and physical economy." },
-  { slug: "biotechnology", name: "Biotechnology", group: "Life & Climate", blurb: "Breakthroughs that improve health outcomes." },
-  { slug: "healthcare", name: "Healthcare", group: "Life & Climate", blurb: "Care delivery, diagnostics and digital health." },
-  { slug: "climate-technology", name: "Climate Technology", group: "Life & Climate", blurb: "Decarbonization and resilience at scale." },
-  { slug: "renewable-energy", name: "Renewable Energy", group: "Life & Climate", blurb: "Clean generation, storage and grid modernization." },
-  { slug: "agriculture", name: "Agriculture", group: "Life & Climate", blurb: "Food security and sustainable agritech." },
-  { slug: "fintech", name: "Financial Technology", group: "Real Economy", blurb: "Transformative solutions for financial access." },
-  { slug: "space-technology", name: "Space Technology", group: "Real Economy", blurb: "Launch, satellites and the orbital economy." },
-  { slug: "defense-technology", name: "Defense Technology", group: "Real Economy", blurb: "Dual-use innovation and national resilience." },
-  { slug: "infrastructure", name: "Digital Infrastructure", group: "Real Economy", blurb: "Data centers, networks and connectivity." },
-  { slug: "manufacturing", name: "Advanced Manufacturing", group: "Real Economy", blurb: "Reshoring and the industrial technology stack." },
-  { slug: "energy", name: "Energy", group: "Real Economy", blurb: "The full spectrum of the energy transition." },
-  { slug: "transportation", name: "Transportation", group: "Real Economy", blurb: "Mobility, logistics and electrification." },
-  { slug: "smart-cities", name: "Smart Cities", group: "Real Economy", blurb: "Connected, efficient urban systems." },
-  { slug: "autonomous-systems", name: "Autonomous Systems", group: "Real Economy", blurb: "Self-directed machines across land, air and sea." },
-  { slug: "fintech-infra", name: "Quantum & Deep Tech", group: "Real Economy", blurb: "The hard-science frontier of tomorrow's economy." },
+  { slug: "artificial-intelligence", name: "Artificial Intelligence & ML", group: "Frontier Technology", blurb: "Core venture pillar (40%). Founders at the inflection point between scientific validation and market deployment." },
+  { slug: "biotechnology", name: "Biotechnology", group: "Frontier Technology", blurb: "Core venture pillar (35%). Science-led companies advancing human health from validation to deployment." },
+  { slug: "defense-space", name: "Defense & Space", group: "Frontier Technology", blurb: "Core venture pillar (25%). Dual-use frontier technology, guided by a Technical Advisory Board of former government and military leaders." },
+  { slug: "nuclear-lifecycle", name: "Nuclear Lifecycle", group: "Infrastructure Growth", blurb: "Mission-critical services across the nuclear energy lifecycle." },
+  { slug: "grid-modernization", name: "Grid Modernization", group: "Infrastructure Growth", blurb: "Upgrading the electrical grid for a resilient, electrified economy." },
+  { slug: "ot-cybersecurity", name: "OT Cybersecurity", group: "Infrastructure Growth", blurb: "Securing the operational technology that underpins critical infrastructure." },
 ];
 
 export type ProcessStep = {
@@ -171,40 +165,73 @@ export type ProcessStep = {
 };
 
 export const PROCESS: ProcessStep[] = [
-  { no: "01", title: "Sourcing", body: "Proprietary networks, thematic research and a global presence surface opportunities others miss." },
-  { no: "02", title: "Screening", body: "Quantitative and qualitative filters align every opportunity to our thesis, mandate and risk appetite." },
-  { no: "03", title: "Due Diligence", body: "Technical, commercial, financial and ESG diligence conducted by specialists across disciplines." },
-  { no: "04", title: "Investment Committee", body: "A formal committee debates conviction, structure and risk before any capital is committed." },
-  { no: "05", title: "Execution", body: "Disciplined structuring and pricing engineered to protect downside and capture asymmetric upside." },
-  { no: "06", title: "Monitoring", body: "Continuous risk attribution, performance review and active board-level engagement." },
-  { no: "07", title: "Portfolio Support", body: "Operating expertise, talent and a commercialization network that accelerates value creation." },
-  { no: "08", title: "Exit & Reporting", body: "Deliberate exit planning and transparent, institutional-grade reporting to our partners." },
+  { no: "01", title: "Sourcing", body: "Proprietary networks and thematic research surface opportunities aligned to each strategy's mandate." },
+  { no: "02", title: "Screening", body: "Quantitative and fundamental filters test every opportunity against thesis, mandate and risk appetite." },
+  { no: "03", title: "Due Diligence", body: "Technical, commercial and financial diligence conducted by specialists across disciplines." },
+  { no: "04", title: "Investment Committee", body: "Each strategy's independent committee debates conviction, structure and risk before capital is committed." },
+  { no: "05", title: "Execution", body: "Disciplined structuring and pricing engineered to protect capital and align interests." },
+  { no: "06", title: "Monitoring", body: "Continuous risk monitoring, including daily Value-at-Risk on liquid strategies, and active oversight." },
+  { no: "07", title: "Valuation & Oversight", body: "Independent valuation committees on illiquid positions and comprehensive third-party administration." },
+  { no: "08", title: "Reporting", body: "Monthly reporting for liquid strategies and quarterly deep-dive reviews for private markets." },
 ];
 
+/* The four commitments that define the platform. */
 export const DIFFERENTIATORS = [
   {
-    title: "Research-led conviction",
-    body: "A dedicated desk of engineers, scientists and analysts translates frontier science into investable theses before they reach the mainstream.",
+    title: "A platform, not a product",
+    body: "Four independent strategies, each a separate Delaware Limited Partnership with its own investment committee and risk framework.",
   },
   {
-    title: "Quantitative intelligence",
-    body: "Proprietary algorithms and machine-learning models inform allocation, risk and timing — discipline at the speed of modern markets.",
+    title: "Aligned interests",
+    body: "Significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms.",
   },
   {
-    title: "Impact with returns",
-    body: "We reject the trade-off between performance and progress, building portfolios where financial prosperity reinforces social and environmental outcomes.",
+    title: "Institutional discipline",
+    body: "Quantitative and fundamental rigor, daily risk monitoring, and independent valuation on illiquid positions.",
   },
   {
-    title: "Institutional governance",
-    body: "Independent oversight, robust compliance and transparent reporting give our partners the assurance their capital deserves.",
+    title: "Absolute transparency",
+    body: "Monthly and quarterly reporting, annual Big Four audits, and real-time access for institutional partners.",
   },
 ];
 
+/* Governance standards, verbatim to the firm's stated commitments. */
+export const GOVERNANCE_STANDARDS = [
+  {
+    title: "Absolute Transparency",
+    body: "Monthly reporting protocols for liquid strategies. Quarterly deep-dive reviews for private markets. Real-time access for institutional partners.",
+  },
+  {
+    title: "Rigorous Oversight",
+    body: "Annual audits conducted by Big Four firms. Comprehensive third-party administration. Independent valuation committees on illiquid positions.",
+  },
+  {
+    title: "Aligned Interests",
+    body: "Significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms.",
+  },
+  {
+    title: "Independent Governance",
+    body: "Each strategy operates as a separate Delaware Limited Partnership with its own investment committee and risk framework.",
+  },
+];
+
+/* Community Equity Fund impact indicators, qualitative, no figures. */
+export const IMPACT_INDICATORS = [
+  {
+    title: "Wealth Equity",
+    body: "Growth in net worth among founders, stakeholders and local investors, expanding access to wealth creation in historically underserved communities.",
+  },
+  {
+    title: "Employment Quality",
+    body: "Job creation, wage growth and career advancement, driving meaningful, sustainable livelihoods, not merely employment numbers.",
+  },
+  {
+    title: "Capital Multiplier",
+    body: "The volume of third-party capital attracted into a community following our initial investment. We measure catalysis, not just contribution.",
+  },
+];
+
+/* Single headquarters, Alrion operates from one New York office. */
 export const GLOBAL_OFFICES = [
-  { city: "New York", region: "Americas", role: "Global Headquarters" },
-  { city: "London", region: "EMEA", role: "European Hub" },
-  { city: "Singapore", region: "APAC", role: "Asia-Pacific Hub" },
-  { city: "Abu Dhabi", region: "Middle East", role: "Sovereign Capital" },
-  { city: "San Francisco", region: "Americas", role: "Venture & Deep Tech" },
-  { city: "Zurich", region: "EMEA", role: "Private Wealth" },
+  { city: "New York", region: "United States", role: "Headquarters · 11 West 118th Street, Suite 6C" },
 ];

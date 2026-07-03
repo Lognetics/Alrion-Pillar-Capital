@@ -3,7 +3,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading, Button } from "@/components/ui/primitives";
 import { SECTORS } from "@/lib/site";
 
-const GROUPS = ["Intelligence & Compute", "Life & Climate", "Real Economy"];
+const GROUPS = ["Frontier Technology", "Infrastructure Growth"];
 
 export function Industries() {
   return (
@@ -12,9 +12,9 @@ export function Industries() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <Reveal>
             <SectionHeading
-              eyebrow="Industries"
-              title={<>Investing where the future is being built.</>}
-              intro="Twenty-one frontier sectors mapped to secular demand, durable competitive moats and real-world impact."
+              eyebrow="Focus Areas"
+              title={<>Where our capital actually goes.</>}
+              intro="Two of our strategies invest directly in sectors: frontier technology through the Venture Capital LP, and mission-critical infrastructure through the Private Equity LP."
             />
           </Reveal>
           <Reveal delay={0.1}>

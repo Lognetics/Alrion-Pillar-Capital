@@ -10,7 +10,7 @@ import { LIABILITY_FRAMEWORK, PENSION_POSITIONING } from "@/lib/investors";
 export const metadata: Metadata = {
   title: "Pension Funds",
   description:
-    "ALRION Pillar Capital builds liability-aware portfolios for public and corporate pension funds — capital preservation, inflation-aware real assets and steady compounding to meet long-dated obligations.",
+    "ALRION Pillar Capital is built to serve public and corporate pension funds with a liability-aware framework, capital preservation, inflation-aware real assets and steady compounding to meet long-dated obligations.",
 };
 
 export default function PensionFundsPage() {
@@ -24,11 +24,11 @@ export default function PensionFundsPage() {
             <span className="text-gilt"> liabilities,</span> not a benchmark.
           </>
         }
-        intro="Public and corporate retirement systems are not chasing the highest number on a chart — they are funding obligations that stretch across decades. We construct portfolios that begin with those liabilities and compound toward them with discipline."
+        intro="Public and corporate retirement systems are not chasing the highest number on a chart. They fund obligations that stretch across decades. We frame allocation against those liabilities and compound toward them with discipline."
         crumbs={[{ label: "Investor Center", href: "/investors" }, { label: "Pension Funds" }]}
       />
 
-      {/* Opening — the duration problem */}
+      {/* Opening, the duration problem */}
       <Section tone="paper">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
@@ -41,14 +41,14 @@ export default function PensionFundsPage() {
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
                 A pension fund's first duty is to be there when its members
-                retire — through every market cycle in between. That makes funded
+                retire, through every market cycle in between. That makes funded
                 status, not peak return, the measure that matters. Volatility that
                 impairs the path is as much a risk as returns that fall short.
               </p>
               <p>
                 We approach the mandate the way an actuary does: from the shape of
                 the obligations outward. Capital preservation, inflation defense
-                and steady compounding are not constraints we tolerate — they are
+                and steady compounding are not constraints we tolerate, they are
                 the design brief.
               </p>
             </div>
@@ -63,7 +63,7 @@ export default function PensionFundsPage() {
             light
             eyebrow="A liability-aware framework"
             title={<>Four principles that defend funded status.</>}
-            intro="Allocation begins with the obligations you must fund — then builds outward toward real, durable return."
+            intro="Allocation begins with the obligations you must fund, then builds outward toward real, durable return."
           />
         </Reveal>
         <div className="mt-16">
@@ -77,7 +77,7 @@ export default function PensionFundsPage() {
           <SectionHeading
             eyebrow="Risk / return positioning"
             title={<>How each platform earns its place in the portfolio.</>}
-            intro="A right-sized blend of preservation, inflation defense and a measured frontier sleeve — each role deliberate."
+            intro="A right-sized blend of preservation, inflation defense and a measured frontier sleeve, each role deliberate."
           />
         </Reveal>
         <div className="mt-14">
@@ -98,21 +98,23 @@ export default function PensionFundsPage() {
           eyebrow="Inflation-aware real assets"
           title={<>Real assets for real liabilities.</>}
           bullets={[
-            "Infrastructure, energy and utilities cash flows",
-            "Frequently inflation-linked, contracted revenue",
+            "Energy, grid and operational-resilience cash flows",
+            "Investment-grade counterparties, contractual revenue",
             "Long holds matched to long-dated obligations",
-            "ESG integration across the ownership lifecycle",
+            "8% preferred return, 20% carried interest",
           ]}
         >
           <p>
             Many pension liabilities are, in substance, indexed to inflation.
             Defending them requires assets whose cash flows move in the same
-            direction. Our private-equity platform invests in the real economy —
-            infrastructure, energy, transportation and utilities — where revenue
-            is often contracted and inflation-sensitive.
+            direction. The Private Equity LP pursues Infrastructure Growth into
+            the mission-critical infrastructure underpinning the modern economy,
+            energy, grid modernization and operational resilience, targeting
+            investment-grade counterparties.
           </p>
           <p>
-            These are multi-year holds by design. Patient capital and operational
+            These are multi-year holds by design, structured on an 8% preferred
+            return with 20% carried interest. Patient capital and operational
             value creation compound returns deliberately, smoothing the
             contribution path and reducing reliance on episodic, timing-dependent
             performance.
@@ -129,20 +131,20 @@ export default function PensionFundsPage() {
           <FaqList
             items={[
               {
-                q: "How do you protect funded status in a drawdown?",
-                a: "Our liquid hedge-fund platform is oriented to capital preservation through systematic hedging, volatility control and daily drawdown management — sized so a market dislocation does not impair your path to fully funded.",
+                q: "How do you approach capital preservation?",
+                a: "The liquid Hedge Fund LP pursues Global Macro Excellence within a disciplined risk envelope, run to a daily 95% Value-at-Risk and a maximum 300% gross exposure, oriented to protecting funded status through the cycle.",
               },
               {
                 q: "How does the portfolio defend against inflation?",
-                a: "Through real assets. Our private-equity platform holds infrastructure, energy and utilities exposure with frequently inflation-linked, contracted cash flows that track long-dated, inflation-sensitive liabilities.",
+                a: "Through real assets. The Private Equity LP pursues Infrastructure Growth into energy, grid and operational resilience, targeting investment-grade counterparties and contractual cash flows that track long-dated, inflation-sensitive liabilities.",
               },
               {
                 q: "Can you work alongside our actuaries and investment staff?",
-                a: "Yes. We construct portfolios against the shape of your liabilities — duration, indexation and pacing — in direct consultation with your internal staff and actuarial advisers rather than against a generic benchmark.",
+                a: "Yes. We frame allocation against the shape of your liabilities, duration, indexation and pacing, in direct consultation with your internal staff and actuarial advisers rather than against a generic benchmark.",
               },
               {
                 q: "Is a frontier-technology allocation appropriate for a pension?",
-                a: "Sized appropriately, yes. A small, deliberate sleeve of frontier innovation contributes long-horizon real return without dominating risk, while preservation and real-asset allocations carry the funded-status burden.",
+                a: "Sized appropriately, yes. A small, deliberate sleeve of the Venture Capital LP's Frontier Technology strategy contributes long-horizon real return without dominating risk, while preservation and real-asset allocations carry the funded-status burden.",
               },
             ]}
           />

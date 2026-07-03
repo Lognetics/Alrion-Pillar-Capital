@@ -23,7 +23,7 @@ export default function SubscriptionPage() {
             <span className="text-gilt"> to committed capital.</span>
           </>
         }
-        intro="Every partnership follows the same disciplined path — diligence, alignment and complete transparency at each step. Here is exactly how capital is committed at ALRION Pillar Capital."
+        intro="Every partnership follows the same disciplined path: diligence, alignment and complete transparency at each step. Here is exactly how capital is committed at ALRION Pillar Capital."
         crumbs={[
           { label: "Investor Center", href: "/investors" },
           { label: "Subscription Process" },
@@ -110,48 +110,41 @@ export default function SubscriptionPage() {
         </div>
       </Section>
 
-      {/* Timeline expectations */}
+      {/* What to expect */}
       <Section tone="navy">
         <Reveal>
           <SectionHeading
             light
-            eyebrow="Timeline expectations"
-            title={<>What to expect, and when.</>}
-            intro="Most onboarding completes within four weeks, subject to the timeliness of documentation and verification. Figures are illustrative."
+            eyebrow="What to expect"
+            title={<>A disciplined, transparent path.</>}
+            intro="Onboarding typically takes several weeks, subject to the timeliness of documentation and verification. Each stage is confirmed in writing before the next begins."
           />
         </Reveal>
         <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-3">
           {[
             {
-              metric: "~4 weeks",
-              label: "Typical onboarding",
-              body: "From first conversation to confirmed, funded commitment.",
+              label: "Confidential intake",
+              body: "Every request is logged confidentially and routed to the investor relations desk for the relevant strategy.",
             },
             {
-              metric: "2 business days",
-              label: "Initial response",
-              body: "Our investor relations desk responds to qualified requests.",
+              label: "Aligned terms",
+              body: "The Hedge Fund LP carries a $1M minimum investment. Full terms for each strategy are set out in the PPM and LPA.",
             },
             {
-              metric: "Quarterly",
-              label: "Reporting cadence",
-              body: "Capital-account and performance statements thereafter.",
+              label: "Ongoing reporting",
+              body: "Monthly reporting for liquid strategies and quarterly deep-dive reviews for private markets thereafter.",
             },
           ].map((item) => (
             <div key={item.label} className="bg-navy-950 p-8">
-              <p className="font-serif text-4xl font-light text-gold-400">
-                {item.metric}
-              </p>
-              <h3 className="mt-4 text-sm font-semibold uppercase tracking-wider text-paper">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-gold-400">
                 {item.label}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-paper/60">
+              <p className="mt-3 text-sm leading-relaxed text-paper/60">
                 {item.body}
               </p>
             </div>
           ))}
         </div>
-        <p className="mt-6 text-xs text-paper/45">Illustrative timelines.</p>
       </Section>
 
       <CtaBand

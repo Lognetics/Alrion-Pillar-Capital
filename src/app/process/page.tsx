@@ -13,7 +13,7 @@ import { PROCESS } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Investment Process",
   description:
-    "A disciplined, eight-stage investment process — from thematic sourcing and specialist diligence to independent committee review, active ownership and transparent reporting.",
+    "A disciplined, eight-stage investment process, from thematic sourcing and specialist diligence to independent committee review, active oversight and transparent reporting.",
 };
 
 export default function ProcessPage() {
@@ -27,7 +27,7 @@ export default function ProcessPage() {
             <span className="text-gilt"> conviction to realization.</span>
           </>
         }
-        intro="Every commitment ALRION Pillar Capital makes moves through the same rigorous, repeatable process — engineered so that capital follows evidence, risk is governed independently, and our partners are kept informed at every step."
+        intro="Every commitment Alrion Pillar Capital makes moves through the same rigorous, repeatable process, engineered so that capital follows evidence, risk is governed independently, and our partners are kept informed at every step."
         crumbs={[{ label: "Process" }]}
       />
 
@@ -43,19 +43,19 @@ export default function ProcessPage() {
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                Outstanding investment outcomes are rarely the product of a
-                single brilliant decision. They are the cumulative result of a
-                disciplined process applied consistently, with the same rigor in
-                a quiet market as in a frenzied one. At ALRION Pillar Capital, our
-                process is the operating system of the firm.
+                Sound investment outcomes are rarely the product of a single
+                decision. They are the cumulative result of a disciplined process
+                applied consistently, with the same rigor in a quiet market as in
+                a frenzied one. At Alrion Pillar Capital, this process is shared
+                across all four strategies.
               </p>
               <p>
                 Each opportunity advances through eight deliberate stages. Insight
                 is sourced through proprietary networks and thematic research,
-                interrogated by specialists across disciplines, debated by an
-                independent committee, structured to protect downside, and
-                monitored continuously through ownership to exit. No stage is
-                skipped, and no conviction goes unexamined.
+                interrogated by specialists, debated by the strategy's independent
+                investment committee, structured to protect capital, and monitored
+                continuously through ownership to realization. No stage is skipped,
+                and no conviction goes unexamined.
               </p>
             </div>
           </Reveal>
@@ -136,8 +136,8 @@ export default function ProcessPage() {
                 body: "Rigorous modeling, quality-of-earnings review and downside analysis frame every valuation and structuring decision.",
               },
               {
-                title: "ESG diligence",
-                body: "Environmental, social and governance factors are assessed as material risks and as sources of durable value.",
+                title: "Counterparty diligence",
+                body: "For infrastructure, we assess the durability of demand and the credit quality of counterparties as sources of downside protection.",
               },
             ]}
           />
@@ -157,11 +157,11 @@ export default function ProcessPage() {
           ]}
         >
           <p>
-            Conviction at ALRION Pillar Capital is collective, not individual.
-            Before any commitment, each opportunity is presented to a formal
-            Investment Committee composed of senior investors and risk
-            professionals — several of whom are deliberately independent of the
-            team that sourced the deal.
+            Conviction at Alrion Pillar Capital is collective, not individual.
+            Each strategy is a separate Delaware Limited Partnership with its own
+            investment committee. Before any commitment, the opportunity is
+            presented to that committee, composed of senior investors and risk
+            professionals independent of the team that sourced it.
           </p>
           <p>
             The committee&apos;s role is to challenge: to probe the weakest points
@@ -180,22 +180,22 @@ export default function ProcessPage() {
             light
             eyebrow="Risk Oversight"
             title={<>Risk governed independently of the investing teams.</>}
-            intro="An independent oversight function monitors exposure continuously and reports directly to governance — separating those who take risk from those who measure it."
+            intro="An independent oversight function monitors exposure continuously and reports directly to governance, separating those who take risk from those who measure it."
           />
         </Reveal>
         <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-3">
           {[
             {
               title: "Continuous monitoring",
-              body: "Proprietary models track exposure, correlation and volatility in real time, surfacing emerging risk before it becomes loss.",
+              body: "Liquid strategies are monitored through daily 95% Value-at-Risk, surfacing emerging risk before it becomes loss.",
             },
             {
               title: "Pre-committed limits",
-              body: "Position, concentration and drawdown limits are set in advance and enforced independently of the investing teams.",
+              body: "Position and concentration limits, including a maximum of 300% gross exposure on the Hedge Fund LP, are set in advance and enforced independently.",
             },
             {
-              title: "Direct escalation",
-              body: "Risk reports to governance through a separate reporting line, ensuring concerns are never filtered by the desk that created them.",
+              title: "Independent valuation",
+              body: "Independent valuation committees govern illiquid positions, supported by comprehensive third-party administration.",
             },
           ].map((it, i) => (
             <Reveal key={it.title} delay={i * 0.07} className="bg-navy-950 p-8">
@@ -216,23 +216,21 @@ export default function ProcessPage() {
           bullets={[
             "Operating expertise across functions and stages",
             "Talent and executive network access",
-            "A global commercialization and partnership network",
+            "Commercial relationships and partnership introductions",
             "Active board-level engagement and governance uplift",
           ]}
         >
           <p>
             Capital is the beginning of our partnership, not the end of it. Once
-            committed, our portfolio teams work alongside management to
-            professionalize operations, recruit critical talent and open the
-            doors that accelerate growth — drawing on a global network built
-            across two decades of frontier investing.
+            committed, our teams work alongside management to professionalize
+            operations, recruit critical talent and open the doors that
+            accelerate growth.
           </p>
           <p>
             We engage actively but never intrusively, contributing strategic
             guidance, governance discipline and commercial relationships where
             they create the most value. Our objective is simple: to help every
-            company in our portfolio reach its full potential, responsibly and
-            durably.
+            company we back reach its full potential, responsibly and durably.
           </p>
         </SplitContent>
       </Section>
@@ -244,22 +242,22 @@ export default function ProcessPage() {
             light
             eyebrow="Transparent Reporting"
             title={<>Clarity our partners can rely on.</>}
-            intro="The final stage of our process closes the loop — returning capital and accounting for it with institutional-grade transparency."
+            intro="The final stage of our process closes the loop, returning capital and accounting for it with institutional-grade transparency."
           />
         </Reveal>
         <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-3">
           {[
             {
               title: "Consistent cadence",
-              body: "Detailed exposure, attribution and performance reporting delivered on a reliable institutional schedule.",
+              body: "Monthly reporting for liquid strategies and quarterly deep-dive reviews for private markets, with real-time access for institutional partners.",
             },
             {
-              title: "Impact accountability",
-              body: "Measurable social and environmental outcomes reported alongside financial results, aligned to the UN SDGs.",
+              title: "Independent assurance",
+              body: "Annual audits conducted by Big Four firms and comprehensive third-party administration stand behind every figure we report.",
             },
             {
-              title: "Deliberate exits",
-              body: "Realization is planned, not improvised — maximizing value and returning capital to partners with full transparency.",
+              title: "Deliberate realization",
+              body: "Realization is planned, not improvised, maximizing value and returning capital to partners with full transparency.",
             },
           ].map((it, i) => (
             <Reveal key={it.title} delay={i * 0.07} className="bg-ink p-8">

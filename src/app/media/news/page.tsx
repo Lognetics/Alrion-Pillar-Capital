@@ -8,7 +8,7 @@ import { FEATURED_NEWS, NEWS_ITEMS } from "@/lib/media";
 export const metadata: Metadata = {
   title: "Latest News",
   description:
-    "The latest news from ALRION Pillar Capital — firm milestones, fund activity, research and impact across our four investment platforms.",
+    "The latest news from ALRION Pillar Capital, firm milestones, fund activity, governance and impact across our four autonomous strategies.",
 };
 
 export default function NewsPage() {
@@ -22,11 +22,11 @@ export default function NewsPage() {
             <span className="text-gilt"> ALRION Pillar Capital.</span>
           </>
         }
-        intro="Milestones, fund activity, research and impact — reported as it happens, from across our four investment platforms and our global network."
+        intro="Milestones, fund activity, governance and impact, reported as they happen from across our four autonomous investment strategies."
         crumbs={[{ label: "Media", href: "/media" }, { label: "Latest News" }]}
       />
 
-      {/* — Featured story ————————————————————————————————————— */}
+      {/* Featured story */}
       <Section tone="paper">
         <Reveal>
           <article className="relative overflow-hidden rounded-sm bg-navy-950 p-8 text-paper md:p-14">
@@ -54,7 +54,7 @@ export default function NewsPage() {
         </Reveal>
       </Section>
 
-      {/* — News index ————————————————————————————————————————— */}
+      {/* News index */}
       <Section tone="cloud">
         <Reveal>
           <SectionHeading

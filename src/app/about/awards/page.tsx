@@ -1,78 +1,100 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
-import { Section, CtaBand } from "@/components/sections/blocks";
+import { Section, FeatureGrid, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { Counter } from "@/components/ui/Counter";
-import { AwardsList } from "@/components/about/AwardsList";
-import { AWARDS, AWARD_STATS } from "@/lib/about";
+import { RECOGNITION_STANDARDS } from "@/lib/about";
+import { GOVERNANCE_STANDARDS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Recognition & Awards",
+  title: "Recognition & Standards",
   description:
-    "Recognition from industry bodies for ALRION Pillar Capital's work across hedge fund, private equity, venture and community equity — and for its standard of governance. Illustrative.",
+    "ALRION Pillar Capital holds every strategy to an institutional standard: Big Four annual audits, independent third-party administration, independent valuation and independent governance across four Delaware Limited Partnerships.",
 };
 
 export default function AwardsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Recognition & Awards"
+        eyebrow="Recognition & Standards"
         title={
           <>
-            Recognition earned
-            <span className="text-gilt"> at the frontier.</span>
+            Judged by our standards,
+            <span className="text-gilt"> not our accolades.</span>
           </>
         }
-        intro="We do not invest for accolades — but external recognition affirms that discipline and impact can compound together. The honours below span our four platforms and our standard of governance."
-        crumbs={[{ label: "About", href: "/about" }, { label: "Recognition & Awards" }]}
+        intro="We do not measure the platform in awards. We measure it in the standards we hold ourselves to: independent audits, independent administration and independent governance across every strategy."
+        crumbs={[{ label: "About", href: "/about" }, { label: "Recognition & Standards" }]}
       />
 
-      {/* — Recognition stats row ———————————————————————————————— */}
-      <section className="relative overflow-hidden bg-navy-950 py-20 text-paper md:py-24">
-        <div className="absolute inset-0 bg-grid opacity-40" />
-        <div className="absolute left-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-gold-500/40 to-transparent" />
-        <div className="shell relative">
-          <div className="grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-            {AWARD_STATS.map((s, i) => (
-              <Reveal key={s.label} delay={i * 0.08} className="bg-navy-950 p-8 md:p-10">
-                <p className="font-serif text-4xl font-light text-gilt md:text-5xl">
-                  <Counter value={s.value} suffix={s.suffix} />
-                </p>
-                <p className="mt-5 text-sm font-semibold text-paper">{s.label}</p>
-                <p className="mt-1 text-xs leading-relaxed text-paper/50">{s.sub}</p>
-              </Reveal>
-            ))}
-          </div>
-          <p className="mt-8 text-center text-xs text-paper/40">
-            Illustrative figures presented for context.
-          </p>
-        </div>
-      </section>
-
-      {/* — Awards by year ——————————————————————————————————————— */}
+      {/* — The standards we hold ————————————————————————————————— */}
       <Section tone="paper">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
+          <Reveal className="lg:col-span-5">
+            <SectionHeading
+              eyebrow="Our Standards"
+              title={<>Recognition, on our terms.</>}
+            />
+          </Reveal>
+          <Reveal delay={0.1} className="lg:col-span-7">
+            <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
+              <p>
+                For an institutional platform, credibility is not awarded, it is
+                demonstrated. It is demonstrated through independent audits,
+                independent administration and independent governance, applied
+                consistently across four Delaware Limited Partnerships.
+              </p>
+              <p>
+                The standards below are the ones we ask our partners to hold us
+                to. They are structural, verifiable and applied without
+                exception, because Conviction by Discipline is a claim only if it
+                is checked.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      {/* — Standards grid ——————————————————————————————————————— */}
+      <Section tone="cloud">
         <Reveal>
           <SectionHeading
-            eyebrow="The Ledger"
-            title={<>A record of recognition.</>}
-            intro="Honours by year, from our earliest launch awards to the present day."
+            eyebrow="What We Hold Ourselves To"
+            title={<>Independent checks, applied to every strategy.</>}
+            intro="Each is a standard, not a slogan, and each applies across all four Limited Partnerships."
           />
         </Reveal>
-        <div className="mt-16">
-          <AwardsList items={AWARDS} />
+        <div className="mt-14">
+          <FeatureGrid columns={2} items={RECOGNITION_STANDARDS} />
         </div>
-        <p className="mt-14 text-xs text-slate-strong/50">
-          Award names, categories and bodies shown are illustrative and presented for
-          context only.
-        </p>
+      </Section>
+
+      {/* — Governance standards ————————————————————————————————— */}
+      <Section tone="navy">
+        <Reveal>
+          <SectionHeading
+            light
+            eyebrow="Governance"
+            title={<>The framework behind the standards.</>}
+            intro="Our recognition rests on four governance commitments that define how the platform operates."
+          />
+        </Reveal>
+        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
+          {GOVERNANCE_STANDARDS.map((s, i) => (
+            <Reveal key={s.title} delay={(i % 4) * 0.07} className="bg-navy-950 p-8">
+              <span className="font-serif text-2xl text-gold-400">0{i + 1}</span>
+              <h3 className="mt-5 text-lg font-semibold text-paper">{s.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-paper/65">{s.body}</p>
+            </Reveal>
+          ))}
+        </div>
       </Section>
 
       <CtaBand
         title={<>The recognition that matters most is yours.</>}
-        body="Speak with our investor relations team about how ALRION Pillar Capital aligns with your mandate and your values."
+        body="Speak with our team about how ALRION Pillar Capital aligns with your mandate and your standards."
         primary={{ href: "/contact", label: "Connect with us" }}
-        secondary={{ href: "/about", label: "About the firm" }}
+        secondary={{ href: "/governance", label: "Our governance" }}
       />
     </>
   );

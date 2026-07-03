@@ -28,7 +28,7 @@ export default function NotFound() {
 
         <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-paper/65">
           The page you are looking for may have moved, been retired or never
-          existed. Let us guide you back to firmer ground — our homepage and
+          existed. Let us guide you back to firmer ground, our homepage and
           investment platforms are a good place to begin.
         </p>
 

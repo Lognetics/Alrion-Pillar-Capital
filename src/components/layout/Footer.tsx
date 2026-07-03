@@ -44,7 +44,8 @@ export function Footer() {
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-paper/55">
             {FIRM.description}
           </p>
-          <p className="mt-6 text-sm text-paper/70">{FIRM.email}</p>
+          <p className="mt-6 text-sm text-paper/70">{FIRM.address}</p>
+          <p className="mt-2 text-sm text-paper/70">{FIRM.email}</p>
           <p className="text-sm text-paper/70">{FIRM.phone}</p>
         </div>
 

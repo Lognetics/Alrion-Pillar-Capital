@@ -4,21 +4,18 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Section, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { cn } from "@/lib/cn";
-import { INDICATORS } from "@/lib/research";
+import { WATCHLIST } from "@/lib/research";
 import { INSIGHTS } from "@/lib/insights";
 
 export const metadata: Metadata = {
   title: "Market Intelligence",
   description:
-    "Live-style market intelligence from ALRION Pillar Capital — illustrative frontier-technology indicators and the research that interprets them.",
+    "The external market signals ALRION Pillar Capital watches across its four strategies, and the analysis our desk publishes from them.",
 };
 
 const PIECES = INSIGHTS.filter(
   (i) => i.category === "Market Intelligence" || i.category === "Economic Outlook",
 );
-
-const arrow = { up: "▲", down: "▼", flat: "■" } as const;
 
 export default function MarketIntelligencePage() {
   return (
@@ -28,53 +25,42 @@ export default function MarketIntelligencePage() {
         title={
           <>
             Market intelligence,
-            <span className="text-gilt"> read in real terms.</span>
+            <span className="text-gilt"> read with discipline.</span>
           </>
         }
-        intro="A continuously evolving view of the frontier-technology markets — the indicators we watch, the dislocations we price, and the analysis our desk publishes from them."
+        intro="The external signals we watch across compute, power, frontier technology and private markets. These are public market indicators we use as context, not measures of Alrion performance."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Market Intelligence" }]}
       />
 
-      {/* Indicator dashboard */}
+      {/* What we watch */}
       <Section tone="ink">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
             light
-            eyebrow="Frontier Monitor"
-            title="The dashboard our desk watches"
-            intro="Illustrative readings across compute, power and capital — refreshed by our research team. Figures are illustrative."
+            eyebrow="What we watch"
+            title="The signals our desk tracks"
+            intro="External, public market context that informs how each of our four strategies is positioned. None of the below represents Alrion returns, exposures or assets under management."
           />
           <div className="flex items-center gap-2 text-xs font-semibold tracking-wide text-paper/60">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-gold-400" />
-            ILLUSTRATIVE · UPDATED MONTHLY
+            <span className="h-2 w-2 rounded-full bg-gold-400" />
+            EXTERNAL MARKET CONTEXT
           </div>
         </div>
 
-        <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-          {INDICATORS.map((ind, i) => (
+        <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2">
+          {WATCHLIST.map((item, i) => (
             <Reveal
-              key={ind.label}
-              delay={(i % 4) * 0.06}
-              className="group relative flex flex-col bg-navy-950 p-6"
+              key={item.label}
+              delay={(i % 2) * 0.06}
+              className="group relative flex flex-col bg-navy-950 p-7"
             >
-              <span className="text-xs font-semibold uppercase tracking-wider text-paper/50">
-                {ind.label}
+              <span className="font-serif text-xl font-light text-paper">
+                {item.label}
               </span>
-              <span className="mt-4 font-serif text-3xl font-light text-paper">
-                {ind.value}
+              <span className="mt-3 text-sm font-semibold text-gold-400">
+                {item.focus}
               </span>
-              <span
-                className={cn(
-                  "mt-2 inline-flex items-center gap-1.5 text-sm font-semibold",
-                  ind.direction === "up" && "text-emerald-400",
-                  ind.direction === "down" && "text-rose-400",
-                  ind.direction === "flat" && "text-gold-400",
-                )}
-              >
-                <span className="text-[0.65rem]">{arrow[ind.direction]}</span>
-                {ind.delta}
-              </span>
-              <span className="mt-4 text-xs leading-relaxed text-paper/45">{ind.note}</span>
+              <span className="mt-3 text-sm leading-relaxed text-paper/55">{item.note}</span>
               <span className="absolute inset-x-0 bottom-0 h-px scale-x-0 bg-gold-500 transition-transform duration-500 group-hover:scale-x-100" />
             </Reveal>
           ))}
@@ -86,7 +72,7 @@ export default function MarketIntelligencePage() {
         <SectionHeading
           eyebrow="From the desk"
           title="Intelligence, interpreted"
-          intro="Our analysts translate the data above into actionable house views."
+          intro="How our desk reads these external signals through the lens of our framework and our four strategies."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {PIECES.map((p, i) => (

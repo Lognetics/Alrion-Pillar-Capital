@@ -9,7 +9,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Newsletter",
   description:
-    "Subscribe to The Frontier Brief — research, market intelligence and the house view from ALRION Pillar Capital, delivered to your inbox.",
+    "Subscribe to The Frontier Brief: research, market intelligence and the house view from ALRION Pillar Capital, delivered to your inbox.",
 };
 
 const BENEFITS = [
@@ -19,7 +19,7 @@ const BENEFITS = [
   },
   {
     title: "Weekly market intelligence",
-    body: "A concise read on the frontier-technology indicators our desk watches — and what they mean.",
+    body: "A concise read on the external market signals our desk watches, and what they mean for each strategy.",
   },
   {
     title: "Essays & commentary",
@@ -32,10 +32,10 @@ const BENEFITS = [
 ];
 
 const PAST_ISSUES = [
-  { no: "No. 24", title: "The capital supercycle no one is pricing correctly", date: "June 2026" },
-  { no: "No. 23", title: "Power is the new compute", date: "May 2026" },
-  { no: "No. 22", title: "Additionality is the only number that matters", date: "May 2026" },
-  { no: "No. 21", title: "Reading the interconnect queue", date: "April 2026" },
+  { no: "No. 06", title: "A platform, not a product", date: "June 2026" },
+  { no: "No. 05", title: "Power is the binding constraint", date: "May 2026" },
+  { no: "No. 04", title: "Catalysis, not contribution", date: "May 2026" },
+  { no: "No. 03", title: "Reading the interconnect queue as market context", date: "April 2026" },
 ];
 
 export default function NewsletterPage() {
@@ -49,7 +49,7 @@ export default function NewsletterPage() {
             <span className="text-gilt"> Brief.</span>
           </>
         }
-        intro={`Research, market intelligence and the house view from ${FIRM.name} — written for allocators and delivered to your inbox.`}
+        intro={`Research, market intelligence and the house view from ${FIRM.name}, written for allocators and delivered to your inbox.`}
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Newsletter" }]}
         align="center"
       />

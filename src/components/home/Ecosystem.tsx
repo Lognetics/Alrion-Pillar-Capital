@@ -14,9 +14,9 @@ export function Ecosystem() {
           <SectionHeading
             light
             align="center"
-            eyebrow="The Investment Ecosystem"
-            title={<>Four platforms. One disciplined philosophy.</>}
-            intro="From liquid public markets to private innovation and inclusive impact, our platforms are engineered to compound capital across the full technology cycle."
+            eyebrow="The Four Strategies"
+            title={<>Four autonomous strategies. One rigorous framework.</>}
+            intro="From global macro to infrastructure, frontier technology and community impact, each strategy is a separate Delaware Limited Partnership, aligned but never entangled."
           />
         </Reveal>
 

@@ -22,7 +22,7 @@ export default function WebinarsPage() {
             <span className="text-gilt"> events.</span>
           </>
         }
-        intro="Where our research desk meets allocators in real time — live briefings on the house view, closed-door roundtables and a library of replays."
+        intro="Where our research desk meets allocators in real time: live briefings on the house view, closed-door roundtables and a library of replays."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Webinars & Events" }]}
       />
 
@@ -31,7 +31,7 @@ export default function WebinarsPage() {
         <SectionHeading
           eyebrow="Upcoming"
           title="On the calendar"
-          intro="Registration affordances are illustrative. Dates and speakers are illustrative."
+          intro="Registration opens through our investor relations team ahead of each session."
         />
         <div className="mt-12 space-y-4">
           {UPCOMING_EVENTS.map((e, i) => (

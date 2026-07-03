@@ -16,7 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "Brand & Media Kit",
   description:
-    "The official ALRION Pillar Capital brand and media kit — logo usage, color palette, typography, downloadable assets and media contact for journalists and partners.",
+    "The official ALRION Pillar Capital brand and media kit, logo usage, color palette, typography, downloadable assets and media contact for journalists and partners.",
 };
 
 export default function ResourcesPage() {
@@ -30,11 +30,11 @@ export default function ResourcesPage() {
             <span className="text-gilt"> brand kit.</span>
           </>
         }
-        intro="Everything journalists, partners and collaborators need to represent the firm accurately — logo usage, color, typography and approved assets."
+        intro="Everything journalists, partners and collaborators need to represent the firm accurately, logo usage, color, typography and approved assets."
         crumbs={[{ label: "Media", href: "/media" }, { label: "Brand & Media Kit" }]}
       />
 
-      {/* — Logo usage ————————————————————————————————————————— */}
+      {/* Logo usage */}
       <Section tone="paper">
         <Reveal>
           <SectionHeading
@@ -69,7 +69,7 @@ export default function ResourcesPage() {
         </div>
       </Section>
 
-      {/* — Color palette —————————————————————————————————————— */}
+      {/* Color palette */}
       <Section tone="cloud">
         <Reveal>
           <SectionHeading
@@ -92,7 +92,7 @@ export default function ResourcesPage() {
         </div>
       </Section>
 
-      {/* — Typography ————————————————————————————————————————— */}
+      {/* Typography */}
       <Section tone="paper">
         <Reveal>
           <SectionHeading
@@ -124,7 +124,7 @@ export default function ResourcesPage() {
         </div>
       </Section>
 
-      {/* — Downloadable assets ————————————————————————————————— */}
+      {/* Downloadable assets */}
       <Section tone="cloud">
         <Reveal>
           <SectionHeading
@@ -158,7 +158,7 @@ export default function ResourcesPage() {
         </div>
       </Section>
 
-      {/* — Media contact —————————————————————————————————————— */}
+      {/* Media contact */}
       <Section tone="navy">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-20">
           <Reveal>

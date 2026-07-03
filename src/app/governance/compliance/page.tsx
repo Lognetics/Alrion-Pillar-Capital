@@ -9,7 +9,7 @@ import { POLICIES } from "@/lib/governance";
 export const metadata: Metadata = {
   title: "Compliance & Ethics",
   description:
-    "ALRION Pillar Capital's compliance and ethics framework — code of conduct, regulatory adherence, AML/KYC, conflicts management, whistleblower protection and firm-wide training, codified and enforced.",
+    "ALRION Pillar Capital's compliance and ethics framework: code of conduct, regulatory adherence, AML/KYC, conflicts management, whistleblower protection and firm-wide training, codified and enforced.",
 };
 
 export default function CompliancePage() {
@@ -23,7 +23,7 @@ export default function CompliancePage() {
             <span className="text-gilt"> codified and enforced.</span>
           </>
         }
-        intro="Strong compliance is not a constraint on our business — it is a precondition for earning the trust of long-term institutional partners."
+        intro="Strong compliance is not a constraint on our business. It is a precondition for earning the trust of long-term institutional partners."
         crumbs={[{ label: "Governance", href: "/governance" }, { label: "Compliance & Ethics" }]}
       />
 
@@ -41,7 +41,7 @@ export default function CompliancePage() {
               <p>
                 Integrity is the foundation on which {FIRM.name} is built. Our
                 compliance program exists to protect our partners, our people and
-                the markets in which we operate — and to ensure that the firm's
+                the markets in which we operate, and to ensure that the firm's
                 conduct always reflects the principles we espouse.
               </p>
               <p>
@@ -91,7 +91,7 @@ export default function CompliancePage() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <span className="eyebrow text-gold-400">Our Ethics Pledge</span>
           <p className="mt-8 text-balance font-serif text-3xl font-light leading-snug text-paper md:text-4xl">
-            “We hold the capital of others to a higher standard than our own — and
+            “We hold the capital of others to a higher standard than our own, and
             we accept that trust, once earned, must be re-earned every single day.”
           </p>
           <p className="mt-8 text-sm uppercase tracking-[0.2em] text-paper/50">

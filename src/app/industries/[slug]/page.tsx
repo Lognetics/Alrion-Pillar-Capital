@@ -9,8 +9,6 @@ import {
   CtaBand,
 } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
-import { Reveal } from "@/components/ui/Reveal";
-import { Counter } from "@/components/ui/Counter";
 import { SECTORS, type Sector } from "@/lib/site";
 import { sectorImage } from "@/lib/imagery";
 import { FeatureImage } from "@/components/ui/media";
@@ -26,53 +24,32 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const sector = SECTORS.find((s) => s.slug === slug);
-  return { title: sector ? sector.name : "Industry" };
+  return { title: sector ? sector.name : "Focus Area" };
 }
 
-/* — Generate rich, original copy from the sector's name & group — */
+/*, Generate copy from the sector's name, group and investing strategy, */
 
 const GROUP_CONTEXT: Record<string, string> = {
-  "Intelligence & Compute":
-    "the computational engine of the modern economy, where advances compound faster than any prior technology wave",
-  "Life & Climate":
-    "the intersection of human health and planetary resilience, two of the largest and most enduring sources of global demand",
-  "Real Economy":
-    "the physical foundations of daily life, now being rebuilt for resilience, security and the energy transition",
+  "Frontier Technology":
+    "a focus area of the Venture Capital LP, where scientific validation meets market deployment",
+  "Infrastructure Growth":
+    "a focus area of the Private Equity LP, the mission-critical infrastructure underpinning the modern economy",
+};
+
+const GROUP_STRATEGY: Record<string, string> = {
+  "Frontier Technology": "the Venture Capital LP",
+  "Infrastructure Growth": "the Private Equity LP",
 };
 
 function focusAreas(sector: Sector): string[] {
   return [
-    `Category leaders in ${sector.name.toLowerCase()} with proprietary technology and defensible economics`,
-    `Critical infrastructure and enabling layers that underpin the broader ${sector.name.toLowerCase()} value chain`,
-    `Founder-led companies translating frontier research into commercial scale`,
-    `Capital-efficient business models with clear paths to durable margins`,
-    `Assets where Alrion's operating network and quantitative diligence add measurable advantage`,
+    `Founders and businesses in ${sector.name.toLowerCase()} with a genuine, hard-to-replicate edge`,
+    `The enabling layers that underpin the broader ${sector.name.toLowerCase()} value chain`,
+    `Companies translating validated science or engineering into commercial scale`,
+    `Business models with a credible path to durable economics`,
+    `Opportunities where our diligence and network add measurable advantage`,
   ];
 }
-
-function angles(sector: Sector) {
-  return [
-    {
-      title: "Public markets",
-      body: `Liquid, risk-managed exposure to ${sector.name.toLowerCase()} through our hedge fund platform, where AI-driven quantitative models identify dislocations at the leading edge.`,
-    },
-    {
-      title: "Private growth",
-      body: `Conviction capital for high-growth ${sector.name.toLowerCase()} companies — from first institutional check through scale — backed by technical diligence and a global network.`,
-    },
-    {
-      title: "Real assets & infrastructure",
-      body: `Control and structured investments in the physical and industrial backbone of ${sector.name.toLowerCase()}, compounded patiently over multi-year horizons.`,
-    },
-  ];
-}
-
-const STATS = [
-  { value: 21, suffix: "", label: "Frontier sectors", sub: "Mapped across three thematic pillars" },
-  { value: 64, suffix: "", label: "Research professionals", sub: "Engineers, scientists and analysts" },
-  { value: 9.4, prefix: "$", suffix: "B", decimals: 1, label: "Private capital deployed", sub: "Into frontier-technology companies" },
-  { value: 22, suffix: "", label: "Countries of activity", sub: "An integrated global footprint" },
-];
 
 export default async function SectorPage({
   params,
@@ -88,6 +65,7 @@ export default async function SectorPage({
   ).slice(0, 3);
 
   const lower = sector.name.toLowerCase();
+  const strategy = GROUP_STRATEGY[sector.group] ?? "the relevant strategy";
 
   return (
     <>
@@ -97,12 +75,12 @@ export default async function SectorPage({
         intro={sector.blurb}
         image={sectorImage(sector.slug)}
         crumbs={[
-          { label: "Industries", href: "/industries" },
+          { label: "Focus Areas", href: "/industries" },
           { label: sector.name },
         ]}
       />
 
-      {/* Overview — why this matters */}
+      {/* Overview, why this matters */}
       <Section tone="paper">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center lg:gap-16">
           <FeatureImage
@@ -112,37 +90,37 @@ export default async function SectorPage({
             className="lg:order-2"
           />
           <div className="lg:order-1">
-        <SectionHeading
-          eyebrow="Why this matters"
-          title={<>A structural shift, not a passing cycle.</>}
-        />
-        <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-strong/85">
-          <p>
-            {sector.name} sits within {sector.group} —{" "}
-            {GROUP_CONTEXT[sector.group] ?? "a defining vector of the next economy"}.
-            Demand here is structural: it is driven not by sentiment but by the
-            deep currents reshaping how the world computes, lives and builds.
-          </p>
-          <p>
-            Alrion approaches {lower} as a research problem before it is a capital
-            allocation. Our desk of engineers, scientists and analysts maps the
-            technology curve, the competitive landscape and the regulatory
-            environment — translating frontier science into investable theses
-            before they reach the mainstream consensus.
-          </p>
-          <p>
-            The opportunity is matched by complexity. Winners in {lower} are
-            separated from the rest by proprietary technology, disciplined
-            capital and operational execution. That is precisely the terrain
-            where our combination of quantitative intelligence and patient,
-            impact-aligned capital is built to compound.
-          </p>
+            <SectionHeading
+              eyebrow="Why this matters"
+              title={<>A structural focus, not a passing cycle.</>}
+            />
+            <div className="mt-8 space-y-5 text-lg leading-relaxed text-slate-strong/85">
+              <p>
+                {sector.name} sits within {sector.group},{" "}
+                {GROUP_CONTEXT[sector.group] ??
+                  "a focus area of the platform"}
+                . It is a sector that {strategy} invests in directly, where
+                demand is driven by structural change rather than sentiment.
+              </p>
+              <p>
+                Alrion approaches {lower} as a research problem before it is a
+                capital allocation. We map the technology, the competitive
+                landscape and the counterparties, integrating fundamental
+                analysis with quantitative rigor before any commitment is made.
+              </p>
+              <p>
+                The opportunity is matched by complexity. Winners in {lower} are
+                separated by a defensible edge, disciplined capital and
+                operational execution. That is the terrain where our combination
+                of research, structuring and independent governance is built to
+                compound.
+              </p>
             </div>
           </div>
         </div>
       </Section>
 
-      {/* Where we focus — split with bullets */}
+      {/* Where we focus, split with bullets */}
       <Section tone="cloud">
         <SplitContent
           eyebrow="Where we focus"
@@ -150,15 +128,14 @@ export default async function SectorPage({
           bullets={focusAreas(sector)}
         >
           <p>
-            We do not chase the entire sector. We concentrate where the moat is
-            durable, the demand is structural and our edge is real — pairing
-            thematic conviction with the discipline to wait for the right entry.
+            We do not chase the entire sector. We concentrate where the edge is
+            durable, the demand is structural and our diligence is real, pairing
+            conviction with the discipline to wait for the right entry.
           </p>
           <p>
             Each focus area is underwritten against the same standard: a clear
-            path to defensible economics, alignment with measurable impact, and a
-            structure engineered to protect downside while capturing asymmetric
-            upside.
+            path to defensible economics, alignment with the strategy's mandate,
+            and a structure engineered to protect capital.
           </p>
         </SplitContent>
       </Section>
@@ -168,85 +145,81 @@ export default async function SectorPage({
         <SectionHeading
           eyebrow="Our thesis"
           title={<>Conviction underwritten by research and rigor.</>}
-          intro={`Three convictions shape how Alrion underwrites ${lower}: that the demand is secular, that defensibility is the difference, and that returns and real-world impact reinforce one another.`}
+          intro={`Two convictions shape how Alrion underwrites ${lower}: that the demand is structural, and that a defensible edge is the difference between a durable investment and a fleeting one.`}
         />
         <div className="mt-8 max-w-3xl space-y-5 text-lg leading-relaxed text-slate-strong/85">
           <p>
             We believe the most durable returns in {lower} accrue to companies
-            that solve a hard problem in a defensible way — and that the firms
+            that solve a hard problem in a defensible way, and that the firms
             able to identify them early are those willing to do the deep
-            technical and quantitative work. Our investment process is built for
-            exactly that.
+            technical and quantitative work. Our process is built for exactly
+            that.
           </p>
           <p>
-            Impact is not a separate mandate; it is intrinsic to the thesis. The
-            advances we back in {lower} create tangible value in the real
-            world — and that alignment, we believe, is itself a source of durable
-            advantage.
+            Every commitment in {lower} is made through {strategy}, a separate
+            Delaware Limited Partnership with its own investment committee and
+            risk framework, so conviction is challenged before capital is
+            committed.
           </p>
         </div>
       </Section>
 
-      {/* How we invest — feature grid of angles */}
+      {/* How we invest */}
       <Section tone="ink">
         <SectionHeading
           light
           eyebrow="How we invest"
-          title={<>Three angles into a single conviction.</>}
-          intro={`Alrion expresses ${lower} across the full capital stack — choosing the instrument, stage and structure that best fit the opportunity.`}
+          title={<>One strategy, one disciplined mandate.</>}
+          intro={`Alrion invests in ${lower} through ${strategy}, choosing the stage and structure that best fit the opportunity.`}
         />
         <div className="mt-14">
-          <FeatureGrid items={angles(sector)} columns={3} />
-        </div>
-      </Section>
-
-      {/* Stat row */}
-      <Section tone="navy">
-        <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
-          <SectionHeading
-            light
-            eyebrow="By the numbers"
-            title={<>The platform behind the thesis.</>}
+          <FeatureGrid
+            items={
+              sector.group === "Frontier Technology"
+                ? [
+                    {
+                      title: "Stage",
+                      body: `Seed to Series A, primarily across the Northeast Corridor, backing founders as technical risk gives way to market deployment.`,
+                    },
+                    {
+                      title: "Diligence",
+                      body: `Technical diligence confirms a genuine, hard-to-replicate edge in ${lower} before any capital is committed.`,
+                    },
+                    {
+                      title: "Advisory depth",
+                      body: `A Technical Advisory Board of former government and military leaders informs diligence in dual-use and frontier technology.`,
+                    },
+                  ]
+                : [
+                    {
+                      title: "Scale",
+                      body: `Growth capital for established businesses with $10M–$100M in revenue and investment-grade counterparties.`,
+                    },
+                    {
+                      title: "Value creation",
+                      body: `Clear operational levers, from professionalization to modernization, underpin every ${lower} thesis.`,
+                    },
+                    {
+                      title: "Economics",
+                      body: `Structured with an 8% preferred return and 20% carried interest, aligning our interests with our partners.`,
+                    },
+                  ]
+            }
+            columns={3}
           />
-          <Reveal delay={0.1}>
-            <span className="text-xs uppercase tracking-[0.2em] text-paper/40">
-              Illustrative
-            </span>
-          </Reveal>
         </div>
-        <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-          {STATS.map((s, i) => (
-            <Reveal key={s.label} delay={i * 0.07} className="bg-navy-950 p-8">
-              <div className="font-serif text-4xl font-light text-gold-400">
-                <Counter
-                  value={s.value}
-                  prefix={s.prefix}
-                  suffix={s.suffix}
-                  decimals={s.decimals}
-                />
-              </div>
-              <div className="mt-4 text-sm font-semibold text-paper">{s.label}</div>
-              <div className="mt-1 text-sm leading-relaxed text-paper/55">{s.sub}</div>
-            </Reveal>
-          ))}
-        </div>
-        <p className="mt-6 text-xs text-paper/40">
-          Figures are firm-level and illustrative, shown to convey scale and
-          approach. They do not represent sector-specific commitments or a
-          forecast of returns.
-        </p>
       </Section>
 
       {/* Related sectors */}
       {related.length > 0 && (
         <Section tone="paper">
           <SectionHeading
-            eyebrow="Related sectors"
+            eyebrow="Related focus areas"
             title={<>Explore the rest of {sector.group}.</>}
           />
           <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-3">
             {related.map((s, i) => (
-              <Reveal key={s.slug} delay={i * 0.05} className="group">
+              <div key={s.slug} className="group">
                 <Link
                   href={`/industries/${s.slug}`}
                   className="flex h-full flex-col bg-paper p-7 transition-colors duration-500 hover:bg-navy-950"
@@ -261,28 +234,28 @@ export default async function SectorPage({
                     {s.blurb}
                   </p>
                   <span className="mt-5 text-xs font-semibold tracking-wide text-gold-600 transition-colors duration-500 group-hover:text-gold-300">
-                    View sector →
+                    View focus area →
                   </span>
                 </Link>
-              </Reveal>
+              </div>
             ))}
           </div>
-          <Reveal delay={0.1} className="mt-10">
+          <div className="mt-10">
             <Link
               href="/industries"
               className="text-sm font-semibold tracking-wide text-navy-900 underline-offset-4 transition-colors hover:text-gold-600 hover:underline"
             >
-              View all twenty-one sectors →
+              View all focus areas →
             </Link>
-          </Reveal>
+          </div>
         </Section>
       )}
 
       <CtaBand
         title={<>Position with conviction in {sector.name}.</>}
-        body={`Speak with our investment team about Alrion's approach to ${lower} and the wider ${sector.group} thesis.`}
+        body={`Speak with our investment team about how ${strategy} approaches ${lower}.`}
         primary={{ href: "/contact", label: "Contact the team" }}
-        secondary={{ href: "/industries", label: "All industries" }}
+        secondary={{ href: "/industries", label: "All focus areas" }}
       />
     </>
   );

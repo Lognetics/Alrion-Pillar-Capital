@@ -12,37 +12,37 @@ export const INSIGHTS: Insight[] = [
   {
     slug: "frontier-outlook-2026",
     category: "Economic Outlook",
-    title: "The Frontier Outlook: AI infrastructure and the next capital supercycle",
+    title: "A platform, not a product: how we approach the year ahead",
     excerpt:
-      "Compute, energy and capital are converging into a once-in-a-generation buildout. Our house view on where durable value accrues across the AI stack.",
+      "Four autonomous strategies, one rigorous framework. Our view on the market context that shapes how each independent strategy is positioned.",
     date: "June 2026",
-    readingTime: "12 min",
+    readingTime: "10 min",
     feature: true,
   },
   {
     slug: "energy-transition-private-markets",
     category: "Investment Themes",
-    title: "Powering intelligence: why the energy transition is a private-markets story",
+    title: "Infrastructure growth: the mission-critical layer",
     excerpt:
-      "The grid is the bottleneck of the decade. We examine the asset classes positioned to finance electrification at scale.",
+      "Nuclear lifecycle, grid modernization and OT cybersecurity anchor our Private Equity strategy. Why we look for contracted, investment-grade demand.",
     date: "May 2026",
     readingTime: "9 min",
   },
   {
     slug: "quant-risk-frontier-markets",
     category: "Market Intelligence",
-    title: "Quantitative discipline in frontier-technology markets",
+    title: "A systematic approach to global macro",
     excerpt:
-      "How AI-driven models and systematic hedging let us pursue asymmetric returns without sacrificing capital preservation.",
+      "How our Hedge Fund strategy combines quantitative modelling with fundamental analysis, within a disciplined daily risk framework.",
     date: "April 2026",
     readingTime: "8 min",
   },
   {
     slug: "impact-measurement-2026",
     category: "ESG",
-    title: "Measuring what matters: our 2026 impact methodology",
+    title: "The ALRION impact model: measuring catalysis, not contribution",
     excerpt:
-      "A transparent look at how we quantify social and environmental outcomes alongside financial performance.",
+      "A transparent look at our three impact indicators, wealth equity, employment quality and the capital multiplier, in underserved New York markets.",
     date: "March 2026",
     readingTime: "7 min",
   },

@@ -10,7 +10,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Research, market intelligence and thought leadership from ALRION Pillar Capital — our house view on the technologies and capital flows shaping the next economy.",
+    "Research, market intelligence and thought leadership from ALRION Pillar Capital, on the framework, the four strategies and the impact model behind our work.",
 };
 
 const CATEGORIES = [
@@ -36,7 +36,7 @@ export default function InsightsPage() {
             <span className="text-gilt"> conviction.</span>
           </>
         }
-        intro="Our research desk publishes the analysis that informs how we allocate capital — house views on frontier technology, market intelligence and the long-term themes reshaping the global economy."
+        intro="Our research desk publishes the analysis that informs how each of our four strategies is positioned: the framework we work to, the external market context we watch, and the long-term themes we study."
         crumbs={[{ label: "Insights" }]}
       />
 

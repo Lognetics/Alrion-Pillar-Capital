@@ -9,7 +9,7 @@ import { InterviewCard, PlayGlyph } from "@/components/media/PlayCard";
 export const metadata: Metadata = {
   title: "Interviews",
   description:
-    "Conversations with the people behind ALRION Pillar Capital — on frontier investing, AI-driven quantitative models, impact, venture and institutional governance.",
+    "Conversations with the people behind ALRION Pillar Capital, on global macro, infrastructure, impact, venture and institutional governance.",
 };
 
 export default function InterviewsPage() {
@@ -23,11 +23,11 @@ export default function InterviewsPage() {
             <span className="text-gilt"> the frontier.</span>
           </>
         }
-        intro="Our partners and specialists, in their own words — on the ideas, models and convictions that define how we invest."
+        intro="Our partners and specialists, in their own words, on the ideas, models and convictions that define how we invest."
         crumbs={[{ label: "Media", href: "/media" }, { label: "Interviews" }]}
       />
 
-      {/* — Featured interview ————————————————————————————————— */}
+      {/* Featured interview */}
       <Section tone="paper">
         <Reveal>
           <article className="group grid cursor-pointer overflow-hidden rounded-sm border border-line lg:grid-cols-2">
@@ -63,7 +63,7 @@ export default function InterviewsPage() {
         </Reveal>
       </Section>
 
-      {/* — Interview library ——————————————————————————————————— */}
+      {/* Interview library */}
       <Section tone="cloud">
         <Reveal>
           <SectionHeading

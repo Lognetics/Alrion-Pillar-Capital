@@ -9,44 +9,44 @@ import { INSIGHTS } from "@/lib/insights";
 export const metadata: Metadata = {
   title: "Economic Outlook",
   description:
-    "The Frontier Outlook — ALRION Pillar Capital's flagship report on the technologies and capital flows shaping the next economy.",
+    "The Frontier Outlook, ALRION Pillar Capital's annual statement of the market context that shapes how each of our four strategies is positioned.",
 };
 
 const KEY_CALLS = [
   {
     no: "01",
-    call: "Compute is a multi-cycle, not a single trade.",
-    body: "We see four distinct capital cycles inside the AI buildout — silicon, networking, data-center real assets and power — moving at different speeds. Allocators concentrated in one are mispricing the others.",
+    call: "A platform, not a product.",
+    body: "Four autonomous strategies operate under one rigorous framework. Each is a separate Delaware LP with its own investment committee and risk framework, so governance and risk boundaries stay clean.",
   },
   {
     no: "02",
-    call: "Power becomes the binding constraint.",
-    body: "Electrification of compute and industry tightens grids faster than supply can respond. We favour contracted generation, long-duration storage and transmission build with inelastic demand.",
+    call: "Power is the binding constraint.",
+    body: "Electrification of compute and industry tightens grids faster than supply can respond. Our Infrastructure Growth work favours contracted, investment-grade demand across grid modernization and nuclear lifecycle.",
   },
   {
     no: "03",
-    call: "Private markets price the frontier better than public.",
-    body: "The most asymmetric exposure to frontier technology remains illiquid. Systematic discipline lets us underwrite it without overpaying for volatility.",
+    call: "Frontier technology rewards proximity.",
+    body: "Our Venture strategy backs founders at the inflection point between scientific validation and market deployment, from seed to Series A, primarily in the Northeast Corridor.",
   },
   {
     no: "04",
-    call: "Resilience re-prices across the real economy.",
-    body: "Dual-use innovation, reshoring and supply-chain security migrate from defense budgets into mainstream institutional portfolios.",
+    call: "Risk is a framework, not an afterthought.",
+    body: "Our Global Macro strategy runs to a daily 95% Value-at-Risk discipline and pre-committed gross-exposure limits, combining quantitative modelling with fundamental analysis.",
   },
   {
     no: "05",
-    call: "Impact and returns increasingly converge.",
-    body: "The themes with the strongest secular tailwinds — energy, health, inclusion — are also where measurable impact compounds. We refuse the trade-off.",
+    call: "We measure catalysis, not contribution.",
+    body: "Our Community Equity Fund treats underserved New York markets as a source of compelling risk-adjusted opportunity, and measures the third-party capital its work attracts.",
   },
 ];
 
 const CHAPTERS = [
-  { no: "I", title: "The Macro Regime", body: "Rates, liquidity and the path for risk capital into the back half of the decade." },
-  { no: "II", title: "The Compute Supercycle", body: "Where durable value accrues across the AI infrastructure stack." },
-  { no: "III", title: "Power & the Grid", body: "The energy transition as a private-markets, contracted-cashflow story." },
-  { no: "IV", title: "Life Sciences at the Frontier", body: "AI-native discovery and the longevity care stack." },
-  { no: "V", title: "Resilience & the Real Economy", body: "Defense, reshoring and supply-chain security." },
-  { no: "VI", title: "Positioning & Risk", body: "How our four platforms are positioned, and what would change our mind." },
+  { no: "I", title: "The Platform Framework", body: "How four autonomous strategies operate under one rigorous framework." },
+  { no: "II", title: "Global Macro", body: "A systematic approach to alpha across global macroeconomic dislocations." },
+  { no: "III", title: "Infrastructure Growth", body: "Nuclear lifecycle, grid modernization and OT cybersecurity." },
+  { no: "IV", title: "Frontier Technology", body: "AI and ML, biotech, and defense and space, from seed to Series A." },
+  { no: "V", title: "Impact Through Investment", body: "The Community Equity Fund and its three impact indicators." },
+  { no: "VI", title: "Governance & Risk", body: "The standards each strategy is held to, and how we manage risk." },
 ];
 
 export default function EconomicOutlookPage() {
@@ -62,7 +62,7 @@ export default function EconomicOutlookPage() {
             <span className="text-gilt"> 2026.</span>
           </>
         }
-        intro="Our house view on the technologies and capital flows shaping the next economy — compute, energy, capital and the convergence of impact with returns."
+        intro="Our annual statement of the market context that shapes each of our four strategies, and the framework, governance and impact model behind them."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Economic Outlook" }]}
       >
         <div className="flex flex-wrap gap-4">
@@ -81,10 +81,10 @@ export default function EconomicOutlookPage() {
           <div className="lg:col-span-8">
             <Reveal>
               <p className="font-serif text-2xl font-light leading-relaxed text-navy-950 md:text-3xl">
-                &ldquo;Compute, energy and capital are converging into a
-                once-in-a-generation buildout. The question for allocators is no
-                longer <em>whether</em> to participate, but <em>where</em> in the
-                stack durable value accrues.&rdquo;
+                &ldquo;Independence by design. Conviction by discipline. Four
+                autonomous strategies, one rigorous framework, and a singular
+                standard of fiduciary care for the allocators who ask the harder
+                questions.&rdquo;
               </p>
               <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-gold-600">
                 From the introduction
@@ -93,16 +93,17 @@ export default function EconomicOutlookPage() {
             <Reveal delay={0.1} className="mt-10 space-y-5 text-lg leading-relaxed text-slate-strong/85">
               <p>
                 Each year our research desk publishes a single, long-form
-                statement of conviction. The Frontier Outlook is where our
-                engineers, scientists and analysts set out the regime they
-                expect, the themes they believe are structurally underpriced,
-                and — crucially — what would change their minds.
+                statement of the market context we read across our four
+                strategies. The Frontier Outlook sets out the framework we work
+                to, the themes each strategy watches, and the governance and
+                impact standards that hold the platform together.
               </p>
               <p>
-                This year&rsquo;s edition is organized around a simple thesis:
-                that the defining capital cycle of the decade is not one trade
-                but several, and that discipline at the level of the stack is
-                what separates participation from compounding.
+                Established in 2024 and based in New York, ALRION Pillar Capital
+                is a platform of four independent Delaware LP strategies. This
+                edition is organized around a simple idea: that autonomy and a
+                shared standard of discipline are what let each strategy do its
+                work well.
               </p>
             </Reveal>
           </div>
@@ -125,8 +126,8 @@ export default function EconomicOutlookPage() {
                 ))}
               </dl>
               <p className="mt-6 text-xs leading-relaxed text-slate-strong/55">
-                Figures throughout the outlook are illustrative and for research
-                purposes only.
+                The outlook sets out the firm's framework and the external market
+                context we watch. It is not a statement of performance.
               </p>
             </div>
           </Reveal>
@@ -137,8 +138,8 @@ export default function EconomicOutlookPage() {
       <Section tone="cloud">
         <SectionHeading
           eyebrow="Our key calls"
-          title="Five convictions for 2026"
-          intro="The propositions that shape how all four of our platforms are positioned this year."
+          title="Five principles for 2026"
+          intro="The propositions that shape how all four of our strategies are positioned this year."
         />
         <div className="mt-12 divide-y divide-line border-y border-line">
           {KEY_CALLS.map((k, i) => (

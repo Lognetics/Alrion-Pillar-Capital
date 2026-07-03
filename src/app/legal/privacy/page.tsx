@@ -5,7 +5,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How ALRION Pillar Capital collects, uses, shares and protects your personal data, and the rights available to you. Illustrative website copy — not legal advice.",
+    "How ALRION Pillar Capital collects, uses, shares and protects your personal data, and the rights available to you. Illustrative website copy, not legal advice.",
 };
 
 const UPDATED = "1 January 2026";
@@ -26,23 +26,23 @@ const sections: LegalSection[] = [
           <li>
             <span className="font-medium text-navy-950">
               Information you provide
-            </span>{" "}
-            — name, email, telephone number, organization, investor category and
+            </span>
+            : name, email, telephone number, organization, investor category and
             any content you submit through contact or subscription forms.
           </li>
           <li>
             <span className="font-medium text-navy-950">
               Information collected automatically
-            </span>{" "}
-            — IP address, device and browser type, pages viewed, referring URLs
+            </span>
+            : IP address, device and browser type, pages viewed, referring URLs
             and other usage data gathered through cookies and similar
             technologies.
           </li>
           <li>
             <span className="font-medium text-navy-950">
               Information from third parties
-            </span>{" "}
-            — verification, due-diligence and analytics data supplied by trusted
+            </span>
+            : verification, due-diligence and analytics data supplied by trusted
             partners.
           </li>
         </ul>
@@ -148,11 +148,11 @@ const sections: LegalSection[] = [
     heading: "International Transfers",
     body: (
       <p>
-        As a global firm, we may transfer personal data to, and store it in,
-        countries other than the one in which it was collected, including the
-        United States. Where we transfer data internationally, we implement
-        appropriate safeguards — such as standard contractual clauses — to ensure
-        an adequate level of protection consistent with applicable law.
+        We may transfer personal data to, and store it in, countries other than
+        the one in which it was collected, including the United States. Where we
+        transfer data internationally, we implement appropriate safeguards, such
+        as standard contractual clauses, to ensure an adequate level of
+        protection consistent with applicable law.
       </p>
     ),
   },

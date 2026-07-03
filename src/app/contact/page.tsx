@@ -6,16 +6,18 @@ import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FIRM, GLOBAL_OFFICES } from "@/lib/site";
 
+const HQ = GLOBAL_OFFICES[0];
+
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Connect with ALRION Pillar Capital — our investor relations, media and general enquiry teams, and our offices across the Americas, EMEA, APAC and the Middle East.",
+    "Connect with ALRION Pillar Capital, our investor relations, media and general enquiry teams, at our New York headquarters.",
 };
 
 const DEPARTMENTS = [
   {
     title: "Investor Relations",
-    body: "For prospective and existing partners — mandates, subscriptions, reporting and capital requests.",
+    body: "For prospective and existing partners: mandates, subscriptions, reporting and capital requests.",
     contact: FIRM.email,
     href: `mailto:${FIRM.email}`,
   },
@@ -27,13 +29,13 @@ const DEPARTMENTS = [
   },
   {
     title: "General Enquiries",
-    body: "For all other questions about the firm, our platforms and our approach.",
+    body: "For all other questions about the firm, our strategies and our approach.",
     contact: FIRM.email,
     href: `mailto:${FIRM.email}`,
   },
   {
     title: "By Telephone",
-    body: "Reach our global headquarters in New York during standard business hours.",
+    body: "Reach our New York headquarters during standard business hours.",
     contact: FIRM.phone,
     href: `tel:${FIRM.phone.replace(/[^+\d]/g, "")}`,
   },
@@ -58,7 +60,7 @@ export default function ContactPage() {
       {/* Form + directory */}
       <Section tone="paper">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* Left — form */}
+          {/* Left, form */}
           <div className="lg:col-span-7">
             <Reveal>
               <SectionHeading
@@ -71,7 +73,7 @@ export default function ContactPage() {
             </Reveal>
           </div>
 
-          {/* Right — directory */}
+          {/* Right, directory */}
           <div className="lg:col-span-5">
             <Reveal>
               <SectionHeading
@@ -99,32 +101,47 @@ export default function ContactPage() {
         </div>
       </Section>
 
-      {/* Global offices */}
+      {/* Headquarters */}
       <Section tone="navy">
         <Reveal>
           <SectionHeading
             light
-            eyebrow="Our offices"
-            title={<>An integrated global presence.</>}
-            intro="From our New York headquarters to hubs across EMEA, APAC and the Middle East, our teams operate as one firm with a single standard of excellence."
+            eyebrow="Our office"
+            title={<>Headquarters in New York.</>}
+            intro="ALRION Pillar Capital operates from a single New York headquarters, where every strategy shares one standard of fiduciary care."
           />
         </Reveal>
-        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
-          {GLOBAL_OFFICES.map((office, i) => (
-            <Reveal
-              key={office.city}
-              delay={(i % 3) * 0.07}
-              className="bg-navy-950 p-8"
+        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 lg:grid-cols-3">
+          <Reveal className="bg-navy-950 p-8">
+            <span className="eyebrow text-gold-400">{HQ.region}</span>
+            <h3 className="mt-4 font-serif text-2xl font-light text-paper">
+              {HQ.city}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-paper/60">
+              {HQ.role}
+            </p>
+          </Reveal>
+          <Reveal delay={0.07} className="bg-navy-950 p-8">
+            <span className="eyebrow text-gold-400">Address</span>
+            <p className="mt-4 text-sm leading-relaxed text-paper/70">
+              {FIRM.address}
+            </p>
+          </Reveal>
+          <Reveal delay={0.14} className="bg-navy-950 p-8">
+            <span className="eyebrow text-gold-400">Get in touch</span>
+            <a
+              href={`mailto:${FIRM.email}`}
+              className="mt-4 block text-sm text-paper/70 underline-offset-4 transition-colors hover:text-gold-300 hover:underline"
             >
-              <span className="eyebrow text-gold-400">{office.region}</span>
-              <h3 className="mt-4 font-serif text-2xl font-light text-paper">
-                {office.city}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-paper/60">
-                {office.role}
-              </p>
-            </Reveal>
-          ))}
+              {FIRM.email}
+            </a>
+            <a
+              href={`tel:${FIRM.phone.replace(/[^+\d]/g, "")}`}
+              className="mt-2 block text-sm text-paper/70 underline-offset-4 transition-colors hover:text-gold-300 hover:underline"
+            >
+              {FIRM.phone}
+            </a>
+          </Reveal>
         </div>
       </Section>
     </>

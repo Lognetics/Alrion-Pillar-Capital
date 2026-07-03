@@ -12,7 +12,7 @@ export type LegalSection = {
 /**
  * Reusable document layout for legal pages. Renders a lighter hero with an
  * "Last updated" line and breadcrumbs, a sticky table-of-contents sidebar
- * (plain anchor links — no client JS required), and a readable, numbered body.
+ * (plain anchor links, no client JS required), and a readable, numbered body.
  */
 export function LegalPage({
   eyebrow = "Legal",
@@ -44,7 +44,7 @@ export function LegalPage({
       <section className="bg-paper py-16 md:py-24">
         <div className="shell">
           <div className="grid gap-12 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-16">
-            {/* — Table of contents ———————————————————————————— */}
+            {/* Table of contents */}
             <aside className="lg:sticky lg:top-28 lg:h-fit">
               <p className="eyebrow text-gold-600">On this page</p>
               <nav className="mt-5 border-l border-line">
@@ -66,7 +66,7 @@ export function LegalPage({
               </nav>
             </aside>
 
-            {/* — Document body ————————————————————————————————— */}
+            {/* Document body */}
             <div className="min-w-0">
               <div className="mb-12 rounded-sm border border-line bg-cloud px-6 py-5">
                 <p className="text-sm leading-relaxed text-slate-strong/80">

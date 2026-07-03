@@ -4,10 +4,10 @@ import { FeatureImage } from "@/components/ui/media";
 import { IMG } from "@/lib/imagery";
 
 const PILLARS = [
-  { k: "01", t: "Public Markets", d: "Liquid, AI-driven strategies positioned at the leading edge of innovation." },
-  { k: "02", t: "Private Innovation", d: "Venture and growth capital backing the founders building what comes next." },
-  { k: "03", t: "Real Assets", d: "Control investments in the infrastructure and energy that power the economy." },
-  { k: "04", t: "Inclusive Impact", d: "Community capital that aligns financial prosperity with social progress." },
+  { k: "01", t: "Hedge Fund LP", d: "Global macro alpha across cross-asset dislocations, governed by daily Value-at-Risk." },
+  { k: "02", t: "Private Equity LP", d: "Growth capital for mission-critical infrastructure, energy, grid and operational resilience." },
+  { k: "03", t: "Venture Capital LP", d: "Founders at the inflection point between scientific validation and market deployment." },
+  { k: "04", t: "Community Equity Fund LP", d: "Underserved markets as compelling, risk-adjusted opportunities in New York." },
 ];
 
 export function WhoWeAre() {
@@ -20,23 +20,23 @@ export function WhoWeAre() {
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 font-serif text-4xl font-light leading-[1.08] text-navy-950 md:text-5xl">
-              A research-led firm investing where the world is being rebuilt.
+              A platform, not a product.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 text-lg leading-relaxed text-slate-strong/85">
-              We believe strategic, impact-driven investment can reshape entire
-              industries. Across four complementary platforms, ALRION Pillar Capital
-              unites the analytical rigor of a quantitative manager with the
-              conviction of a long-term owner — empowering founders, strengthening
-              communities, and redefining what institutional capital can achieve.
+              Alrion Pillar Capital is an institutional alternative investment
+              platform established in 2024 and headquartered in New York. Rather than
+              stretch a single product across misaligned markets, we operate four
+              autonomous strategies, each a separate Delaware Limited Partnership
+              with its own investment committee and risk framework.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
             <p className="mt-5 text-lg leading-relaxed text-slate-strong/85">
-              Our work is guided by a single conviction: that financial prosperity
-              should reinforce environmental stewardship, social progress and ethical
-              governance — not stand apart from them.
+              What unifies them is not a market view but a standard: independent
+              governance, aligned interests, and absolute transparency for the
+              allocators who ask the harder questions.
             </p>
           </Reveal>
           <Reveal delay={0.2}>

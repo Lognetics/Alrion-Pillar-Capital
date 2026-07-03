@@ -8,7 +8,7 @@ import { EPISODES } from "@/lib/research";
 export const metadata: Metadata = {
   title: "Podcasts",
   description:
-    "Capital for the Frontier — the ALRION Pillar Capital podcast. Conversations with our partners on investing at the edge of technology.",
+    "Capital for the Frontier, the ALRION Pillar Capital podcast. Conversations from across our four strategies on the framework behind our work.",
 };
 
 const PLATFORMS = ["Apple Podcasts", "Spotify", "YouTube", "RSS"];
@@ -26,7 +26,7 @@ export default function PodcastsPage() {
             <span className="text-gilt"> the Frontier.</span>
           </>
         }
-        intro="Our podcast brings the research desk into conversation — unscripted discussions about compute, energy, biotech and the discipline behind frontier investing."
+        intro="Our podcast brings the research desk into conversation: unscripted discussions about our framework, the four strategies and the discipline behind them."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Podcasts" }]}
       >
         <div className="flex flex-wrap items-center gap-3">

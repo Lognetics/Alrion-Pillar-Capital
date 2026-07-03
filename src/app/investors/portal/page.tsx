@@ -50,7 +50,7 @@ export default function PortalPage() {
               </h1>
               <p className="mt-8 max-w-md text-pretty text-lg leading-relaxed text-paper/70">
                 A secure, single sign-on gateway to your capital accounts,
-                statements, performance and every document we share with you —
+                statements, performance and every document we share with you,
                 held to the institutional standard your capital expects.
               </p>
 

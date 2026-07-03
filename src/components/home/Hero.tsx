@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/primitives";
 
-const WORDS = ["the frontier.", "innovation.", "impact.", "the future."];
-
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden bg-navy-950 text-paper">
@@ -36,17 +34,15 @@ export function Hero() {
           >
             <span className="h-px w-10 bg-gold-500" />
             <span className="eyebrow text-gold-400">
-              Global Investment Management · Est. 2019
+              Institutional Alternative Investment Platform · New York · Est. 2024
             </span>
           </motion.div>
 
-          <h1 className="mt-8 font-serif text-5xl font-light leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.4rem]">
-            <Line delay={0.15}>Capital engineered</Line>
+          <h1 className="mt-8 font-serif text-5xl font-light leading-[1.04] sm:text-6xl md:text-7xl lg:text-[4.9rem]">
+            <Line delay={0.15}>Independence by Design.</Line>
             <Line delay={0.3}>
-              for{" "}
-              <span className="relative inline-block text-gilt">
-                <RotatingWord />
-              </span>
+              Conviction by{" "}
+              <span className="text-gilt">Discipline.</span>
             </Line>
           </h1>
 
@@ -56,10 +52,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
             className="mt-8 max-w-2xl text-pretty text-lg leading-relaxed text-paper/70 md:text-xl"
           >
-            ALRION Pillar Capital allocates across public markets and private
-            innovation — uniting research-led conviction, AI-driven quantitative
-            models and institutional governance to compound returns and measurable
-            impact at the frontier of technology.
+            Four autonomous strategies. One rigorous framework. A singular standard
+            of fiduciary care for the allocators who ask the harder questions.
           </motion.p>
 
           <motion.div
@@ -69,10 +63,10 @@ export function Hero() {
             className="mt-10 flex flex-wrap gap-4"
           >
             <Button href="/strategies" variant="gold">
-              Explore our strategies
+              The four strategies
             </Button>
             <Button href="/about" variant="ghost">
-              Who we are
+              A platform, not a product
             </Button>
           </motion.div>
         </div>
@@ -103,38 +97,6 @@ function Line({ children, delay }: { children: React.ReactNode; delay: number })
       >
         {children}
       </motion.span>
-    </span>
-  );
-}
-
-function RotatingWord() {
-  return (
-    <span className="inline-grid">
-      {WORDS.map((word, i) => (
-        <motion.span
-          key={word}
-          className="col-start-1 row-start-1"
-          animate={{
-            opacity: [0, 1, 1, 0],
-            y: ["40%", "0%", "0%", "-40%"],
-          }}
-          transition={{
-            duration: WORDS.length * 2.4,
-            times: [
-              i / WORDS.length,
-              (i + 0.12) / WORDS.length,
-              (i + 0.88) / WORDS.length,
-              (i + 1) / WORDS.length,
-            ],
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        >
-          {word}
-        </motion.span>
-      ))}
-      {/* Reserve width with the longest word, invisibly */}
-      <span className="invisible col-start-1 row-start-1">the frontier.</span>
     </span>
   );
 }

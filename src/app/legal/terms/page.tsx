@@ -5,7 +5,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description:
-    "The terms governing your access to and use of the ALRION Pillar Capital website. Illustrative website copy — not legal advice.",
+    "The terms governing your access to and use of the ALRION Pillar Capital website. Illustrative website copy, not legal advice.",
 };
 
 const UPDATED = "1 January 2026";
@@ -71,9 +71,9 @@ const sections: LegalSection[] = [
     body: (
       <>
         <p>
-          The Site and its entire contents, features and functionality —
+          The Site and its entire contents, features and functionality,
           including but not limited to all information, text, displays, images,
-          graphics, logos and the design, selection and arrangement thereof — are
+          graphics, logos and the design, selection and arrangement thereof, are
           owned by {FIRM.short}, its licensors or other providers of such
           material and are protected by international copyright, trademark and
           other intellectual-property laws.
@@ -162,7 +162,7 @@ const sections: LegalSection[] = [
         employees or agents be liable for any indirect, incidental, special,
         consequential or punitive damages, or for any loss of profits, data,
         goodwill or other intangible losses, arising out of or relating to your
-        access to or use of, or inability to access or use, the Site — whether
+        access to or use of, or inability to access or use, the Site, whether
         based in contract, tort, statute or otherwise.
       </p>
     ),

@@ -3,15 +3,14 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Section, FeatureGrid, FaqList, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { Counter } from "@/components/ui/Counter";
 import { Timeline } from "@/components/investors/Timeline";
 import { IMPACT_RETURNS, ENDOWMENT_MODEL } from "@/lib/investors";
-import { IMPACT_STATS } from "@/lib/site";
+import { IMPACT_INDICATORS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Foundations & Endowments",
   description:
-    "ALRION Pillar Capital serves mission-driven foundations and endowments — mission-aligned impact investing, perpetual-horizon construction, spending-policy support and ESG integration with competitive returns.",
+    "ALRION Pillar Capital is built to serve mission-driven foundations and endowments through the Community Equity Fund LP, impact through investment, long-horizon construction and aligned interests across four independent Delaware LP strategies.",
 };
 
 export default function FoundationsPage() {
@@ -25,29 +24,26 @@ export default function FoundationsPage() {
             <span className="text-gilt"> without the trade-off.</span>
           </>
         }
-        intro="Foundations and endowments steward capital that is meant to last forever and do good along the way. We reject the idea that those goals compete — and build portfolios where competitive returns and measurable impact reinforce one another."
+        intro="Foundations and endowments steward capital that is meant to last and to do good along the way. Alrion Pillar Capital is built to serve that dual purpose through the Community Equity Fund LP, a strategy proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York."
         crumbs={[{ label: "Investor Center", href: "/investors" }, { label: "Foundations & Endowments" }]}
       />
 
-      {/* Impact-with-returns framing — counters */}
+      {/* Impact indicators, qualitative */}
       <Section tone="navy">
         <Reveal>
           <SectionHeading
             light
             align="center"
-            eyebrow="Impact with returns"
-            title={<>Capital that performs while it progresses.</>}
-            intro="Our impact platforms are measured with the same rigor as our return platforms — and reported with the same transparency."
+            eyebrow="Impact through investment"
+            title={<>How we measure catalysis, not just contribution.</>}
+            intro="The Community Equity Fund LP reports against three qualitative indicators, held to the same standard of transparency as our return-focused strategies."
           />
         </Reveal>
-        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-          {IMPACT_STATS.map((s, i) => (
-            <Reveal key={s.label} delay={(i % 4) * 0.06} className="bg-navy-950 p-8">
-              <div className="font-serif text-4xl font-light text-gilt">
-                <Counter value={s.value} prefix={s.prefix} suffix={s.suffix} decimals={s.decimals} />
-              </div>
-              <div className="mt-4 text-sm font-semibold text-paper">{s.label}</div>
-              <div className="mt-1 text-xs leading-relaxed text-paper/55">{s.sub}</div>
+        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+          {IMPACT_INDICATORS.map((s, i) => (
+            <Reveal key={s.title} delay={(i % 3) * 0.06} className="bg-navy-950 p-8">
+              <div className="text-sm font-semibold text-gilt">{s.title}</div>
+              <div className="mt-3 text-sm leading-relaxed text-paper/70">{s.body}</div>
             </Reveal>
           ))}
         </div>
@@ -59,7 +55,7 @@ export default function FoundationsPage() {
           <SectionHeading
             eyebrow="The thesis"
             title={<>Why we refuse the false choice.</>}
-            intro="Mission alignment is not a concession that costs return — for a perpetual institution, it is a source of durability."
+            intro="Mission alignment is not a concession that costs return. For a long-horizon institution, it can be a source of durability."
           />
         </Reveal>
         <div className="mt-14">
@@ -72,8 +68,8 @@ export default function FoundationsPage() {
         <Reveal>
           <SectionHeading
             eyebrow="The endowment model"
-            title={<>Built to outlive every market cycle.</>}
-            intro="A construction discipline for institutions that intend to exist forever — balancing real growth against today's spending obligations."
+            title={<>Built for a long horizon.</>}
+            intro="A construction discipline for institutions that intend to endure, balancing real growth against today's spending obligations."
           />
         </Reveal>
         <div className="mt-16">
@@ -94,16 +90,17 @@ export default function FoundationsPage() {
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
                 A spending policy only works if the portfolio can fund it through
-                every environment. We design a liquid, drawdown-managed sleeve and
-                predictable distribution planning so your annual draw is supported
-                without forcing the sale of long-term holdings at the wrong moment.
+                every environment. The liquid Hedge Fund LP, run to a daily 95%
+                Value-at-Risk and a maximum 300% gross exposure, sits alongside
+                private-market strategies so an annual draw need not force the sale
+                of long-term holdings at the wrong moment.
               </p>
               <p>
-                Target returns are framed to exceed your spending rate plus
-                inflation across a full cycle — preserving real purchasing power for
-                the beneficiaries who depend on the institution decades from now.
-                Impact is reported alongside performance, audited annually and
-                aligned to the UN Sustainable Development Goals.
+                Alignment is designed in. We commit significant GP capital across
+                every fund and invest where we ask our partners to invest, at the
+                same terms. Impact is reported alongside performance through three
+                qualitative indicators, Wealth Equity, Employment Quality and the
+                Capital Multiplier.
               </p>
             </div>
           </Reveal>
@@ -120,19 +117,19 @@ export default function FoundationsPage() {
             items={[
               {
                 q: "Do mission-aligned mandates sacrifice return?",
-                a: "We are built on the conviction that they need not. Our Community Equity Fund and climate platform pursue competitive returns and measurable outcomes together, and impact is reported with the same rigor as performance.",
+                a: "We are built on the conviction that they need not. The Community Equity Fund LP is a model proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York, and it is seeded by carried interest from the institutional strategies.",
               },
               {
-                q: "How do you support our spending policy?",
-                a: "Through a liquid, drawdown-managed sleeve and predictable distribution planning, so your annual draw is supported without forcing untimely sales. Target returns are framed to exceed your spending rate plus inflation across a cycle.",
+                q: "How is the Community Equity Fund structured?",
+                a: "It is a separate Delaware Limited Partnership with its own investment committee and risk framework, carrying a 51%+ Minority- and Women-Owned Business Enterprises mandate and audited annually by a Big Four firm.",
               },
               {
-                q: "Can our charter's values and exclusions be encoded?",
-                a: "Yes. Exclusion lists, thematic tilts and values-based constraints are built into segregated mandates so your portfolio reflects your charter, with ESG integration across the ownership lifecycle.",
+                q: "How does the platform support a long horizon?",
+                a: "Four autonomous strategies span liquid macro, private infrastructure, frontier venture and community impact. Private-market strategies are structured on an 8% preferred return with 20% carried interest, matched to long-dated obligations.",
               },
               {
                 q: "How is impact measured and reported?",
-                a: "Social and environmental outcomes are quantified, audited annually and aligned to the UN Sustainable Development Goals — delivered through the investor portal alongside your performance and capital-account reporting.",
+                a: "Through three qualitative indicators, Wealth Equity, Employment Quality and the Capital Multiplier. We measure catalysis, the third-party capital drawn into a community after our initial investment, not just contribution.",
               },
             ]}
           />
@@ -140,7 +137,7 @@ export default function FoundationsPage() {
       </Section>
 
       <CtaBand
-        title={<>Align your endowment with its mission — and its mandate.</>}
+        title={<>Align your endowment with its mission, and its mandate.</>}
         body="We will frame a perpetual-horizon allocation that supports your spending policy while advancing the outcomes your charter exists to serve."
         primary={{ href: "/contact", label: "Speak with investor relations" }}
         secondary={{ href: "/esg", label: "Explore our impact approach" }}

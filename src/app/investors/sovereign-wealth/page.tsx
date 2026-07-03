@@ -4,13 +4,12 @@ import { Section, FaqList, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
 import { Timeline } from "@/components/investors/Timeline";
-import { RegionList } from "@/components/investors/RegionList";
-import { COINVEST_MODEL, SOVEREIGN_REGIONS } from "@/lib/investors";
+import { COINVEST_MODEL } from "@/lib/investors";
 
 export const metadata: Metadata = {
   title: "Sovereign Wealth Funds",
   description:
-    "ALRION Pillar Capital partners with sovereign wealth funds at scale — anchor commitments, fee-advantaged co-investment, strategic frontier-technology mandates and alignment with national development priorities.",
+    "ALRION Pillar Capital is built to serve sovereign investors through four autonomous Delaware LP strategies, anchor commitments, aligned interests at the same terms and exposure to durable national priorities.",
 };
 
 export default function SovereignWealthPage() {
@@ -20,11 +19,11 @@ export default function SovereignWealthPage() {
         eyebrow="For Sovereign Wealth Funds"
         title={
           <>
-            Strategic capital at the
-            <span className="text-gilt"> scale of nations.</span>
+            Patient capital, aligned to
+            <span className="text-gilt"> durable priorities.</span>
           </>
         }
-        intro="Sovereign investors deploy patient capital with a dual mandate: superior long-term return and the strategic advancement of national priorities. We are built to serve both — at scale, through co-investment, across the frontier technologies that will define the next economic era."
+        intro="Sovereign investors deploy patient capital with a dual mandate: durable long-term return and the strategic advancement of national priorities. Alrion Pillar Capital is built to serve both through four autonomous Delaware LP strategies spanning energy and grid infrastructure and frontier technology."
         crumbs={[{ label: "Investor Center", href: "/investors" }, { label: "Sovereign Wealth Funds" }]}
       />
 
@@ -32,16 +31,16 @@ export default function SovereignWealthPage() {
       <Section tone="paper">
         <Reveal>
           <SectionHeading
-            eyebrow="Scale & strategic alignment"
-            title={<>Return and national development, pursued together.</>}
-            intro="The frontier technologies that drive the strongest long-term returns — AI infrastructure, semiconductors, energy, advanced manufacturing — are the same ones that build national capability. For sovereign investors, alignment is the opportunity."
+            eyebrow="Strategic alignment"
+            title={<>Return and national priorities, pursued together.</>}
+            intro="The Infrastructure Growth and Frontier Technology strategies invest into the mission-critical infrastructure and technologies that also build national capability, energy, grid modernization, operational resilience, AI, biotech, defense and space. For sovereign investors, alignment is the opportunity."
           />
         </Reveal>
         <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-line bg-line md:grid-cols-3">
           {[
-            { t: "Deployment at scale", b: "Capacity to absorb cornerstone, multi-year commitments across four investment platforms without diluting conviction." },
-            { t: "Strategic exposure", b: "Targeted access to semiconductors, AI compute, energy transition, space and dual-use deep tech aligned to national priorities." },
-            { t: "Long-horizon alignment", b: "Patient capital and multi-year holds that match the generational horizon of sovereign mandates." },
+            { t: "Anchor commitments", b: "Cornerstone, multi-year commitments across one or more of the four independent Delaware LP strategies." },
+            { t: "Strategic exposure", b: "Infrastructure Growth into energy, grid and operational resilience, and Frontier Technology across AI, biotech, defense and space." },
+            { t: "Long-horizon alignment", b: "Patient private-market holds structured on an 8% preferred return with 20% carried interest, matched to sovereign horizons." },
           ].map((x, i) => (
             <Reveal key={x.t} delay={i * 0.07} className="bg-paper p-9">
               <span className="font-serif text-2xl text-gold-500">0{i + 1}</span>
@@ -57,35 +56,14 @@ export default function SovereignWealthPage() {
         <Reveal>
           <SectionHeading
             light
-            eyebrow="The co-investment model"
-            title={<>A partnership that scales with your conviction.</>}
-            intro="Sovereign relationships move beyond fund commitments into direct partnership — co-investment rights, strategic mandates and the transfer of capability home."
+            eyebrow="The partnership model"
+            title={<>A partnership grounded in alignment.</>}
+            intro="Sovereign relationships move beyond a fund commitment into partnership: anchor commitments, alignment at the same terms and independent governance on every strategy."
           />
         </Reveal>
         <div className="mt-16">
           <Timeline steps={COINVEST_MODEL} light />
         </div>
-      </Section>
-
-      {/* Global reach */}
-      <Section tone="ink">
-        <Reveal>
-          <SectionHeading
-            light
-            eyebrow="Global reach"
-            title={<>An integrated footprint across every major capital region.</>}
-            intro="Twenty-two countries of activity, anchored by hubs positioned where sovereign capital and frontier innovation meet."
-          />
-        </Reveal>
-        <div className="mt-14">
-          <RegionList regions={SOVEREIGN_REGIONS} />
-        </div>
-        <Reveal delay={0.1}>
-          <p className="mt-6 text-xs text-paper/45">
-            Illustrative regional focus. Office roles and coverage reflect our
-            stated global footprint and are confirmed in mandate documentation.
-          </p>
-        </Reveal>
       </Section>
 
       {/* Governance reassurance */}
@@ -101,14 +79,15 @@ export default function SovereignWealthPage() {
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
                 Sovereign capital carries national significance, and our governance
-                is built accordingly. Independent oversight, formal investment-committee
-                discipline and audited, institutional-grade reporting underpin every
-                figure we share — at any scale of commitment.
+                is built accordingly. Each strategy is a separate Delaware Limited
+                Partnership with its own investment committee and risk framework,
+                audited annually by a Big Four firm, with independent valuation
+                committees on illiquid positions.
               </p>
               <p>
                 Where confidentiality is paramount, we structure engagements to
                 respect it: discreet sourcing, controlled information flow and
-                bespoke mandates that keep strategic intent contained to the people
+                communications that keep strategic intent contained to the people
                 who need to know it.
               </p>
             </div>
@@ -125,20 +104,20 @@ export default function SovereignWealthPage() {
           <FaqList
             items={[
               {
-                q: "How do co-investment rights work?",
-                a: "An anchor commitment establishes the partnership and unlocks preferential, fee-advantaged co-investment rights on direct deals — letting you scale conviction into specific frontier-technology opportunities alongside us.",
+                q: "How does an anchor commitment work?",
+                a: "A cornerstone allocation across one or more of the four Delaware LP strategies establishes the partnership and aligns long-term incentives at fund level, on the fund's stated terms.",
               },
               {
-                q: "Can a mandate target our national development priorities?",
-                a: "Yes. We structure custom mandates around national priorities — semiconductors, energy, AI infrastructure, dual-use technology — within agreed risk and governance bounds, with secondments and joint diligence to build internal capability.",
+                q: "How are your interests aligned with ours?",
+                a: "We commit significant GP capital across every fund and invest where we ask our partners to invest, at the same terms. Conviction is shared rather than sold.",
               },
               {
-                q: "Do you have a presence in our region?",
-                a: "Our integrated footprint spans 22 countries, anchored by hubs in Abu Dhabi, Singapore, London, Zurich, New York and San Francisco. We position teams where sovereign capital and frontier innovation intersect.",
+                q: "Which national priorities can we gain exposure to?",
+                a: "The Private Equity LP pursues Infrastructure Growth into energy, grid modernization and operational resilience. The Venture Capital LP pursues Frontier Technology across AI, biotech, defense and space at Seed to Series A.",
               },
               {
-                q: "How is confidentiality maintained at this scale?",
-                a: "Through discreet sourcing, controlled information flow and bespoke mandate structures. Strategic intent is contained to the people who need to know it, and governance operates independently of the investing desks.",
+                q: "How is confidentiality maintained?",
+                a: "Through discreet sourcing, controlled information flow and communications designed to keep strategic intent contained. Each strategy's governance operates independently of the teams deploying capital.",
               },
             ]}
           />
@@ -146,10 +125,10 @@ export default function SovereignWealthPage() {
       </Section>
 
       <CtaBand
-        title={<>Discuss a strategic partnership with our sovereign desk.</>}
-        body="We will explore anchor commitments, co-investment rights and mandates aligned to your national priorities."
-        primary={{ href: "/contact", label: "Contact the sovereign desk" }}
-        secondary={{ href: "/global", label: "Explore our global footprint" }}
+        title={<>Discuss a strategic partnership with our investor relations desk.</>}
+        body="We will explore anchor commitments and the strategies aligned to your national priorities, on the same terms we hold ourselves to."
+        primary={{ href: "/contact", label: "Contact investor relations" }}
+        secondary={{ href: "/strategies", label: "Explore our strategies" }}
       />
     </>
   );

@@ -8,13 +8,12 @@ import {
 } from "@/components/sections/blocks";
 import { SectionHeading, Button } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { Counter } from "@/components/ui/Counter";
-import { FIRM, HERO_STATS, DIFFERENTIATORS } from "@/lib/site";
+import { FIRM, DIFFERENTIATORS, GOVERNANCE_STANDARDS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Who We Are",
   description:
-    "ALRION Pillar Capital is a global, research-led investment firm pursuing durable returns and measurable impact at the frontier of technology — guided by AI-driven quantitative models and institutional governance.",
+    "ALRION Pillar Capital is an institutional alternative investment platform established in 2024 in New York, comprising four independent Delaware Limited Partnerships unified by one rigorous framework of fiduciary care.",
 };
 
 export default function AboutPage() {
@@ -24,11 +23,11 @@ export default function AboutPage() {
         eyebrow="Who We Are"
         title={
           <>
-            A research-led firm building
-            <span className="text-gilt"> capital for the frontier.</span>
+            A platform, not a product.
+            <span className="text-gilt"> Independence by Design.</span>
           </>
         }
-        intro="ALRION Pillar Capital allocates across public markets and private innovation in pursuit of enduring returns and measurable impact — uniting scientific rigor, quantitative intelligence and institutional discipline."
+        intro="ALRION Pillar Capital is an institutional alternative investment platform: four autonomous strategies, one rigorous framework, and a singular standard of fiduciary care for the allocators who ask the harder questions."
         crumbs={[{ label: "About" }]}
       />
 
@@ -37,68 +36,60 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
             <SectionHeading
-              eyebrow="The Firm"
-              title={<>Where rigorous science meets patient capital.</>}
+              eyebrow="The Platform"
+              title={<>Four autonomous strategies. One rigorous framework.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                {FIRM.name} is a global, research-led investment firm founded on
-                a single conviction: the technologies redefining the world&apos;s
-                economy demand capital that is equally rigorous, adaptive and
-                principled. Since {FIRM.established}, we have allocated across the
-                full technology cycle — from liquid public markets to early-stage
-                private innovation — in pursuit of durable returns and measurable
-                progress.
+                {FIRM.name} is an institutional alternative investment platform,
+                a platform, not a product. Established in {FIRM.established} in
+                New York, it comprises four independent Delaware Limited
+                Partnerships, each with its own investment committee and risk
+                framework.
               </p>
               <p>
-                We are, above all, an institution built around research. A
-                dedicated desk of engineers, scientists and analysts translates
-                frontier breakthroughs into investable theses long before they
-                reach the mainstream, while proprietary AI-driven quantitative
-                models inform how we size conviction, manage risk and time our
-                commitments. The result is a discipline that follows insight
-                rather than sentiment.
+                The four strategies pursue very different mandates: global macro,
+                infrastructure growth, frontier technology and community equity.
+                They are bound together by one rigorous framework of research,
+                risk monitoring and independent oversight, so that a single
+                standard of discipline applies across the whole platform.
               </p>
               <p>
-                Our partners are long-term institutions, family offices and
-                mission-aligned allocators who expect more than performance. They
-                expect transparency, independent governance and a portfolio in
-                which financial prosperity reinforces — never compromises —
-                social and environmental outcomes. That expectation defines who
-                we are.
+                Our partners are institutions, family offices and mission-aligned
+                allocators who expect more than performance. They expect
+                transparency, independent governance and structural alignment.
+                That expectation defines who we are: Independence by Design,
+                Conviction by Discipline.
               </p>
             </div>
           </Reveal>
         </div>
       </Section>
 
-      {/* — Stats row ————————————————————————————————————————— */}
+      {/* — Governance standards ——————————————————————————————— */}
       <section className="relative overflow-hidden bg-navy-950 py-20 text-paper md:py-24">
         <div className="absolute inset-0 bg-grid opacity-40" />
         <div className="absolute left-1/2 top-0 h-px w-3/4 -translate-x-1/2 bg-gradient-to-r from-transparent via-gold-500/40 to-transparent" />
         <div className="shell relative">
-          <div className="grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-            {HERO_STATS.map((s, i) => (
-              <Reveal key={s.label} delay={i * 0.08} className="bg-navy-950 p-8 md:p-10">
-                <p className="font-serif text-4xl font-light text-gilt md:text-5xl">
-                  <Counter
-                    value={s.value}
-                    prefix={s.prefix}
-                    suffix={s.suffix}
-                    decimals={s.decimals}
-                  />
-                </p>
-                <p className="mt-5 text-sm font-semibold text-paper">{s.label}</p>
-                <p className="mt-1 text-xs leading-relaxed text-paper/50">{s.sub}</p>
+          <Reveal>
+            <SectionHeading
+              light
+              eyebrow="Our Standards"
+              title={<>Governance you can hold us to.</>}
+              intro="Four commitments define how the platform operates, structural rather than stated."
+            />
+          </Reveal>
+          <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+            {GOVERNANCE_STANDARDS.map((s, i) => (
+              <Reveal key={s.title} delay={i * 0.08} className="bg-navy-950 p-8 md:p-10">
+                <span className="font-serif text-2xl text-gold-400">0{i + 1}</span>
+                <p className="mt-5 text-lg font-semibold text-paper">{s.title}</p>
+                <p className="mt-3 text-sm leading-relaxed text-paper/60">{s.body}</p>
               </Reveal>
             ))}
           </div>
-          <p className="mt-8 text-center text-xs text-paper/40">
-            Illustrative figures presented for context. Past performance is not
-            indicative of future results.
-          </p>
         </div>
       </section>
 
@@ -108,33 +99,27 @@ export default function AboutPage() {
           <Reveal className="lg:col-span-5">
             <SectionHeading
               eyebrow="Our Story"
-              title={<>Founded at the intersection of science and markets.</>}
+              title={<>Conceived and launched in 2024.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                {FIRM.name} was established in {FIRM.established} by a group of
-                investors, engineers and scientists who shared a frustration with
-                the way capital was being allocated to the most consequential
-                technologies of the era. Too much money was chasing narrative;
-                too little was grounded in genuine technical understanding.
+                {FIRM.name} was conceived and launched in {FIRM.established} in
+                New York around a single conviction: that serious allocators
+                deserve a platform where independence is engineered into the
+                structure and conviction is earned through discipline.
               </p>
               <p>
-                We set out to build a different kind of institution — one in which
-                the people evaluating a breakthrough could read the research
-                paper, interrogate the architecture and model the economics with
-                equal fluency. From a single research desk, the firm grew into a
-                multi-platform manager spanning public markets, private equity,
-                venture and inclusive impact capital, unified by a common
-                methodology and an uncompromising standard of governance.
+                Rather than a single product, the platform was designed from the
+                outset as four autonomous strategies, each a separate Delaware
+                Limited Partnership with its own investment committee and risk
+                framework. One rigorous framework of governance and oversight
+                binds them together.
               </p>
               <p>
-                That founding ethos endures. Every mandate we manage, every
-                position we hold and every report we publish reflects the same
-                discipline that defined our first day: science before capital,
-                conviction earned through evidence, and impact measured alongside
-                return.
+                That founding logic defines everything we do: a platform, not a
+                product, Independence by Design and Conviction by Discipline.
               </p>
             </div>
           </Reveal>
@@ -147,8 +132,8 @@ export default function AboutPage() {
           <SectionHeading
             align="center"
             eyebrow="Mission & Vision"
-            title={<>Why we exist, and where we are headed.</>}
-            intro="Our purpose is durable, even as the technologies we back evolve."
+            title={<>Why we exist, and how we operate.</>}
+            intro="Our purpose is durable, even as the strategies we run evolve."
             className="mx-auto"
           />
         </Reveal>
@@ -156,41 +141,36 @@ export default function AboutPage() {
           <Reveal className="bg-paper p-10 md:p-12">
             <p className="eyebrow text-gold-600">Our Mission</p>
             <h3 className="mt-5 font-serif text-2xl font-light text-navy-950 md:text-3xl">
-              To direct capital toward the frontier with rigor, conviction and
-              conscience.
+              A singular standard of fiduciary care for the allocators who ask the
+              harder questions.
             </h3>
             <p className="mt-6 leading-relaxed text-slate-strong/80">
-              We exist to fund the science, infrastructure and enterprises that
-              advance human progress — and to do so with the discipline,
-              transparency and independence that long-term institutional capital
-              deserves. We measure our success in returns realized and in lives,
-              communities and ecosystems improved.
+              We exist to run four autonomous strategies under one rigorous
+              framework, with the transparency, independent governance and
+              structural alignment that institutional capital deserves.
             </p>
           </Reveal>
           <Reveal delay={0.1} className="bg-paper p-10 md:p-12">
             <p className="eyebrow text-gold-600">Our Vision</p>
             <h3 className="mt-5 font-serif text-2xl font-light text-navy-950 md:text-3xl">
-              An investment institution where prosperity and progress compound
-              together.
+              Independence by Design. Conviction by Discipline.
             </h3>
             <p className="mt-6 leading-relaxed text-slate-strong/80">
-              We envision a firm that sets the standard for how frontier
-              technology is financed — proving, portfolio by portfolio, that the
-              choice between performance and responsibility is a false one. Our
-              ambition is to remain the partner of choice for those building, and
-              backing, the world that comes next.
+              We aim to prove that autonomy and discipline are not in tension. Each
+              strategy stands on its own conviction, and every strategy is held to
+              the same institutional standard of care.
             </p>
           </Reveal>
         </div>
       </Section>
 
-      {/* — Core Values / Founding Principles ——————————————————— */}
+      {/* — Founding principles ————————————————————————————————— */}
       <Section tone="paper">
         <Reveal>
           <SectionHeading
             eyebrow="Founding Principles"
-            title={<>The values that govern every decision.</>}
-            intro="These principles are not aspirations on a wall — they are the operating logic of the firm, embedded in how we research, allocate, govern and report."
+            title={<>The logic that governs every decision.</>}
+            intro="These principles are not aspirations on a wall. They are the operating logic of the platform, embedded in how we structure, research, govern and report."
           />
         </Reveal>
         <div className="mt-14">
@@ -198,28 +178,28 @@ export default function AboutPage() {
             columns={3}
             items={[
               {
-                title: "Evidence over sentiment",
-                body: "We size conviction to the strength of the evidence. Every thesis is stress-tested by specialists before a dollar follows it.",
+                title: "A platform, not a product",
+                body: "Four autonomous strategies, each a separate Delaware Limited Partnership with its own investment committee and risk framework.",
               },
               {
-                title: "Independence of mind",
-                body: "Our research and risk functions challenge consensus and one another, ensuring no allocation rests on an unexamined assumption.",
+                title: "Independence by design",
+                body: "Independence is engineered into the structure. Research, risk and governance functions operate with genuine autonomy.",
               },
               {
-                title: "Responsibility by design",
-                body: "Social and environmental outcomes are engineered into our process, not bolted on as an afterthought or marketing claim.",
+                title: "Conviction by discipline",
+                body: "We size conviction to the strength of the evidence, integrating quantitative modelling with fundamental analysis.",
               },
               {
-                title: "Long-term partnership",
-                body: "We align with patient capital and patient founders, compounding value over horizons measured in cycles, not quarters.",
+                title: "Aligned interests",
+                body: "Significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms.",
               },
               {
-                title: "Uncompromising governance",
-                body: "Independent oversight, robust compliance and transparent reporting are non-negotiable foundations of how we operate.",
+                title: "Rigorous oversight",
+                body: "Annual Big Four audits, third-party administration and independent valuation committees on illiquid positions.",
               },
               {
-                title: "Intellectual humility",
-                body: "We treat being wrong as information. Adversarial review and continuous learning keep our convictions honest.",
+                title: "Absolute transparency",
+                body: "Monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets and real-time access for partners.",
               },
             ]}
           />
@@ -232,8 +212,8 @@ export default function AboutPage() {
           <SectionHeading
             light
             eyebrow="The Alrion Difference"
-            title={<>What sets our approach apart.</>}
-            intro="Four sources of edge that, together, define how ALRION Pillar Capital invests at the frontier."
+            title={<>Four commitments that define the platform.</>}
+            intro="Together, these define how ALRION Pillar Capital operates for institutional partners."
           />
         </Reveal>
         <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
@@ -251,33 +231,32 @@ export default function AboutPage() {
       <Section tone="paper">
         <SplitContent
           eyebrow="Our People"
-          title={<>Led by a multidisciplinary team of investors, engineers and scientists.</>}
+          title={<>A team organized to challenge itself.</>}
           bullets={[
-            "Investment professionals across public and private markets",
-            "Engineers and scientists embedded in technical diligence",
-            "Quantitative researchers building proprietary models",
-            "Independent risk, compliance and governance specialists",
+            "Managing partners accountable for each of the four strategies",
+            "Independent risk and compliance functions across every LP",
+            "An advisory board spanning the domains we invest in",
+            "A Venture Capital Technical Advisory Board of former government and military leaders",
           ]}
         >
           <p>
             What distinguishes {FIRM.short} is not a single discipline but the
-            deliberate collision of many. Portfolio managers sit beside the
-            engineers who can read a technology&apos;s architecture; data
-            scientists work alongside the analysts who model its economics. This
-            cross-disciplinary fluency is the engine of our conviction.
+            deliberate collision of many, held to one rigorous framework. Each
+            strategy is led by partners who own their conviction, and each is
+            checked by independent risk and governance functions.
           </p>
           <p>
-            Our teams are organized to challenge one another. Investing,
-            research, risk and governance functions operate with genuine
-            independence, ensuring that every commitment survives rigorous,
-            adversarial scrutiny before it earns the firm&apos;s capital.
+            Our teams are organized to challenge one another. Investing, risk and
+            governance functions operate with genuine independence, so that every
+            commitment survives rigorous, adversarial scrutiny before it earns a
+            strategy's capital.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <Button href="/governance" variant="outline">
               Our governance
             </Button>
-            <Button href="/careers" variant="outline">
-              Join the team
+            <Button href="/about/leadership" variant="outline">
+              Meet the team
             </Button>
           </div>
         </SplitContent>
@@ -295,20 +274,20 @@ export default function AboutPage() {
         <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-line bg-line md:grid-cols-3">
           {[
             {
-              title: "Corporate Governance",
-              body: "Independent oversight, robust compliance and transparent reporting that give our partners assurance.",
+              title: "Governance",
+              body: "Independent governance, Big Four audits and third-party administration that give our partners institutional assurance.",
               href: "/governance",
               label: "Explore governance",
             },
             {
-              title: "ESG & Responsible Capital",
-              body: "An integrated approach where measurable impact and durable returns reinforce one another.",
-              href: "/esg",
-              label: "Explore ESG",
+              title: "Impact Through Investment",
+              body: "The Community Equity Fund LP proves that underserved markets hold compelling risk-adjusted opportunities in New York.",
+              href: "/impact",
+              label: "Explore impact",
             },
             {
               title: "Careers at Alrion",
-              body: "Join a multidisciplinary team building the standard for how the frontier is financed.",
+              body: "Join a team building the standard for how autonomous strategies are run under one rigorous framework.",
               href: "/careers",
               label: "View opportunities",
             },
@@ -327,8 +306,8 @@ export default function AboutPage() {
       </Section>
 
       <CtaBand
-        title={<>Partner with a firm built for the frontier.</>}
-        body="Speak with our investor relations team to explore how ALRION Pillar Capital aligns with your mandate and your values."
+        title={<>Partner with a platform built for serious allocators.</>}
+        body="Speak with our team to explore how ALRION Pillar Capital aligns with your mandate and your standards."
         primary={{ href: "/contact", label: "Connect with us" }}
         secondary={{ href: "/strategies", label: "Our strategies" }}
       />

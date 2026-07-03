@@ -13,12 +13,16 @@ export function StatBand() {
             className="px-6 py-10 first:pl-0 last:pr-0"
           >
             <div className="font-serif text-4xl font-light text-gilt md:text-5xl">
-              <Counter
-                value={stat.value}
-                prefix={stat.prefix}
-                suffix={stat.suffix}
-                decimals={stat.decimals}
-              />
+              {stat.text !== undefined ? (
+                stat.text
+              ) : (
+                <Counter
+                  value={stat.value ?? 0}
+                  prefix={stat.prefix}
+                  suffix={stat.suffix}
+                  decimals={stat.decimals}
+                />
+              )}
             </div>
             <p className="mt-3 text-sm font-medium text-paper">{stat.label}</p>
             <p className="mt-1 text-xs text-paper/45">{stat.sub}</p>

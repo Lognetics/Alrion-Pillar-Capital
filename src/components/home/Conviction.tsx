@@ -11,13 +11,13 @@ export function Conviction() {
         </Reveal>
         <Reveal delay={0.05}>
           <blockquote className="mx-auto mt-4 max-w-4xl text-balance font-serif text-3xl font-light leading-[1.2] md:text-[2.75rem]">
-            We invest at the frontier because that is where the future is decided —
-            where capital, conviction and responsibility compound into lasting value.
+            We built a platform, not a product, four independent strategies unified
+            by institutional standards rather than stretched across misaligned markets.
           </blockquote>
         </Reveal>
         <Reveal delay={0.1}>
           <p className="mt-10 text-sm tracking-[0.2em] text-paper/55">
-            ALRION PILLAR CAPITAL · INVESTMENT PHILOSOPHY
+            ALRION PILLAR CAPITAL · THE PLATFORM PHILOSOPHY
           </p>
         </Reveal>
       </div>

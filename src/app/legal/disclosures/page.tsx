@@ -5,7 +5,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Disclosures",
   description:
-    "Important regulatory and investment disclosures regarding ALRION Pillar Capital, including risk, forward-looking statements and jurisdictional notices. Illustrative website copy — not legal advice.",
+    "Important regulatory and investment disclosures regarding ALRION Pillar Capital, including risk, forward-looking statements and jurisdictional notices. Illustrative website copy, not legal advice.",
 };
 
 const UPDATED = "1 January 2026";

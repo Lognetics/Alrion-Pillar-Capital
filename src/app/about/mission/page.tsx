@@ -7,7 +7,7 @@ import { OBJECTIVES } from "@/lib/about";
 export const metadata: Metadata = {
   title: "Mission & Vision",
   description:
-    "ALRION Pillar Capital exists to direct capital toward the frontier with rigor, conviction and conscience — building an institution where prosperity and progress compound together.",
+    "ALRION Pillar Capital exists to run four autonomous strategies under one rigorous framework, with a singular standard of fiduciary care: Independence by Design, Conviction by Discipline.",
 };
 
 export default function MissionPage() {
@@ -29,17 +29,16 @@ export default function MissionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <h1 className="mt-8 max-w-5xl text-balance font-serif text-4xl font-light leading-[1.08] text-navy-950 md:text-6xl lg:text-7xl">
-              To direct capital toward the frontier with{" "}
-              <span className="text-gilt">rigor, conviction and conscience</span> —
-              funding the science, infrastructure and enterprises that advance human
-              progress.
+              A singular standard of{" "}
+              <span className="text-gilt">fiduciary care</span> for the allocators
+              who ask the harder questions.
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-10 max-w-2xl text-pretty text-lg leading-relaxed text-slate-strong/80 md:text-xl">
-              We measure our success in two currencies at once: returns realized for
-              our partners, and lives, communities and ecosystems measurably improved.
-              We reject the idea that the two must trade against one another.
+              We run four autonomous strategies under one rigorous framework, with
+              the transparency, independent governance and structural alignment that
+              institutional capital deserves. A platform, not a product.
             </p>
           </Reveal>
         </div>
@@ -55,17 +54,16 @@ export default function MissionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-8 max-w-4xl font-serif text-3xl font-light leading-snug text-paper md:text-5xl">
-              An investment institution where{" "}
-              <span className="text-gilt">prosperity and progress compound together</span>
-              {" "}— and where the choice between performance and responsibility is
-              proven, portfolio by portfolio, to be a false one.
+              <span className="text-gilt">Independence by Design. Conviction by Discipline.</span>
+              {" "}Four autonomous strategies, one rigorous framework, proven
+              strategy by strategy.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-10 max-w-2xl text-pretty text-lg leading-relaxed text-paper/70">
-              Our ambition is to set the standard for how frontier technology is
-              financed, and to remain the partner of choice for those building, and
-              backing, the world that comes next.
+              Our ambition is to be the platform of choice for allocators who ask
+              the harder questions, holding every strategy to one standard of
+              fiduciary care.
             </p>
           </Reveal>
         </div>

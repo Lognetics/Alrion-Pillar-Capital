@@ -9,7 +9,7 @@ import { REPORTS, type Report } from "@/lib/research";
 export const metadata: Metadata = {
   title: "Quarterly & Annual Reports",
   description:
-    "The ALRION Pillar Capital report archive — quarterly investor letters, annual reports and impact reports, grouped by year.",
+    "The ALRION Pillar Capital report archive: quarterly investor letters, annual reports and impact reports, grouped by year.",
 };
 
 const typeStyle: Record<Report["type"], string> = {
@@ -31,7 +31,7 @@ export default function ReportsPage() {
             <span className="text-gilt"> archive.</span>
           </>
         }
-        intro="Our institutional-grade reporting, in one place — quarterly investor letters, annual reviews and impact reports going back to inception."
+        intro="Our reporting in one place: quarterly investor letters, annual reviews and impact reports, grouped by year since the platform launched in 2024."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Reports" }]}
       />
 
@@ -39,7 +39,7 @@ export default function ReportsPage() {
         <SectionHeading
           eyebrow="Archive"
           title="Reporting by year"
-          intro="Download affordances are illustrative. Figures within each report are illustrative."
+          intro="Reports are organised by year. Downloads open through our investor relations team."
         />
 
         <div className="mt-12 space-y-16">

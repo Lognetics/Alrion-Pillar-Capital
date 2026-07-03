@@ -10,7 +10,7 @@ import { LEADERSHIP } from "@/lib/about";
 export const metadata: Metadata = {
   title: "Management Team",
   description:
-    "ALRION Pillar Capital is led by a multidisciplinary team of investors, engineers and scientists who organize themselves to challenge one another and earn every conviction.",
+    "ALRION Pillar Capital is led by managing partners accountable for each of four autonomous strategies, held to one rigorous framework of independent risk and governance.",
 };
 
 export default function LeadershipPage() {
@@ -20,11 +20,11 @@ export default function LeadershipPage() {
         eyebrow="Management Team"
         title={
           <>
-            Investors, engineers and
-            <span className="text-gilt"> scientists, in one room.</span>
+            Partners who own
+            <span className="text-gilt"> their conviction.</span>
           </>
         }
-        intro="Our leadership is deliberately multidisciplinary. The deliberate collision of finance, engineering and science is the engine of our conviction — and the reason no allocation rests on an unexamined assumption."
+        intro="Each strategy is led by partners accountable for their own mandate, and each is checked by independent risk and governance functions, so that no allocation rests on an unexamined assumption."
         crumbs={[{ label: "About", href: "/about" }, { label: "Management Team" }]}
       />
 
@@ -42,14 +42,14 @@ export default function LeadershipPage() {
               <p>
                 At {FIRM.short}, leadership is measured by the quality of the
                 decisions it enables, not the certainty it projects. Our partners
-                lead teams that are encouraged to challenge them, and the firm&apos;s
+                lead teams encouraged to challenge them, and the platform&apos;s
                 most senior voices are the ones most willing to be proven wrong.
               </p>
               <p>
-                Each leader carries deep responsibility for a platform or function,
-                yet all are bound by a single methodology — science before capital,
-                conviction earned through evidence — and a shared accountability to
-                the partners whose capital they steward.
+                Each partner carries responsibility for a strategy or function,
+                yet all are bound by one rigorous framework, Independence by
+                Design and Conviction by Discipline, and a shared accountability
+                to the allocators whose capital they steward.
               </p>
             </div>
           </Reveal>
@@ -62,20 +62,21 @@ export default function LeadershipPage() {
           <SectionHeading
             eyebrow="The Team"
             title={<>The people accountable for every decision.</>}
-            intro="A representative leadership group spanning the firm's four platforms and its independent governance functions."
+            intro="A leadership group spanning the platform's four strategies and its independent risk and governance functions."
           />
         </Reveal>
         <div className="mt-14">
           <BioGrid items={LEADERSHIP} columns={4} />
         </div>
         <p className="mt-12 text-xs text-slate-strong/50">
-          Names, titles and roles shown are representative for illustration.
+          Team members shown are representative and illustrative, pending final
+          disclosure.
         </p>
       </Section>
 
       <CtaBand
-        title={<>Build the frontier with us.</>}
-        body="We are always seeking multidisciplinary talent who believe capital should be as rigorous as the science it backs."
+        title={<>Build the platform with us.</>}
+        body="We seek people who believe independence should be engineered into the structure and conviction earned through discipline."
         primary={{ href: "/careers", label: "View opportunities" }}
         secondary={{ href: "/about/investment-committee", label: "Investment committee" }}
       />

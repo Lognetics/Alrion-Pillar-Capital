@@ -35,7 +35,7 @@ export default function ThoughtLeadershipPage() {
             <span className="text-gilt"> the partnership.</span>
           </>
         }
-        intro="Long-form essays and opinion from the people who allocate our capital — original arguments about investing where the science is genuinely hard."
+        intro="Long-form essays and opinion from across the partnership: original arguments about our framework, our four strategies and the discipline behind them."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Thought Leadership" }]}
       />
 

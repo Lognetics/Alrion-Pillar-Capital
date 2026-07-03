@@ -25,7 +25,7 @@ export function ContactForm() {
       <div className="flex h-full flex-col justify-center rounded-sm border border-line bg-cloud p-10">
         <span className="font-serif text-3xl text-gold-500">✓</span>
         <h3 className="mt-5 font-serif text-2xl font-light text-navy-950">
-          Thank you — your message is received.
+          Thank you, your message is received.
         </h3>
         <p className="mt-4 leading-relaxed text-slate-strong/80">
           A member of our investor relations team will respond within two

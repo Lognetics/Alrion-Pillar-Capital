@@ -12,17 +12,17 @@ import { Reveal } from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Build your career at ALRION Pillar Capital — a research-led investment firm where engineers, scientists and investors translate frontier science into durable returns and measurable impact.",
+    "Build your career at ALRION Pillar Capital, an early-stage New York platform where investors, engineers and scientists work across four autonomous strategies with a shared standard of rigor.",
 };
 
 const DEPARTMENTS = [
   {
     title: "Investment Teams",
-    body: "Portfolio managers, analysts and associates across our hedge fund, private equity, venture and community equity platforms.",
+    body: "Portfolio managers, analysts and associates across our hedge fund, private equity, venture and community equity strategies.",
   },
   {
     title: "Quantitative Research",
-    body: "Data scientists and engineers building the AI-driven models that power allocation, risk and signal generation.",
+    body: "Researchers and engineers building the models that inform allocation, risk and signal generation for the hedge fund strategy.",
   },
   {
     title: "Technical Diligence",
@@ -38,34 +38,34 @@ const DEPARTMENTS = [
   },
   {
     title: "Operations & Technology",
-    body: "The engineers, administrators and operators who keep a global, multi-platform firm running seamlessly.",
+    body: "The engineers, administrators and operators who keep four autonomous strategies running to one rigorous standard.",
   },
 ];
 
 const OPEN_ROLES = [
   {
-    title: "Quantitative Researcher, Frontier Markets",
+    title: "Quantitative Researcher, Global Macro",
     team: "Quantitative Research",
     location: "New York · Hybrid",
     type: "Full-time",
     blurb:
-      "Design and deploy machine-learning models that identify dislocations across frontier-technology equities for our hedge fund platform.",
+      "Design and validate cross-asset models that identify macroeconomic dislocations for our Global Macro Excellence hedge fund strategy.",
   },
   {
-    title: "Investment Associate, Venture Capital",
+    title: "Investment Associate, Frontier Technology",
     team: "Investment Teams",
-    location: "San Francisco · On-site",
+    location: "New York · On-site",
     type: "Full-time",
     blurb:
-      "Source, diligence and support category-defining founders across AI, robotics, biotech and deep tech from first check through growth.",
+      "Source and diligence founders across AI, biotechnology and defense and space for our seed to Series A venture strategy in the Northeast Corridor.",
   },
   {
-    title: "Technical Diligence Lead, Climate & Energy",
+    title: "Technical Diligence Lead, Infrastructure",
     team: "Technical Diligence",
-    location: "London · Hybrid",
+    location: "New York · Hybrid",
     type: "Full-time",
     blurb:
-      "Lead primary technical evaluation of climate and energy-transition investments, from underlying science to industrial scalability.",
+      "Lead technical evaluation of infrastructure investments across nuclear lifecycle, grid modernization and operational-technology cybersecurity.",
   },
   {
     title: "Risk Analyst, Independent Oversight",
@@ -73,15 +73,15 @@ const OPEN_ROLES = [
     location: "New York · On-site",
     type: "Full-time",
     blurb:
-      "Monitor exposure, correlation and volatility across platforms, enforcing limits and validating models within our oversight function.",
+      "Monitor exposure and volatility across strategies, enforcing limits and validating models within our independent oversight function.",
   },
   {
-    title: "Investor Relations Manager, EMEA",
+    title: "Investor Relations Manager",
     team: "Investor Relations",
-    location: "Zurich · Hybrid",
+    location: "New York · Hybrid",
     type: "Full-time",
     blurb:
-      "Serve as a trusted point of contact for our European institutional partners, delivering reporting and stewardship to our standard.",
+      "Serve as a trusted point of contact for our institutional partners, delivering reporting and stewardship to our standard.",
   },
 ];
 
@@ -115,12 +115,12 @@ export default function CareersPage() {
                 We are a research-led firm at our core, and that shapes everything
                 about how we work. Ideas are debated on their merits, conviction is
                 earned through evidence and every team member is expected to think
-                like an owner. The work is demanding because the problems are hard —
-                and that is precisely why the people who thrive here choose to stay.
+                like an owner. The work is demanding because the problems are hard,
+                and that is precisely why the people who choose to build here stay.
               </p>
               <p>
-                Across six offices and twenty-two countries of activity, we operate
-                as one firm with a single standard of excellence. We invest in our
+                As an early-stage New York platform, we are building a small,
+                deliberate team across four autonomous strategies. We invest in our
                 people the way we invest our capital: patiently, with conviction and
                 with a long-term view of the value they will compound.
               </p>
@@ -148,7 +148,7 @@ export default function CareersPage() {
               },
               {
                 title: "Research at the frontier",
-                body: "Direct access to the most consequential technologies of our time and the experts building them, across our global portfolio.",
+                body: "Direct access to the most consequential technologies of our time and the experts building them, across our four strategies.",
               },
               {
                 title: "Continuous development",
@@ -159,12 +159,12 @@ export default function CareersPage() {
                 body: "Premium health coverage, parental leave and wellbeing support designed to sustain people through demanding work.",
               },
               {
-                title: "Global mobility",
-                body: "Opportunities to work across our offices in the Americas, EMEA, APAC and the Middle East as your career grows.",
+                title: "Breadth across strategies",
+                body: "Opportunities to work across our hedge fund, private equity, venture and community equity strategies as your career grows.",
               },
               {
                 title: "Impact that matters",
-                body: "The chance to align your work with measurable social and environmental outcomes through our impact-led mandate.",
+                body: "The chance to align your work with the Community Equity Fund's mandate to invest in Minority- and Women-Owned Business Enterprises.",
               },
             ]}
           />
@@ -199,7 +199,7 @@ export default function CareersPage() {
           eyebrow="Graduate & internship programs"
           title={<>Begin your career at the frontier.</>}
           bullets={[
-            "Two-year rotational analyst program across platforms",
+            "Two-year rotational analyst program across strategies",
             "Summer internships in investment and quantitative research",
             "Dedicated mentorship from senior investors and engineers",
             "A clear pathway from intern to full-time team member",
@@ -208,12 +208,12 @@ export default function CareersPage() {
           <p>
             We believe the best investors and researchers are developed, not merely
             recruited. Our graduate program rotates analysts across our investment
-            platforms, risk function and research desk, building the breadth that
+            strategies, risk function and research desk, building the breadth that
             defines a complete Alrion professional.
           </p>
           <p>
             Our summer internships give exceptional students real responsibility on
-            live work — from technical diligence to model development — alongside the
+            live work, from technical diligence to model development, alongside the
             mentorship and feedback to grow quickly. Many of our interns return to
             launch their full-time careers with us.
           </p>
@@ -226,7 +226,7 @@ export default function CareersPage() {
           <SectionHeading
             eyebrow="Open roles"
             title={<>Current opportunities.</>}
-            intro="A selection of the roles we are actively hiring for across our global offices."
+            intro="A selection of the roles we are actively hiring for at our New York headquarters."
           />
         </Reveal>
         <div className="mt-12 grid gap-px overflow-hidden rounded-sm border border-line bg-line">

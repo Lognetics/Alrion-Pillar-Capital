@@ -1,9 +1,11 @@
 /* ============================================================
-   About-section content: story milestones, leadership team,
-   investment committee, global advisors and awards. All copy
-   is original and faithful to ALRION Pillar Capital's stated
-   positioning. Names, titles and figures are representative
-   and illustrative unless otherwise noted.
+   About-section content: founding timeline, leadership team,
+   investment committee, advisory board and recognition & standards.
+   All copy is faithful to ALRION Pillar Capital's stated positioning:
+   a platform, not a product, established 2024 in New York as four
+   independent Delaware Limited Partnerships. Team members shown are
+   representative and illustrative pending final disclosure. No AUM,
+   track record, scale or global footprint is claimed.
    ============================================================ */
 
 export type Milestone = {
@@ -13,54 +15,26 @@ export type Milestone = {
   tag?: string;
 };
 
+/* The platform was conceived and launched in 2024. We do not portray
+   a multi-year history before that founding. */
 export const MILESTONES: Milestone[] = [
   {
-    year: "2019",
-    title: "A research desk becomes a firm",
+    year: "2024",
+    title: "A platform, not a product",
     tag: "Founding",
-    body: "ALRION Pillar Capital is established in New York by a small group of investors, engineers and scientists united by one conviction — that the most consequential technologies of the era demand capital grounded in genuine technical understanding, not narrative.",
-  },
-  {
-    year: "2020",
-    title: "First quantitative models go live",
-    tag: "Public Markets",
-    body: "The firm launches its inaugural hedge-fund mandate, deploying proprietary AI-driven quantitative models across frontier-technology equities. Disciplined hedging and daily risk attribution define the methodology from day one.",
-  },
-  {
-    year: "2021",
-    title: "Venture platform opens to founders",
-    tag: "Venture Capital",
-    body: "Alrion writes its first institutional checks into category-defining founders in AI, robotics and climate technology, pairing conviction capital with deep technical diligence and a global commercialization network.",
-  },
-  {
-    year: "2022",
-    title: "Private equity and real assets",
-    tag: "Private Equity",
-    body: "The firm extends into control and growth capital for industrial-scale businesses — infrastructure, energy, transportation and utilities — blending operational rigor with patient, multi-year ownership.",
-  },
-  {
-    year: "2023",
-    title: "Community Equity Fund launches",
-    tag: "Impact",
-    body: "Acting on its founding belief that prosperity and progress should compound together, Alrion launches the Community Equity Fund to channel inclusive capital into underserved communities and measurable social outcomes.",
+    body: "ALRION Pillar Capital is conceived in New York around a single conviction: Independence by Design, Conviction by Discipline. The platform is designed as four autonomous strategies bound by one rigorous framework of fiduciary care.",
   },
   {
     year: "2024",
-    title: "An integrated global footprint",
-    tag: "Expansion",
-    body: "Hubs in London, Singapore, Abu Dhabi, San Francisco and Zurich knit the platforms into a single research-led institution, giving Alrion proprietary sightlines into innovation across every major market.",
+    title: "Four independent Delaware LPs",
+    tag: "Structure",
+    body: "The four strategies are established as separate Delaware Limited Partnerships, each with its own investment committee and risk framework: a Hedge Fund LP, a Private Equity LP, a Venture Capital LP and a Community Equity Fund LP.",
   },
   {
-    year: "2025",
-    title: "Governance and impact at scale",
-    tag: "Institution",
-    body: "Independent oversight, robust compliance and transparent impact reporting mature into an institutional standard, as long-term partners entrust the firm with capital across all four platforms.",
-  },
-  {
-    year: "2026",
-    title: "Capital for the frontier, today",
-    tag: "Today",
-    body: "Alrion operates as a four-division manager spanning public markets and private innovation — proving, portfolio by portfolio, that durable returns and measurable impact are not a trade-off but a design.",
+    year: "2024",
+    title: "One standard of governance",
+    tag: "Governance",
+    body: "From the outset, the platform adopts institutional governance: annual Big Four audits, comprehensive third-party administration, independent valuation committees on illiquid positions and significant GP commitments across every fund.",
   },
 ];
 
@@ -73,23 +47,23 @@ export type Objective = {
 export const OBJECTIVES: Objective[] = [
   {
     no: "01",
-    title: "Fund the frontier",
-    body: "Direct capital toward the science, infrastructure and enterprises advancing human progress — across the full technology cycle, from liquid markets to first institutional checks.",
+    title: "Preserve independence",
+    body: "Operate each strategy as an autonomous Delaware Limited Partnership with its own investment committee and risk framework, so that conviction is never diluted by cross-strategy compromise.",
   },
   {
     no: "02",
-    title: "Compound responsibly",
-    body: "Engineer social and environmental outcomes into the investment process so that financial prosperity reinforces, never compromises, the world we are building.",
+    title: "Apply one framework",
+    body: "Hold four autonomous strategies to a single rigorous standard of research, risk monitoring and independent oversight, ensuring consistency of discipline across very different mandates.",
   },
   {
     no: "03",
-    title: "Lead on governance",
-    body: "Set the institutional standard for how frontier technology is financed, with independent oversight, transparent reporting and uncompromising discipline.",
+    title: "Align every interest",
+    body: "Commit significant GP capital across every fund. We invest where we ask our partners to invest, and at the same terms, so that alignment is structural rather than stated.",
   },
   {
     no: "04",
-    title: "Endure across cycles",
-    body: "Remain the partner of choice for those building, and backing, the next decade — aligning patient capital with patient founders over horizons measured in cycles.",
+    title: "Report without exception",
+    body: "Sustain absolute transparency through monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets and real-time access for institutional partners.",
   },
 ];
 
@@ -102,33 +76,33 @@ export type Principle = {
 export const PRINCIPLES: Principle[] = [
   {
     no: "01",
-    title: "Science before capital",
-    body: "We invest only where we genuinely understand the technology. A thesis must survive the scrutiny of people who can read the research paper and model the economics with equal fluency before a dollar follows it.",
+    title: "A platform, not a product",
+    body: "We are a platform of four autonomous strategies, not a single product. Each is a separate Delaware Limited Partnership with its own investment committee and risk framework, so conviction is preserved strategy by strategy.",
   },
   {
     no: "02",
-    title: "Conviction earned through evidence",
-    body: "We size positions to the strength of the evidence, not the volume of the narrative. Every commitment is stress-tested by specialists across disciplines and debated openly before the firm acts.",
+    title: "Independence by design",
+    body: "Independence is engineered into the structure, not asserted in a memo. Our research, risk and governance functions operate with genuine autonomy so that no allocation rests on an unexamined assumption.",
   },
   {
     no: "03",
-    title: "Independence of mind",
-    body: "Our research, risk and governance functions operate with genuine autonomy and challenge one another by design, ensuring no allocation ever rests on an unexamined assumption or unchallenged consensus.",
+    title: "Conviction by discipline",
+    body: "We size conviction to the strength of the evidence. Quantitative modelling is integrated with fundamental analysis, and every commitment is stress-tested before capital follows it.",
   },
   {
     no: "04",
-    title: "Responsibility by design",
-    body: "Impact is engineered into our process, not bolted on as an afterthought. We reject the false choice between performance and progress and measure our success in both returns and outcomes.",
+    title: "Aligned interests",
+    body: "We make significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms, so that our incentives and theirs point in the same direction.",
   },
   {
     no: "05",
-    title: "Long-term partnership",
-    body: "We align with patient capital and patient founders, compounding value over horizons measured in cycles rather than quarters, and we honour the trust our partners place in us with transparency.",
+    title: "Rigorous oversight",
+    body: "Annual Big Four audits, comprehensive third-party administration and independent valuation committees on illiquid positions hold every strategy to an institutional standard of governance.",
   },
   {
     no: "06",
-    title: "Intellectual humility",
-    body: "We treat being wrong as information. Adversarial review, continuous learning and a culture that prizes the better argument over seniority keep our convictions honest and our methodology evolving.",
+    title: "Absolute transparency",
+    body: "We report without exception: monthly reporting for liquid strategies, quarterly deep-dive reviews for private markets and real-time access for institutional partners.",
   },
 ];
 
@@ -140,34 +114,34 @@ export type Value = {
 
 export const VALUES: Value[] = [
   {
+    glyph: "I",
+    title: "Independence",
+    body: "Each strategy stands on its own, with its own committee and risk framework. Independence by design means conviction is never compromised to serve another mandate.",
+  },
+  {
+    glyph: "D",
+    title: "Discipline",
+    body: "Conviction by discipline. We hold every idea to a standard of evidence, integrating quantitative modelling with fundamental analysis before a dollar follows.",
+  },
+  {
+    glyph: "F",
+    title: "Fiduciary care",
+    body: "A singular standard of fiduciary care for the allocators who ask the harder questions. Their capital is a responsibility we treat as our own.",
+  },
+  {
+    glyph: "A",
+    title: "Alignment",
+    body: "We make significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms.",
+  },
+  {
+    glyph: "T",
+    title: "Transparency",
+    body: "We report what we do. Monthly and quarterly reporting, annual Big Four audits and real-time access for institutional partners are foundations, not features.",
+  },
+  {
     glyph: "R",
     title: "Rigor",
-    body: "We hold every idea to a standard of evidence. Technical, financial and ESG diligence is conducted by specialists, and conviction is always proportional to proof.",
-  },
-  {
-    glyph: "I",
-    title: "Integrity",
-    body: "We do what we say, and we report what we do. Independence, honesty and transparency are non-negotiable foundations of how we steward our partners' capital.",
-  },
-  {
-    glyph: "C",
-    title: "Courage",
-    body: "Backing the frontier means acting before the consensus. We have the conviction to invest in the unproven when the evidence — and the mission — warrants it.",
-  },
-  {
-    glyph: "S",
-    title: "Stewardship",
-    body: "Capital is a responsibility. We protect downside as fiercely as we pursue upside, and we treat the communities and ecosystems we touch as stakeholders.",
-  },
-  {
-    glyph: "C",
-    title: "Collaboration",
-    body: "Our edge is the deliberate collision of disciplines. Investors, engineers, scientists and risk specialists work as one team, sharpened by genuine debate.",
-  },
-  {
-    glyph: "P",
-    title: "Progress",
-    body: "We exist to advance things — for our partners, for founders and for the world. We measure ourselves by the durable value and tangible good we help create.",
+    body: "One rigorous framework governs four autonomous strategies. Daily risk monitoring, independent valuation and adversarial review keep our convictions honest.",
   },
 ];
 
@@ -179,109 +153,109 @@ export type Person = {
   initials: string;
 };
 
-/* Representative leadership team — names and titles illustrative. */
+/* Representative leadership team, illustrative pending final disclosure. */
 export const LEADERSHIP: Person[] = [
   {
     name: "Adrian Voss",
     title: "Founder & Chief Executive Officer",
-    focus: "Firm strategy",
+    focus: "Platform strategy",
     initials: "AV",
-    bio: "Founded Alrion in 2019 around a single conviction: that frontier capital must be grounded in technical understanding. Sets the firm's strategy across all four platforms.",
+    bio: "Founded the platform in 2024 around a single conviction: Independence by Design, Conviction by Discipline. Sets the standard of fiduciary care that unifies the four autonomous strategies.",
   },
   {
     name: "Lena Maris",
     title: "President & Chief Investment Officer",
-    focus: "Cross-platform investing",
+    focus: "Cross-strategy framework",
     initials: "LM",
-    bio: "Oversees investment strategy across public and private markets, ensuring a single research methodology and risk discipline unify the firm's mandates.",
-  },
-  {
-    name: "Dr. Idris Calloway",
-    title: "Chief Research Officer",
-    focus: "Frontier science",
-    initials: "IC",
-    bio: "Leads the research desk of engineers and scientists translating frontier breakthroughs into investable theses long before they reach the mainstream.",
-  },
-  {
-    name: "Priya Anand",
-    title: "Head of Quantitative Strategies",
-    focus: "AI-driven models",
-    initials: "PA",
-    bio: "Architects the proprietary machine-learning models that inform allocation, sizing and timing across the firm's liquid and systematic mandates.",
+    bio: "Oversees the single rigorous framework that governs all four strategies, ensuring consistent research, risk and oversight discipline across very different mandates.",
   },
   {
     name: "Marcus Thorne",
-    title: "Managing Partner, Private Equity",
-    focus: "Real assets",
+    title: "Managing Partner, Hedge Fund LP",
+    focus: "Global macro",
     initials: "MT",
-    bio: "Builds enduring companies in infrastructure, energy and transportation, partnering with management to professionalize operations and compound value.",
+    bio: "Leads the Global Macro Excellence strategy, pursuing alpha across macroeconomic dislocations with multi-timeframe, cross-asset relative value and daily risk monitoring.",
+  },
+  {
+    name: "Priya Anand",
+    title: "Managing Partner, Private Equity LP",
+    focus: "Infrastructure growth",
+    initials: "PA",
+    bio: "Directs the Infrastructure Growth strategy, deploying growth capital into nuclear lifecycle, grid modernization and operational-technology cybersecurity.",
   },
   {
     name: "Sofia Reyes",
-    title: "Managing Partner, Venture Capital",
-    focus: "Deep tech",
+    title: "Managing Partner, Venture Capital LP",
+    focus: "Frontier technology",
     initials: "SR",
-    bio: "Backs category-defining founders in AI, robotics, biotech and climate, pairing conviction capital with technical diligence and an operating network.",
+    bio: "Backs founders at the inflection point between scientific validation and market deployment across artificial intelligence, biotechnology, and defense and space.",
   },
   {
     name: "Daniela Okafor",
-    title: "Head of Community Equity",
-    focus: "Impact",
+    title: "Head, Community Equity Fund LP",
+    focus: "Impact through investment",
     initials: "DO",
-    bio: "Directs inclusive capital toward underserved communities and enterprises, measuring success in both returns realized and tangible social outcomes.",
+    bio: "Leads the strategy proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York, under a 51%+ MWBE mandate.",
+  },
+  {
+    name: "Idris Calloway",
+    title: "Chief Risk Officer",
+    focus: "Risk framework",
+    initials: "IC",
+    bio: "Maintains the risk framework across all four Limited Partnerships, including daily Value-at-Risk on liquid strategies and independent valuation on illiquid positions.",
   },
   {
     name: "Jonathan Pierce",
-    title: "Chief Risk & Compliance Officer",
-    focus: "Governance",
+    title: "Chief Compliance Officer",
+    focus: "Governance & oversight",
     initials: "JP",
-    bio: "Maintains the independent oversight, risk attribution and regulatory discipline that give the firm's partners the assurance their capital deserves.",
+    bio: "Oversees Big Four audits, third-party administration and the independent governance that gives the platform's partners institutional assurance.",
   },
 ];
 
-/* Representative investment committee — names and titles illustrative. */
+/* Representative investment committee, illustrative pending final disclosure. */
 export const COMMITTEE: Person[] = [
   {
     name: "Lena Maris",
     title: "Chair · Chief Investment Officer",
-    focus: "Cross-platform conviction",
+    focus: "Cross-strategy conviction",
     initials: "LM",
-    bio: "Chairs the committee and arbitrates conviction, structure and risk across every mandate before capital is committed.",
-  },
-  {
-    name: "Dr. Idris Calloway",
-    title: "Chief Research Officer",
-    focus: "Technical diligence",
-    initials: "IC",
-    bio: "Represents the research desk, ensuring every thesis withstands rigorous scientific and architectural scrutiny.",
-  },
-  {
-    name: "Priya Anand",
-    title: "Head of Quantitative Strategies",
-    focus: "Model & risk signals",
-    initials: "PA",
-    bio: "Brings quantitative evidence — sizing, timing and risk attribution — to the committee's deliberations.",
+    bio: "Chairs the committee and applies the platform's one rigorous framework to conviction, structure and risk before any capital is committed.",
   },
   {
     name: "Marcus Thorne",
-    title: "Managing Partner, Private Equity",
-    focus: "Real-asset structuring",
+    title: "Managing Partner, Hedge Fund LP",
+    focus: "Macro & liquid risk",
     initials: "MT",
-    bio: "Evaluates control and growth opportunities through an operational value-creation and governance lens.",
+    bio: "Brings quantitative and fundamental evidence, sizing and daily Value-at-Risk discipline to the committee's deliberations on liquid strategies.",
+  },
+  {
+    name: "Priya Anand",
+    title: "Managing Partner, Private Equity LP",
+    focus: "Infrastructure structuring",
+    initials: "PA",
+    bio: "Evaluates growth-capital opportunities in mission-critical infrastructure through an operational value-creation and governance lens.",
   },
   {
     name: "Sofia Reyes",
-    title: "Managing Partner, Venture Capital",
-    focus: "Early-stage conviction",
+    title: "Managing Partner, Venture Capital LP",
+    focus: "Frontier conviction",
     initials: "SR",
-    bio: "Champions frontier founders while holding venture theses to the firm's standard of technical evidence.",
+    bio: "Champions founders at the inflection point between scientific validation and market deployment while holding venture theses to the platform's standard of evidence.",
+  },
+  {
+    name: "Idris Calloway",
+    title: "Chief Risk Officer",
+    focus: "Independent risk",
+    initials: "IC",
+    bio: "Holds an independent voice on risk across every strategy, with authority to challenge any commitment on risk, valuation or exposure grounds.",
   },
   {
     name: "Jonathan Pierce",
-    title: "Chief Risk & Compliance Officer",
-    focus: "Independent oversight",
+    title: "Chief Compliance Officer",
+    focus: "Governance & oversight",
     initials: "JP",
-    bio: "Provides an independent veto on risk, compliance and governance, safeguarding the integrity of every decision.",
+    bio: "Provides an independent view on compliance and governance, safeguarding the integrity of every decision the committee reaches.",
   },
 ];
 
@@ -295,85 +269,93 @@ export const DECISION_STEPS: DecisionStep[] = [
   {
     no: "01",
     title: "Thesis presentation",
-    body: "The sponsoring team presents the opportunity, the technical evidence and the investment thesis, alongside the diligence conducted by specialists across disciplines.",
+    body: "The sponsoring strategy presents the opportunity, the evidence and the investment thesis, alongside the diligence conducted by specialists across disciplines.",
   },
   {
     no: "02",
     title: "Adversarial review",
-    body: "An assigned challenger argues the bear case. Research, quantitative and risk functions interrogate every assumption until the thesis either strengthens or fails.",
+    body: "An assigned challenger argues the bear case. The committee interrogates every assumption until the thesis either strengthens or fails.",
   },
   {
     no: "03",
     title: "Structure & risk",
-    body: "The committee debates sizing, structure and downside protection, with the risk and compliance officer holding an independent voice on every dimension.",
+    body: "The committee debates sizing, structure and downside protection, with the Chief Risk Officer holding an independent voice on every dimension.",
   },
   {
     no: "04",
     title: "Decision & mandate",
-    body: "A documented decision records the conviction, conditions and monitoring plan. Only commitments that survive this scrutiny earn the firm's capital.",
+    body: "A documented decision records the conviction, conditions and monitoring plan. Only commitments that survive this scrutiny earn the strategy's capital.",
   },
 ];
 
-/* Representative global advisory board — names and titles illustrative. */
+/* Representative advisory board, illustrative pending final disclosure. */
 export const ADVISORS: Person[] = [
   {
-    name: "Prof. Helena Brandt",
-    title: "Former Director, National AI Laboratory",
+    name: "Helena Brandt",
+    title: "Artificial Intelligence Advisor",
     focus: "Artificial intelligence",
     initials: "HB",
-    bio: "Advises on the trajectory of foundation models and applied AI, grounding the firm's compute and intelligence theses in frontier science.",
+    bio: "Advises the Venture Capital LP on the trajectory of foundation models and applied AI, grounding the platform's intelligence theses in frontier science.",
   },
   {
-    name: "Rajesh Menon",
-    title: "Ex-Central Bank Deputy Governor",
-    focus: "Macro & policy",
-    initials: "RM",
-    bio: "Offers perspective on macroeconomic regimes, monetary policy and the geopolitical currents that shape global capital allocation.",
-  },
-  {
-    name: "Dr. Yuki Tanaka",
-    title: "Pioneer in Robotics & Autonomy",
-    focus: "Robotics",
-    initials: "YT",
-    bio: "Guides the firm's diligence into physical AI, automation and autonomous systems across land, air and sea.",
-  },
-  {
-    name: "Amara Diallo",
-    title: "Climate Finance Architect",
-    focus: "Climate technology",
-    initials: "AD",
-    bio: "Shapes the firm's approach to decarbonization, resilience and impact measurement aligned to the UN SDGs.",
-  },
-  {
-    name: "Stefan Albright",
-    title: "Former Global Head of Securities",
-    focus: "Markets & risk",
-    initials: "SA",
-    bio: "Advises on liquidity, market structure and the systematic risk frameworks behind the firm's public-market mandates.",
-  },
-  {
-    name: "Dr. Naledi Khoza",
-    title: "Biotechnology Research Leader",
-    focus: "Life sciences",
+    name: "Naledi Khoza",
+    title: "Biotechnology Advisor",
+    focus: "Biotechnology",
     initials: "NK",
-    bio: "Brings scientific rigor to the firm's biotechnology and healthcare theses, from diagnostics to therapeutic platforms.",
+    bio: "Brings scientific rigor to the platform's biotechnology theses, from diagnostics to therapeutic platforms, at the point of scientific validation.",
   },
   {
     name: "Victor Lindqvist",
-    title: "Infrastructure & Energy Statesman",
-    focus: "Real assets",
+    title: "Infrastructure & Energy Advisor",
+    focus: "Infrastructure growth",
     initials: "VL",
-    bio: "Counsels on critical infrastructure, the energy transition and the patient capital that modernizes the real economy.",
+    bio: "Counsels the Private Equity LP on nuclear lifecycle, grid modernization and the operational resilience underpinning the modern economy.",
+  },
+  {
+    name: "Stefan Albright",
+    title: "Markets & Risk Advisor",
+    focus: "Macro & risk",
+    initials: "SA",
+    bio: "Advises on liquidity, market structure and the systematic risk frameworks behind the Hedge Fund LP's global macro mandate.",
   },
   {
     name: "Imani Carter",
-    title: "Inclusive Economy Strategist",
-    focus: "Community impact",
+    title: "Community Impact Advisor",
+    focus: "Community equity",
     initials: "IC",
-    bio: "Advises the Community Equity Fund on inclusive enterprise, local development and credible social-outcome measurement.",
+    bio: "Advises the Community Equity Fund LP on inclusive enterprise, local development and credible measurement of wealth equity and capital multiplication.",
   },
 ];
 
+/* Venture Capital LP Technical Advisory Board of former government and
+   military leaders. Names are representative and illustrative pending
+   final disclosure. */
+export const TECHNICAL_ADVISORY_BOARD: Person[] = [
+  {
+    name: "Gen. (Ret.) Marcus Hale",
+    title: "Former Senior Military Commander",
+    focus: "Defense & space",
+    initials: "MH",
+    bio: "Advises the Venture Capital LP on dual-use frontier technology across defense and space, drawing on senior command experience.",
+  },
+  {
+    name: "Dr. Evelyn Stark",
+    title: "Former Senior Government Technologist",
+    focus: "Government & policy",
+    initials: "ES",
+    bio: "Advises on the government and regulatory context for defense, space and critical-technology investment across the Northeast Corridor.",
+  },
+  {
+    name: "Adm. (Ret.) Theodore Nash",
+    title: "Former Senior Military Leader",
+    focus: "National security",
+    initials: "TN",
+    bio: "Counsels on national-security applications of frontier technology and the diligence required for dual-use founders.",
+  },
+];
+
+/* Retained for the (now unused) AwardsList component's type import.
+   The platform makes no award claims; there is no awards data. */
 export type Award = {
   year: string;
   title: string;
@@ -381,79 +363,28 @@ export type Award = {
   category: string;
 };
 
-/* Illustrative recognition — awards and bodies are representative. */
-export const AWARDS: Award[] = [
-  {
-    year: "2026",
-    title: "Frontier Technology Investor of the Year",
-    body: "Global Alternatives Council",
-    category: "Firm-wide",
-  },
-  {
-    year: "2026",
-    title: "Best Quantitative Hedge Fund Strategy",
-    body: "Institutional Markets Review",
-    category: "Hedge Fund",
-  },
-  {
-    year: "2025",
-    title: "Impact Fund of the Year",
-    body: "Responsible Capital Awards",
-    category: "Community Equity",
-  },
-  {
-    year: "2025",
-    title: "Excellence in Investment Governance",
-    body: "Institutional Governance Institute",
-    category: "Firm-wide",
-  },
-  {
-    year: "2024",
-    title: "Venture Firm to Watch · Deep Tech",
-    body: "Frontier Innovation Index",
-    category: "Venture Capital",
-  },
-  {
-    year: "2024",
-    title: "Infrastructure Deal of the Year",
-    body: "Real Assets Forum",
-    category: "Private Equity",
-  },
-  {
-    year: "2023",
-    title: "Rising Manager of the Year",
-    body: "Global Alternatives Council",
-    category: "Firm-wide",
-  },
-  {
-    year: "2023",
-    title: "Innovation in AI-Driven Allocation",
-    body: "Quantitative Finance Society",
-    category: "Hedge Fund",
-  },
-  {
-    year: "2022",
-    title: "Best ESG Integration · New Manager",
-    body: "Responsible Capital Awards",
-    category: "Firm-wide",
-  },
-  {
-    year: "2021",
-    title: "Emerging Venture Platform of the Year",
-    body: "Frontier Innovation Index",
-    category: "Venture Capital",
-  },
-  {
-    year: "2020",
-    title: "Most Promising Launch · Systematic Strategies",
-    body: "Institutional Markets Review",
-    category: "Hedge Fund",
-  },
-];
+export type Standard = {
+  title: string;
+  body: string;
+};
 
-export const AWARD_STATS = [
-  { value: 28, suffix: "+", label: "Industry honours", sub: "Across firm and platforms since inception" },
-  { value: 11, label: "Award bodies", sub: "Recognizing our work globally" },
-  { value: 6, label: "Consecutive years", sub: "Of external recognition" },
-  { value: 4, label: "Platforms recognized", sub: "Each of our investment divisions" },
+/* Recognition & Standards: qualitative. No awards, counts or bodies are
+   invented. Emphasis on audits, administration and governance. */
+export const RECOGNITION_STANDARDS: Standard[] = [
+  {
+    title: "Big Four annual audits",
+    body: "Every strategy is audited annually by a Big Four firm, an independent external check on the platform's financial statements and controls.",
+  },
+  {
+    title: "Independent administration",
+    body: "Comprehensive third-party administration and independent valuation committees on illiquid positions keep valuation and record-keeping at arm's length.",
+  },
+  {
+    title: "Independent governance",
+    body: "Each strategy operates as a separate Delaware Limited Partnership with its own investment committee and risk framework.",
+  },
+  {
+    title: "Aligned interests",
+    body: "Significant GP commitments across every fund. We invest where we ask our partners to invest, and at the same terms.",
+  },
 ];

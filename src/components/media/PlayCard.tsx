@@ -1,6 +1,6 @@
 import type { Interview } from "@/lib/media";
 
-/* — Styled play affordance ——————————————————————————————————— */
+/* Styled play affordance */
 export function PlayGlyph({ size = 14 }: { size?: number }) {
   return (
     <svg
@@ -16,7 +16,7 @@ export function PlayGlyph({ size = 14 }: { size?: number }) {
   );
 }
 
-/* — Interview list card ——————————————————————————————————————— */
+/* Interview list card */
 export function InterviewCard({ item }: { item: Interview }) {
   return (
     <article className="group flex h-full cursor-pointer flex-col rounded-sm border border-line bg-paper p-7 transition-colors hover:border-gold-500/60">

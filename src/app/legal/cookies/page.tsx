@@ -5,7 +5,7 @@ import { FIRM } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Cookie Preferences",
   description:
-    "Learn about the cookies ALRION Pillar Capital uses, why we use them, and how to manage your preferences. Illustrative website copy — not legal advice.",
+    "Learn about the cookies ALRION Pillar Capital uses, why we use them, and how to manage your preferences. Illustrative website copy, not legal advice.",
 };
 
 const UPDATED = "1 January 2026";
@@ -33,7 +33,7 @@ const COOKIE_TYPES: {
   {
     name: "Functional",
     purpose:
-      "Remember choices you make — such as language or region — to provide a more personalized experience.",
+      "Remember choices you make, such as language or region, to provide a more personalized experience.",
     example: "Language preference, saved settings",
     required: false,
   },
@@ -55,7 +55,7 @@ const sections: LegalSection[] = [
         Cookies are small text files placed on your device when you visit a
         website. They are widely used to make websites work, or work more
         efficiently, and to provide information to the site&rsquo;s owners.
-        Similar technologies — such as web beacons, pixels and local storage —
+        Similar technologies, such as web beacons, pixels and local storage,
         perform comparable functions and are covered by this policy. {FIRM.name}{" "}
         uses these technologies for the purposes described below.
       </p>

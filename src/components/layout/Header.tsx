@@ -45,7 +45,7 @@ export function Header() {
             onDark ? "text-paper/60" : "text-mist-500",
           )}
         >
-          <Link href="/global" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>Global Presence</Link>
+          <Link href="/strategies" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>The Strategies</Link>
           <Link href="/insights/newsletter" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>Newsletter</Link>
           <Link href="/investors/portal" className={cn("link-quiet font-medium", onDark ? "text-paper" : "text-navy-900")}>
             Investor Portal ↗
