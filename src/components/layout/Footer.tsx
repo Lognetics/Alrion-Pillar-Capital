@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { NAV } from "@/lib/nav";
 import { FIRM } from "@/lib/site";
+import { JUNIPER_SQUARE_URL } from "@/lib/legal";
+import { ComplianceDisclosures } from "./ComplianceDisclosures";
 import { Logo } from "./Logo";
 
 const LEGAL = [
-  { href: "/legal/terms", label: "Terms of Use" },
   { href: "/legal/privacy", label: "Privacy Policy" },
-  { href: "/legal/disclosures", label: "Disclosures" },
-  { href: "/governance/transparency", label: "Transparency" },
-  { href: "/legal/cookies", label: "Cookie Preferences" },
+  { href: "/legal/terms", label: "Terms of Use" },
+  { href: "/legal/disclosures", label: "Full Disclosures" },
 ];
 
 export function Footer() {
@@ -44,9 +44,38 @@ export function Footer() {
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-paper/55">
             {FIRM.description}
           </p>
-          <p className="mt-6 text-sm text-paper/70">{FIRM.address}</p>
-          <p className="mt-2 text-sm text-paper/70">{FIRM.email}</p>
-          <p className="text-sm text-paper/70">{FIRM.phone}</p>
+          <p className="mt-6 text-[0.7rem] font-semibold uppercase tracking-wide text-gold-400">
+            Headquarters
+          </p>
+          <p className="mt-2 text-sm text-paper/70">{FIRM.address}</p>
+          <p className="mt-2 text-sm text-paper/70">{FIRM.phone}</p>
+          <p className="text-sm text-paper/70">{FIRM.email}</p>
+
+          <p className="mt-6 text-[0.7rem] font-semibold uppercase tracking-wide text-gold-400">
+            Investors
+          </p>
+          <ul className="mt-2 space-y-1.5 text-sm text-paper/60">
+            <li>
+              <a
+                href={JUNIPER_SQUARE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-paper"
+              >
+                Investor Portal (Juniper Square) ↗
+              </a>
+            </li>
+            <li>
+              <Link href="/investors/capital-requests" className="transition-colors hover:text-paper">
+                Request Access
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="transition-colors hover:text-paper">
+                Contact Investor Relations
+              </Link>
+            </li>
+          </ul>
         </div>
 
         <div className="grid gap-8 md:col-span-9 md:grid-cols-5">
@@ -70,31 +99,25 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Disclosure */}
+      {/* Important disclosures (Rule 506(b) / 3(c)(7) compliance) */}
+      <ComplianceDisclosures />
+
+      {/* Copyright bar */}
       <div className="border-t border-white/10">
-        <div className="shell py-8">
-          <p className="text-xs leading-relaxed text-paper/40">
-            This website is for informational purposes only and does not constitute an
-            offer to sell or a solicitation of an offer to buy any security or investment
-            product. Investing involves risk, including the possible loss of principal.
-            Past performance is not indicative of future results. Figures shown are
-            illustrative. ALRION Pillar Capital provides services to qualified and
-            institutional investors in accordance with applicable law.
+        <div className="shell flex flex-col gap-4 py-8 text-xs text-paper/45 md:flex-row md:items-center md:justify-between">
+          <p>
+            © {new Date().getFullYear()} {FIRM.name}. All rights reserved.
           </p>
-          <div className="mt-6 flex flex-col gap-4 border-t border-white/5 pt-6 text-xs text-paper/45 md:flex-row md:items-center md:justify-between">
-            <p>
-              © {new Date().getFullYear()} {FIRM.name}. All rights reserved.
-            </p>
-            <ul className="flex flex-wrap gap-x-6 gap-y-2">
-              {LEGAL.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="transition-colors hover:text-paper">
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            {LEGAL.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="transition-colors hover:text-paper">
+                  {l.label}
+                </Link>
+              </li>
+            ))}
+            <li className="text-paper/30">Form CRS (when applicable)</li>
+          </ul>
         </div>
       </div>
     </footer>

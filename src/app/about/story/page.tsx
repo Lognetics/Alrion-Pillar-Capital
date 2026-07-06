@@ -90,8 +90,8 @@ export default function StoryPage() {
             <div className="mt-10 flex items-center justify-center gap-4">
               <span className="h-px w-10 bg-gold-500" />
               <div className="text-left">
-                <p className="text-sm font-semibold text-paper">Adrian Voss</p>
-                <p className="text-xs text-paper/50">Founder &amp; Chief Executive Officer</p>
+                <p className="text-sm font-semibold text-paper">The Managing Partner</p>
+                <p className="text-xs text-paper/50">ALRION Pillar Capital</p>
               </div>
             </div>
           </Reveal>

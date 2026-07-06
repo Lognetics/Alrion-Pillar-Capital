@@ -1,84 +1,115 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/PageHero";
 import { Section, CtaBand } from "@/components/sections/blocks";
-import { SectionHeading } from "@/components/ui/primitives";
+import { SectionHeading, Button } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { BioGrid } from "@/components/about/BioGrid";
-import { FIRM } from "@/lib/site";
-import { LEADERSHIP } from "@/lib/about";
+import { SENIOR_LEADERSHIP } from "@/lib/about";
 
 export const metadata: Metadata = {
-  title: "Management Team",
+  title: "Leadership",
   description:
-    "ALRION Pillar Capital is led by managing partners accountable for each of four autonomous strategies, held to one rigorous framework of independent risk and governance.",
+    "The people, and the guardrails, behind every decision at ALRION Pillar Capital. Governance architecture, senior leadership roles, and access to full team profiles for verified Qualified Purchasers.",
 };
 
 export default function LeadershipPage() {
   return (
     <>
       <PageHero
-        eyebrow="Management Team"
+        eyebrow="Governance & People"
         title={
           <>
-            Partners who own
-            <span className="text-gilt"> their conviction.</span>
+            The people, and the guardrails,
+            <span className="text-gilt"> behind every decision.</span>
           </>
         }
-        intro="Each strategy is led by partners accountable for their own mandate, and each is checked by independent risk and governance functions, so that no allocation rests on an unexamined assumption."
-        crumbs={[{ label: "About", href: "/about" }, { label: "Management Team" }]}
-      />
+        intro="ALRION Pillar Capital is led by a Managing Partner with a fiduciary-first philosophy, supported by independent investment committees, an external advisory board, and Big-Four-audited operational infrastructure. Full team profiles, biographies, and credentials are available to verified Qualified Purchasers via the Investor Portal."
+        crumbs={[{ label: "About", href: "/about" }, { label: "Leadership" }]}
+      >
+        <Button href="/investors/capital-requests" variant="gold">
+          Request access
+        </Button>
+      </PageHero>
 
-      {/* — Leadership philosophy ——————————————————————————————— */}
+      {/* Senior leadership, role slots, no names */}
       <Section tone="paper">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Senior Leadership"
+            title={<>Senior leadership, by mandate.</>}
+            intro="Reserved role slots are filled as each seat is confirmed. Until an individual has consented to public listing, the seat is shown in an Announcing state. We do not publish placeholder names."
+          />
+        </Reveal>
+
+        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-2 lg:grid-cols-2">
+          {SENIOR_LEADERSHIP.map((r, i) => (
+            <Reveal key={r.role} delay={(i % 2) * 0.06} className="bg-paper p-8">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="text-lg font-semibold text-navy-950">{r.role}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate-strong/70">
+                    {r.reporting}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded-full border border-gold-500/40 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-wide text-gold-600">
+                  Announcing
+                </span>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-slate-strong/55">
+          No investment decision is made by a single individual. Each strategy is a
+          separate Delaware Limited Partnership governed by its own investment
+          committee. Detailed biographies and credentials are made available to
+          verified investors through the Investor Portal.
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Button href="/about/investment-committee" variant="outline">
+            Investment committees
+          </Button>
+          <Button href="/about/advisors" variant="outline">
+            Advisory board
+          </Button>
+        </div>
+      </Section>
+
+      {/* Independence, in practice (3.5) */}
+      <Section tone="navy">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
           <Reveal className="lg:col-span-5">
             <SectionHeading
-              eyebrow="Leadership Philosophy"
-              title={<>Leadership as stewardship, not spectacle.</>}
+              light
+              eyebrow="Independence, In Practice"
+              title={<>Independence is only credible when it is governed.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
-            <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
+            <div className="space-y-6 text-lg leading-relaxed text-paper/75">
               <p>
-                At {FIRM.short}, leadership is measured by the quality of the
-                decisions it enables, not the certainty it projects. Our partners
-                lead teams encouraged to challenge them, and the platform&apos;s
-                most senior voices are the ones most willing to be proven wrong.
+                Each of our four strategies is a separate Delaware Limited
+                Partnership with its own investment committee and risk framework.
+                Fund administration is provided by Juniper Square. Annual audits are
+                conducted by an independent, nationally recognized certified public
+                accounting firm.
               </p>
               <p>
-                Each partner carries responsibility for a strategy or function,
-                yet all are bound by one rigorous framework, Independence by
-                Design and Conviction by Discipline, and a shared accountability
-                to the allocators whose capital they steward.
+                The General Partner commits, at minimum, 1% of aggregate Fund
+                commitments, and no less than $1,000,000 in the case of APEI Fund I,
+                alongside Limited Partners, on the same economic terms, ensuring
+                aligned interests from first dollar to last.
               </p>
             </div>
           </Reveal>
         </div>
       </Section>
 
-      {/* — Team grid ——————————————————————————————————————————— */}
-      <Section tone="cloud">
-        <Reveal>
-          <SectionHeading
-            eyebrow="The Team"
-            title={<>The people accountable for every decision.</>}
-            intro="A leadership group spanning the platform's four strategies and its independent risk and governance functions."
-          />
-        </Reveal>
-        <div className="mt-14">
-          <BioGrid items={LEADERSHIP} columns={4} />
-        </div>
-        <p className="mt-12 text-xs text-slate-strong/50">
-          Team members shown are representative and illustrative, pending final
-          disclosure.
-        </p>
-      </Section>
-
       <CtaBand
-        title={<>Build the platform with us.</>}
-        body="We seek people who believe independence should be engineered into the structure and conviction earned through discipline."
-        primary={{ href: "/careers", label: "View opportunities" }}
-        secondary={{ href: "/about/investment-committee", label: "Investment committee" }}
+        title={<>Full team profiles are available to verified Qualified Purchasers.</>}
+        body="Detailed biographies, professional histories, credentials, and Investment Committee charters are made available through the Investor Portal, hosted by Juniper Square, following investor qualification."
+        primary={{ href: "/investors/capital-requests", label: "Request access" }}
+        secondary={{ href: "/contact", label: "Contact Investor Relations" }}
       />
     </>
   );

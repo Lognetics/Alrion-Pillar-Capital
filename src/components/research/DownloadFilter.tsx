@@ -5,11 +5,7 @@ import { cn } from "@/lib/cn";
 import type { Download } from "@/lib/research";
 
 const typeStyle: Record<Download["type"], string> = {
-  Report: "bg-gold-500/15 text-gold-600 border-gold-500/30",
   "White Paper": "bg-navy-900/8 text-navy-900 border-navy-900/15",
-  Factsheet: "bg-slate-strong/8 text-slate-strong border-line",
-  Letter: "bg-sky-500/10 text-sky-700 border-sky-500/25",
-  Impact: "bg-emerald-500/10 text-emerald-700 border-emerald-500/25",
 };
 
 export function DownloadFilter({ items }: { items: Download[] }) {
@@ -111,7 +107,7 @@ export function DownloadFilter({ items }: { items: Download[] }) {
       </div>
 
       <p className="mt-5 text-xs text-slate-strong/50">
-        Showing {filtered.length} of {items.length} resources. Downloads are illustrative.
+        Showing {filtered.length} of {items.length} white papers.
       </p>
     </div>
   );

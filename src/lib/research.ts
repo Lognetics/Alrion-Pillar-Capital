@@ -373,23 +373,18 @@ export const REPLAYS: Replay[] = [
 /* Download center rows  */
 export type Download = {
   title: string;
-  type: "Report" | "White Paper" | "Factsheet" | "Letter" | "Impact";
+  type: "White Paper";
   format: string;
   size: string;
   date: string;
 };
 
+/* Per the firm's brief, the public Download Center lists white papers only.
+   Reports, impact reports, investor letters and fact sheets are made
+   available to verified investors through the Investor Portal. */
 export const DOWNLOADS: Download[] = [
-  { title: "2025 Annual Report", type: "Report", format: "PDF", size: "6.2 MB", date: "Feb 2026" },
-  { title: "2025 Impact Report", type: "Impact", format: "PDF", size: "4.8 MB", date: "Feb 2026" },
-  { title: "Q1 2026 Investor Letter", type: "Letter", format: "PDF", size: "1.4 MB", date: "Apr 2026" },
   { title: "A Platform, Not a Product", type: "White Paper", format: "PDF", size: "3.1 MB", date: "Jun 2026" },
   { title: "Infrastructure Growth: The Mission-Critical Layer", type: "White Paper", format: "PDF", size: "2.6 MB", date: "May 2026" },
-  { title: "Hedge Fund LP Factsheet", type: "Factsheet", format: "PDF", size: "0.8 MB", date: "Jun 2026" },
-  { title: "Private Equity LP Factsheet", type: "Factsheet", format: "PDF", size: "0.9 MB", date: "Jun 2026" },
-  { title: "Venture Capital LP Factsheet", type: "Factsheet", format: "PDF", size: "0.8 MB", date: "Jun 2026" },
-  { title: "Community Equity Fund LP Factsheet", type: "Factsheet", format: "PDF", size: "0.7 MB", date: "Jun 2026" },
   { title: "The ALRION Impact Model", type: "White Paper", format: "PDF", size: "3.7 MB", date: "Mar 2026" },
-  { title: "Q4 2025 Investor Letter", type: "Letter", format: "PDF", size: "1.3 MB", date: "Jan 2026" },
   { title: "Governance Standards for a Multi-Strategy Platform", type: "White Paper", format: "PDF", size: "2.4 MB", date: "Jan 2026" },
 ];

@@ -153,109 +153,55 @@ export type Person = {
   initials: string;
 };
 
-/* Representative leadership team, illustrative pending final disclosure. */
-export const LEADERSHIP: Person[] = [
-  {
-    name: "Adrian Voss",
-    title: "Founder & Chief Executive Officer",
-    focus: "Platform strategy",
-    initials: "AV",
-    bio: "Founded the platform in 2024 around a single conviction: Independence by Design, Conviction by Discipline. Sets the standard of fiduciary care that unifies the four autonomous strategies.",
-  },
-  {
-    name: "Lena Maris",
-    title: "President & Chief Investment Officer",
-    focus: "Cross-strategy framework",
-    initials: "LM",
-    bio: "Oversees the single rigorous framework that governs all four strategies, ensuring consistent research, risk and oversight discipline across very different mandates.",
-  },
-  {
-    name: "Marcus Thorne",
-    title: "Managing Partner, Hedge Fund LP",
-    focus: "Global macro",
-    initials: "MT",
-    bio: "Leads the Global Macro Excellence strategy, pursuing alpha across macroeconomic dislocations with multi-timeframe, cross-asset relative value and daily risk monitoring.",
-  },
-  {
-    name: "Priya Anand",
-    title: "Managing Partner, Private Equity LP",
-    focus: "Infrastructure growth",
-    initials: "PA",
-    bio: "Directs the Infrastructure Growth strategy, deploying growth capital into nuclear lifecycle, grid modernization and operational-technology cybersecurity.",
-  },
-  {
-    name: "Sofia Reyes",
-    title: "Managing Partner, Venture Capital LP",
-    focus: "Frontier technology",
-    initials: "SR",
-    bio: "Backs founders at the inflection point between scientific validation and market deployment across artificial intelligence, biotechnology, and defense and space.",
-  },
-  {
-    name: "Daniela Okafor",
-    title: "Head, Community Equity Fund LP",
-    focus: "Impact through investment",
-    initials: "DO",
-    bio: "Leads the strategy proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York, under a 51%+ MWBE mandate.",
-  },
-  {
-    name: "Idris Calloway",
-    title: "Chief Risk Officer",
-    focus: "Risk framework",
-    initials: "IC",
-    bio: "Maintains the risk framework across all four Limited Partnerships, including daily Value-at-Risk on liquid strategies and independent valuation on illiquid positions.",
-  },
-  {
-    name: "Jonathan Pierce",
-    title: "Chief Compliance Officer",
-    focus: "Governance & oversight",
-    initials: "JP",
-    bio: "Oversees Big Four audits, third-party administration and the independent governance that gives the platform's partners institutional assurance.",
-  },
+/* No individuals are named on the public site. Senior leadership is shown
+   as role slots in an "Announcing" state until each seat is filled and the
+   individual has consented in writing to public listing. Full team profiles
+   and biographies are reserved for verified investors via the Investor Portal. */
+export type LeadershipRole = {
+  role: string;
+  reporting: string;
+  status?: "Announcing" | "Filled";
+};
+
+export const SENIOR_LEADERSHIP: LeadershipRole[] = [
+  { role: "Chief Investment Officer, Private Equity", reporting: "Chairs the APEI Fund I Investment Committee" },
+  { role: "Chief Investment Officer, Global Macro", reporting: "Chairs the Macro strategy Investment Committee" },
+  { role: "Head of Venture Capital", reporting: "Chairs the VC strategy Investment Committee" },
+  { role: "Head of the Community Equity Fund", reporting: "MWBE mandate stewardship" },
+  { role: "Chief Operating Officer", reporting: "Operations, HR and vendor management" },
+  { role: "Chief Compliance Officer", reporting: "Regulatory oversight, AML/KYC, Form ADV" },
+  { role: "Chief Financial Officer / Controller", reporting: "Finance and audit liaison" },
+  { role: "Head of Investor Relations", reporting: "LP communications, Juniper Square" },
 ];
 
-/* Representative investment committee, illustrative pending final disclosure. */
-export const COMMITTEE: Person[] = [
+/* Investment committees, one per strategy. Composition is described by
+   principle, not by person. */
+export type CommitteeRow = {
+  strategy: string;
+  committee: string;
+  composition: string;
+};
+
+export const INVESTMENT_COMMITTEES: CommitteeRow[] = [
   {
-    name: "Lena Maris",
-    title: "Chair · Chief Investment Officer",
-    focus: "Cross-strategy conviction",
-    initials: "LM",
-    bio: "Chairs the committee and applies the platform's one rigorous framework to conviction, structure and risk before any capital is committed.",
+    strategy: "APEI Fund I (Private Equity, Energy & Infrastructure)",
+    committee: "Alrion Pillar PE Investment Committee",
+    composition: "Managing Partner, plus two internal principals and one independent industry expert (nuclear supply-chain or OT cybersecurity).",
   },
   {
-    name: "Marcus Thorne",
-    title: "Managing Partner, Hedge Fund LP",
-    focus: "Macro & liquid risk",
-    initials: "MT",
-    bio: "Brings quantitative and fundamental evidence, sizing and daily Value-at-Risk discipline to the committee's deliberations on liquid strategies.",
+    strategy: "Global Macro LP",
+    committee: "Macro Investment Committee",
+    composition: "Managing Partner, plus the CIO, Global Macro and one independent quantitative risk expert. Daily Value-at-Risk oversight.",
   },
   {
-    name: "Priya Anand",
-    title: "Managing Partner, Private Equity LP",
-    focus: "Infrastructure structuring",
-    initials: "PA",
-    bio: "Evaluates growth-capital opportunities in mission-critical infrastructure through an operational value-creation and governance lens.",
+    strategy: "Venture Capital LP",
+    committee: "Frontier Technology Investment Committee",
+    composition: "Managing Partner, plus the Head of Venture Capital and two independent sector operators (AI / deep-tech and defense-tech).",
   },
   {
-    name: "Sofia Reyes",
-    title: "Managing Partner, Venture Capital LP",
-    focus: "Frontier conviction",
-    initials: "SR",
-    bio: "Champions founders at the inflection point between scientific validation and market deployment while holding venture theses to the platform's standard of evidence.",
-  },
-  {
-    name: "Idris Calloway",
-    title: "Chief Risk Officer",
-    focus: "Independent risk",
-    initials: "IC",
-    bio: "Holds an independent voice on risk across every strategy, with authority to challenge any commitment on risk, valuation or exposure grounds.",
-  },
-  {
-    name: "Jonathan Pierce",
-    title: "Chief Compliance Officer",
-    focus: "Governance & oversight",
-    initials: "JP",
-    bio: "Provides an independent view on compliance and governance, safeguarding the integrity of every decision the committee reaches.",
+    strategy: "Community Equity Fund LP",
+    committee: "Community Investment Committee",
+    composition: "Head of the Community Equity Fund, plus an independent community-development expert and an independent MWBE finance practitioner.",
   },
 ];
 
@@ -288,69 +234,39 @@ export const DECISION_STEPS: DecisionStep[] = [
   },
 ];
 
-/* Representative advisory board, illustrative pending final disclosure. */
-export const ADVISORS: Person[] = [
-  {
-    name: "Helena Brandt",
-    title: "Artificial Intelligence Advisor",
-    focus: "Artificial intelligence",
-    initials: "HB",
-    bio: "Advises the Venture Capital LP on the trajectory of foundation models and applied AI, grounding the platform's intelligence theses in frontier science.",
-  },
-  {
-    name: "Naledi Khoza",
-    title: "Biotechnology Advisor",
-    focus: "Biotechnology",
-    initials: "NK",
-    bio: "Brings scientific rigor to the platform's biotechnology theses, from diagnostics to therapeutic platforms, at the point of scientific validation.",
-  },
-  {
-    name: "Victor Lindqvist",
-    title: "Infrastructure & Energy Advisor",
-    focus: "Infrastructure growth",
-    initials: "VL",
-    bio: "Counsels the Private Equity LP on nuclear lifecycle, grid modernization and the operational resilience underpinning the modern economy.",
-  },
-  {
-    name: "Stefan Albright",
-    title: "Markets & Risk Advisor",
-    focus: "Macro & risk",
-    initials: "SA",
-    bio: "Advises on liquidity, market structure and the systematic risk frameworks behind the Hedge Fund LP's global macro mandate.",
-  },
-  {
-    name: "Imani Carter",
-    title: "Community Impact Advisor",
-    focus: "Community equity",
-    initials: "IC",
-    bio: "Advises the Community Equity Fund LP on inclusive enterprise, local development and credible measurement of wealth equity and capital multiplication.",
-  },
-];
+/* The Advisory Board is described by focus and discipline, not by person.
+   No placeholder names are published; role titles stand until each advisor
+   has signed a formal advisory letter and consented in writing to listing.
+   Advisory Board members do not vote on investments. */
+export type AdvisoryFocus = {
+  focus: string;
+  discipline: string;
+};
 
-/* Venture Capital LP Technical Advisory Board of former government and
-   military leaders. Names are representative and illustrative pending
-   final disclosure. */
-export const TECHNICAL_ADVISORY_BOARD: Person[] = [
+export const ADVISORY_BOARD: AdvisoryFocus[] = [
   {
-    name: "Gen. (Ret.) Marcus Hale",
-    title: "Former Senior Military Commander",
-    focus: "Defense & space",
-    initials: "MH",
-    bio: "Advises the Venture Capital LP on dual-use frontier technology across defense and space, drawing on senior command experience.",
+    focus: "Nuclear Engineering & Regulatory Affairs",
+    discipline: "Former NRC / DOE or ASME Section III certified engineer",
   },
   {
-    name: "Dr. Evelyn Stark",
-    title: "Former Senior Government Technologist",
-    focus: "Government & policy",
-    initials: "ES",
-    bio: "Advises on the government and regulatory context for defense, space and critical-technology investment across the Northeast Corridor.",
+    focus: "OT Cybersecurity & NERC-CIP Compliance",
+    discipline: "Former utility CISO or federal cyber leadership",
   },
   {
-    name: "Adm. (Ret.) Theodore Nash",
-    title: "Former Senior Military Leader",
-    focus: "National security",
-    initials: "TN",
-    bio: "Counsels on national-security applications of frontier technology and the diligence required for dual-use founders.",
+    focus: "Institutional Allocator Perspective",
+    discipline: "Former CIO or head of alternatives at a public pension or endowment",
+  },
+  {
+    focus: "ESG & Sustainable Finance",
+    discipline: "Sustainability practitioner with a private-markets track record",
+  },
+  {
+    focus: "Community Development Finance",
+    discipline: "MWBE / CDFI leader in the New York market",
+  },
+  {
+    focus: "Legal & Regulatory Counsel",
+    discipline: "Delaware LP and 1940-Act specialist (not fund counsel of record)",
   },
 ];
 

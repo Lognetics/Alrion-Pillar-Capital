@@ -3,100 +3,65 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Section, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { BioGrid } from "@/components/about/BioGrid";
-import { FIRM } from "@/lib/site";
-import { ADVISORS, TECHNICAL_ADVISORY_BOARD } from "@/lib/about";
+import { ADVISORY_BOARD } from "@/lib/about";
 
 export const metadata: Metadata = {
-  title: "Advisors",
+  title: "Advisory Board",
   description:
-    "ALRION Pillar Capital's advisory network, including a Venture Capital Technical Advisory Board of former government and military leaders, sharpens the diligence behind the platform's four strategies.",
+    "The Alrion Pillar Advisory Board provides cross-strategy counsel on macro conditions, sector diligence, ESG standards, and governance. Advisory Board members do not vote on investments.",
 };
 
 export default function AdvisorsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Advisors"
+        eyebrow="Advisory Board"
         title={
           <>
-            Counsel across
-            <span className="text-gilt"> every strategy.</span>
+            Challenge, perspective,
+            <span className="text-gilt"> and access.</span>
           </>
         }
-        intro="Our advisory network extends the platform's reach into domains no single team could master alone, from artificial intelligence and biotechnology to infrastructure, macro policy and community equity."
-        crumbs={[{ label: "About", href: "/about" }, { label: "Advisors" }]}
+        intro="The Alrion Pillar Advisory Board provides cross-strategy counsel on macro conditions, sector diligence, ESG standards, and governance. Advisory Board members do not vote on investments; their role is challenge, perspective and access."
+        crumbs={[{ label: "About", href: "/about" }, { label: "Advisory Board" }]}
       />
 
-      {/* — Value of the network ———————————————————————————————— */}
-      <Section tone="paper">
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
-          <Reveal className="lg:col-span-5">
-            <SectionHeading
-              eyebrow="Why It Matters"
-              title={<>Expertise that sharpens conviction.</>}
-            />
-          </Reveal>
-          <Reveal delay={0.1} className="lg:col-span-7">
-            <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
-              <p>
-                Investing at the frontier means evaluating technologies and
-                markets that sit at the edge of validated knowledge. {FIRM.short}
-                {" "}maintains an advisory network so that the people interrogating
-                a thesis can stand among authorities in the relevant field.
-              </p>
-              <p>
-                Our advisors do not make investment decisions. That authority
-                rests with each strategy and its investment committee. They
-                sharpen those decisions, challenge assumptions and validate the
-                diligence behind them.
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </Section>
-
-      {/* — Advisory board grid ————————————————————————————————— */}
-      <Section tone="cloud">
-        <Reveal>
-          <SectionHeading
-            eyebrow="Advisory Network"
-            title={<>Counsel across the domains we invest in.</>}
-            intro="An advisory network spanning the scientific and economic domains behind our four strategies."
-          />
-        </Reveal>
-        <div className="mt-14">
-          <BioGrid items={ADVISORS} columns={4} />
-        </div>
-        <p className="mt-12 text-xs text-slate-strong/50">
-          Team members shown are representative and illustrative, pending final
-          disclosure.
-        </p>
-      </Section>
-
-      {/* — Technical Advisory Board ————————————————————————————— */}
+      {/* Advisory board by focus and discipline, no names */}
       <Section tone="paper">
         <Reveal>
           <SectionHeading
-            eyebrow="Technical Advisory Board"
-            title={<>Former government and military leaders.</>}
-            intro="The Venture Capital LP is supported by a Technical Advisory Board of former government and military leaders, guiding diligence into dual-use frontier technology across defense and space."
+            eyebrow="Advisory Board"
+            title={<>Counsel by discipline, not by name.</>}
+            intro="We do not publish placeholder names. Role titles stand until each advisor has signed a formal advisory letter and consented in writing to public listing."
           />
         </Reveal>
-        <div className="mt-14">
-          <BioGrid items={TECHNICAL_ADVISORY_BOARD} columns={3} />
+
+        <div className="mt-14 grid gap-px overflow-hidden rounded-sm border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+          {ADVISORY_BOARD.map((a, i) => (
+            <Reveal key={a.focus} delay={(i % 3) * 0.06} className="flex flex-col bg-paper p-8">
+              {/* Uniform gold rule beneath the focus, per brief */}
+              <h3 className="text-lg font-semibold text-navy-950">{a.focus}</h3>
+              <span className="mt-4 h-px w-10 bg-gold-500" />
+              <p className="mt-4 text-sm leading-relaxed text-slate-strong/75">
+                {a.discipline}
+              </p>
+            </Reveal>
+          ))}
         </div>
-        <p className="mt-12 text-xs text-slate-strong/50">
-          Team members shown are representative and illustrative, pending final
-          disclosure.
+
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-slate-strong/55">
+          Advisory Board members do not make investment decisions. That authority
+          rests with each strategy and its investment committee. Advisors sharpen
+          those decisions, challenge assumptions and validate the diligence behind
+          them.
         </p>
       </Section>
 
       <CtaBand
         title={<>Conviction, informed by serious counsel.</>}
         body="Explore how advisory counsel feeds into our rigorous framework and each strategy's investment committee."
-        primary={{ href: "/about/investment-committee", label: "Investment committee" }}
-        secondary={{ href: "/process", label: "Our process" }}
+        primary={{ href: "/about/investment-committee", label: "Investment committees" }}
+        secondary={{ href: "/about/leadership", label: "Leadership" }}
       />
     </>
   );

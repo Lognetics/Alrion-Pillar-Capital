@@ -3,59 +3,74 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Section, CtaBand } from "@/components/sections/blocks";
 import { SectionHeading } from "@/components/ui/primitives";
 import { Reveal } from "@/components/ui/Reveal";
-import { BioGrid } from "@/components/about/BioGrid";
-import { COMMITTEE, DECISION_STEPS } from "@/lib/about";
+import { INVESTMENT_COMMITTEES, DECISION_STEPS } from "@/lib/about";
 
 export const metadata: Metadata = {
-  title: "Investment Committee",
+  title: "Investment Committees",
   description:
-    "Each ALRION Pillar Capital strategy has its own investment committee, a formal, adversarial process that holds every thesis to a standard of evidence before capital is committed.",
+    "Each ALRION Pillar Capital strategy is a separate Delaware Limited Partnership governed by its own investment committee. No investment decision is made by a single individual.",
 };
 
 export default function CommitteePage() {
   return (
     <>
       <PageHero
-        eyebrow="Investment Committee"
+        eyebrow="Investment Committees"
         title={
           <>
             Where conviction is
             <span className="text-gilt"> contested, then committed.</span>
           </>
         }
-        intro="No capital leaves a strategy without passing through its investment committee, a formal body that debates conviction, structure and risk, and where the strongest argument, not the most senior voice, prevails."
-        crumbs={[{ label: "About", href: "/about" }, { label: "Investment Committee" }]}
+        intro="Each strategy is a separate Delaware Limited Partnership and is governed by its own investment committee. No investment decision is made by a single individual; committees debate conviction, structure and risk before capital is committed."
+        crumbs={[{ label: "About", href: "/about" }, { label: "Investment Committees" }]}
       />
 
-      {/* — How the committee works ——————————————————————————————— */}
+      {/* Committees by strategy (3.3) */}
       <Section tone="paper">
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
-          <Reveal className="lg:col-span-5">
-            <SectionHeading
-              eyebrow="How It Works"
-              title={<>A single gate for every commitment.</>}
-            />
-          </Reveal>
-          <Reveal delay={0.1} className="lg:col-span-7">
-            <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
-              <p>
-                Each strategy's committee applies one rigorous framework to
-                opportunities as different as a liquid quantitative trade and a
-                multi-year infrastructure investment. Its purpose is not to
-                rubber-stamp conviction but to test it.
-              </p>
-              <p>
-                Every thesis arrives backed by the diligence of specialists, and
-                every thesis meets an assigned challenger whose job is to argue the
-                bear case. The Chief Risk Officer holds an independent voice, and,
-                where warranted, an independent veto, on every decision.
-              </p>
-            </div>
-          </Reveal>
+        <Reveal>
+          <SectionHeading
+            eyebrow="One Committee Per Strategy"
+            title={<>Governed independently, held to one standard.</>}
+            intro="Committees are structured to include at least one independent voice. No principal votes on their own portfolio company."
+          />
+        </Reveal>
+
+        <div className="mt-14 overflow-hidden rounded-sm border border-line">
+          {/* Header row (desktop) */}
+          <div className="hidden bg-navy-950 px-6 py-4 text-xs font-semibold uppercase tracking-wide text-paper/70 md:grid md:grid-cols-12 md:gap-6">
+            <span className="md:col-span-4">Strategy</span>
+            <span className="md:col-span-3">Investment Committee</span>
+            <span className="md:col-span-5">Composition Principle</span>
+          </div>
+          {INVESTMENT_COMMITTEES.map((c, i) => (
+            <Reveal
+              key={c.strategy}
+              delay={i * 0.05}
+              className="grid gap-2 border-t border-line bg-paper px-6 py-6 first:border-t-0 md:grid-cols-12 md:gap-6 md:border-t"
+            >
+              <div className="md:col-span-4">
+                <p className="font-semibold text-navy-950">{c.strategy}</p>
+              </div>
+              <div className="md:col-span-3">
+                <p className="text-sm text-gold-600">{c.committee}</p>
+              </div>
+              <div className="md:col-span-5">
+                <p className="text-sm leading-relaxed text-slate-strong/80">{c.composition}</p>
+              </div>
+            </Reveal>
+          ))}
         </div>
+
+        <p className="mt-8 max-w-3xl text-sm leading-relaxed text-slate-strong/60">
+          Every commitment moves through a single, uncompromising discipline,
+          regardless of the market it invests in. Committee charters, member
+          biographies, and voting records for each strategy are available to Limited
+          Partners via the Investor Portal.
+        </p>
       </Section>
 
-      {/* — How decisions are made (stepped) —————————————————————— */}
+      {/* How decisions are made (stepped) */}
       <Section tone="navy">
         <Reveal>
           <SectionHeading
@@ -76,29 +91,11 @@ export default function CommitteePage() {
         </div>
       </Section>
 
-      {/* — Committee members ——————————————————————————————————— */}
-      <Section tone="paper">
-        <Reveal>
-          <SectionHeading
-            eyebrow="The Committee"
-            title={<>The voices in the room.</>}
-            intro="A committee drawing on each strategy's conviction alongside independent risk and compliance perspectives."
-          />
-        </Reveal>
-        <div className="mt-14">
-          <BioGrid items={COMMITTEE} columns={3} />
-        </div>
-        <p className="mt-12 text-xs text-slate-strong/50">
-          Team members shown are representative and illustrative, pending final
-          disclosure.
-        </p>
-      </Section>
-
       <CtaBand
         title={<>Discipline you can rely on.</>}
         body="Learn how our committee process connects to firm-wide governance, oversight and transparent reporting."
         primary={{ href: "/governance", label: "Our governance" }}
-        secondary={{ href: "/process", label: "Our process" }}
+        secondary={{ href: "/about/advisors", label: "Advisory board" }}
       />
     </>
   );

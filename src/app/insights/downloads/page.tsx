@@ -8,7 +8,7 @@ import { DOWNLOADS } from "@/lib/research";
 export const metadata: Metadata = {
   title: "Download Center",
   description:
-    "One hub for every ALRION Pillar Capital resource: reports, white papers, investor letters and platform factsheets, searchable by type.",
+    "ALRION Pillar Capital white papers, available to the public. Reports, investor letters and fund materials are available to verified investors through the Investor Portal.",
 };
 
 export default function DownloadsPage() {
@@ -22,16 +22,16 @@ export default function DownloadsPage() {
             <span className="text-gilt"> center.</span>
           </>
         }
-        intro="Every public resource in one place: reports, white papers, investor letters and platform factsheets. Filter by type or search by title."
+        intro="Our white papers, available to the public. Reports, investor letters and fund materials are reserved for verified investors through the Investor Portal."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Download Center" }]}
       />
 
       {/* Filterable library */}
       <Section tone="paper">
         <SectionHeading
-          eyebrow="Library"
-          title="Browse every resource"
-          intro="Use the filters and search to find exactly what you need."
+          eyebrow="White Papers"
+          title="Browse our white papers"
+          intro="Search our published white papers by title."
         />
         <div className="mt-12">
           <DownloadFilter items={DOWNLOADS} />
@@ -39,10 +39,10 @@ export default function DownloadsPage() {
       </Section>
 
       <CtaBand
-        title="Looking for limited-partner materials?"
-        body="Capital-account statements and LP reporting are available through our investor relations team."
-        primary={{ href: "/contact", label: "Investor relations" }}
-        secondary={{ href: "/insights/reports", label: "Report archive" }}
+        title="Looking for reports, letters or fund materials?"
+        body="Reports, investor letters and fund materials are available to verified investors through the Investor Portal, hosted by Juniper Square."
+        primary={{ href: "/investors/capital-requests", label: "Request access" }}
+        secondary={{ href: "/contact", label: "Investor relations" }}
       />
     </>
   );
