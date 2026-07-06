@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { NAV } from "@/lib/nav";
 import { FIRM } from "@/lib/site";
-import { JUNIPER_SQUARE_URL } from "@/lib/legal";
+import { INVESTOR_PORTAL_URL } from "@/lib/legal";
 import { ComplianceDisclosures } from "./ComplianceDisclosures";
 import { Logo } from "./Logo";
 
@@ -57,12 +57,12 @@ export function Footer() {
           <ul className="mt-2 space-y-1.5 text-sm text-paper/60">
             <li>
               <a
-                href={JUNIPER_SQUARE_URL}
+                href={INVESTOR_PORTAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-paper"
               >
-                Investor Portal (Juniper Square) ↗
+                Investor Portal ↗
               </a>
             </li>
             <li>

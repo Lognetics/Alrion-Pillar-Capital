@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { JUNIPER_SQUARE_URL } from "@/lib/legal";
+import { INVESTOR_PORTAL_URL } from "@/lib/legal";
 
 export function PortalLogin() {
   return (
@@ -10,24 +10,23 @@ export function PortalLogin() {
           Access your portal
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-slate-strong/75">
-          The Alrion investor portal is hosted by Juniper Square. Sign in with the
-          credentials issued during onboarding to reach your capital accounts,
-          statements, performance reporting and document vault.
+          Sign in with the credentials issued during onboarding to reach your
+          capital accounts, statements, performance reporting and document vault.
         </p>
       </div>
 
       <a
-        href={JUNIPER_SQUARE_URL}
+        href={INVESTOR_PORTAL_URL}
         target="_blank"
         rel="noopener noreferrer"
         className="flex w-full items-center justify-center gap-2 bg-navy-900 px-7 py-3.5 text-sm font-semibold tracking-wide text-paper transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:bg-navy-800"
       >
-        Sign in on Juniper Square
+        Sign in to the Investor Portal
         <span aria-hidden>↗</span>
       </a>
 
       <p className="mt-4 text-center text-xs text-slate-strong/50">
-        Sessions are protected by Juniper Square with multi-factor authentication.
+        Sessions are protected with multi-factor authentication.
       </p>
 
       <div className="relative my-6 text-center">

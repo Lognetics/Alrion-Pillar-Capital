@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { NAV, type NavSection } from "@/lib/nav";
 import { cn } from "@/lib/cn";
-import { JUNIPER_SQUARE_URL } from "@/lib/legal";
+import { INVESTOR_PORTAL_URL } from "@/lib/legal";
 import { Logo } from "./Logo";
 import { MobileNav } from "./MobileNav";
 
@@ -49,7 +49,7 @@ export function Header() {
           <Link href="/strategies" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>The Strategies</Link>
           <Link href="/insights/newsletter" className={cn("link-quiet", onDark ? "hover:text-paper" : "hover:text-navy-900")}>Newsletter</Link>
           <a
-            href={JUNIPER_SQUARE_URL}
+            href={INVESTOR_PORTAL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className={cn("link-quiet font-medium", onDark ? "text-paper" : "text-navy-900")}
