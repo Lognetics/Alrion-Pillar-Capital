@@ -22,7 +22,7 @@ export default function LeadershipPage() {
             <span className="text-gilt"> behind every decision.</span>
           </>
         }
-        intro="ALRION Pillar Capital is led by a Managing Partner with a fiduciary-first philosophy, supported by independent investment committees, an external advisory board, and Big-Four-audited operational infrastructure. Full team profiles, biographies, and credentials are available to verified Qualified Purchasers via the Investor Portal."
+        intro="ALRION Pillar Capital is led by a Managing Partner with a fiduciary-first philosophy, supported by independent investment committees, an external advisory board, and independently audited operational infrastructure. Full team profiles, biographies, and credentials are available to verified Qualified Purchasers via the Investor Portal."
         crumbs={[{ label: "About", href: "/about" }, { label: "Leadership" }]}
       >
         <Button href="/investors/capital-requests" variant="gold">

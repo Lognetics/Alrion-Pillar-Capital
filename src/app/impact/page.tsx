@@ -8,7 +8,7 @@ import { FIRM, IMPACT_INDICATORS } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Impact",
   description:
-    "Impact Through Investment. The Community Equity Fund LP proves that underserved markets in New York represent some of the most compelling risk-adjusted opportunities, under a 51%+ MWBE mandate and seeded by carried interest from the institutional strategies.",
+    "Impact Through Investment. The Community Equity Fund LP proves that underserved markets in New York represent some of the most compelling risk-adjusted opportunities, seeded by carried interest from the institutional strategies.",
 };
 
 /* Anchor ids for the three indicators, so navigation links resolve. */
@@ -42,9 +42,8 @@ export default function ImpactPage() {
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
                 Impact at {FIRM.name} is expressed the same way our conviction is,
-                through investment. The Community Equity Fund LP operates under a
-                mandate weighted 51%+ toward Minority- and Women-Owned Business
-                Enterprises, concentrating capital where it can compound both return
+                through investment. The Community Equity Fund LP focuses on
+                underserved markets in New York, concentrating capital where it can compound both return
                 and opportunity.
               </p>
               <p>
@@ -68,9 +67,8 @@ export default function ImpactPage() {
       <Section tone="navy">
         <SplitContent
           eyebrow="The Model"
-          title={<>Seeded by performance, mandated for inclusion.</>}
+          title={<>Seeded by performance, focused on community.</>}
           bullets={[
-            "A mandate weighted 51%+ toward MWBE enterprises",
             "Focused on underserved markets in New York",
             "Seeded by carried interest from the institutional strategies",
             "Structured as a separate Delaware Limited Partnership",

@@ -1,7 +1,7 @@
 /* ============================================================
    Media-section content: news, interviews and brand kit.
    Copy faithful to ALRION Pillar Capital, a New York platform
-   established in 2024. No AUM, returns or track-record claims.
+   headquartered in New York. No AUM, returns or track-record claims.
    ============================================================ */
 
 /* News */
@@ -37,15 +37,7 @@ export const NEWS_ITEMS: NewsItem[] = [
     category: "Governance",
     title: "Firm appoints independent third-party administration and audit",
     excerpt:
-      "The platform engages comprehensive third-party fund administration and commits to annual Big Four audits, with independent valuation committees on illiquid positions.",
-    readTime: "4 min read",
-  },
-  {
-    date: "November 14, 2024",
-    category: "Community Equity",
-    title: "Community Equity Fund formalizes its MWBE mandate",
-    excerpt:
-      "The impact strategy commits to allocating a majority of capital to Minority- and Women-Owned Business Enterprises, seeded by carried interest from the institutional strategies.",
+      "The platform engages comprehensive third-party fund administration and commits to annual independent audits, with independent valuation committees on illiquid positions.",
     readTime: "4 min read",
   },
   {

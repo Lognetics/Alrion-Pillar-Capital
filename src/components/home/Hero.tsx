@@ -34,7 +34,7 @@ export function Hero() {
           >
             <span className="h-px w-10 bg-gold-500" />
             <span className="eyebrow text-gold-400">
-              Institutional Alternative Investment Platform · New York · Est. 2024
+              Institutional Alternative Investment Platform · New York
             </span>
           </motion.div>
 

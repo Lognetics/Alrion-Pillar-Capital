@@ -114,7 +114,7 @@ export default function InstitutionsPage() {
             { t: "Liquid strategies", b: "Monthly reporting protocols for liquid strategies, delivered through the secure portal." },
             { t: "Private markets", b: "Quarterly deep-dive reviews with independent valuation committees on illiquid positions." },
             { t: "Impact indicators", b: "Qualitative reporting on Wealth Equity, Employment Quality and the Capital Multiplier." },
-            { t: "Audit & assurance", b: "Annual Big Four audits and comprehensive third-party administration." },
+            { t: "Audit & assurance", b: "Annual independent audits and comprehensive third-party administration." },
             { t: "Direct access", b: "A named relationship manager and direct lines to the investment and risk teams." },
           ].map((x, i) => (
             <Reveal key={x.t} delay={(i % 3) * 0.06} className="bg-paper p-8">

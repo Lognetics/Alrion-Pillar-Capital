@@ -2,7 +2,7 @@
    Firm-level content shared across pages.
 
    SOURCE OF TRUTH: Alrion Pillar Capital is an institutional
-   alternative investment platform established in 2024 in New York, 
+   alternative investment platform headquartered in New York,
    "a platform, not a product", comprising four independent Delaware
    Limited Partnerships. Copy is precise and fiduciary in tone. Only
    verifiable figures appear here; no AUM, track record, or global
@@ -18,7 +18,6 @@ export const FIRM = {
   email: "info@alrionpillarcapital.com",
   press: "info@alrionpillarcapital.com",
   phone: "+1 (347) 988-3366",
-  established: 2024,
   address: "11 West 118th Street, Suite 6C, New York, NY 10026",
   city: "New York",
   description:
@@ -42,9 +41,9 @@ export type Stat = {
 /* Only structural, verifiable facts, no scale or track-record claims. */
 export const HERO_STATS: Stat[] = [
   { text: "4", label: "Autonomous strategies", sub: "Four independent Delaware Limited Partnerships" },
-  { text: "2024", label: "Established", sub: "Headquartered in New York" },
-  { text: "51%+", label: "MWBE mandate", sub: "Community Equity Fund LP" },
-  { text: "Big Four", label: "Annual audits", sub: "Independent third-party administration" },
+  { text: "NYC", label: "Headquarters", sub: "One New York headquarters" },
+  { text: "Delaware", label: "Limited Partnerships", sub: "Each with its own investment committee" },
+  { text: "3(c)(7)", label: "Private funds", sub: "For qualified purchasers only" },
 ];
 
 export type Strategy = {
@@ -125,15 +124,15 @@ export const STRATEGIES: Strategy[] = [
     summary:
       "A model proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York.",
     description:
-      "The Community Equity Fund LP is built on a conviction that underserved markets represent some of the most compelling risk-adjusted opportunities in New York. Operating under a 51%+ Minority- and Women-Owned Business Enterprise mandate and seeded by carried interest from our institutional strategies, it measures success in local hiring, wealth building and neighborhood stability.",
+      "The Community Equity Fund LP is built on a conviction that underserved markets represent some of the most compelling risk-adjusted opportunities in New York. Seeded by carried interest from our institutional strategies, it measures success in local hiring, wealth building and neighborhood stability.",
     bullets: [
-      "51%+ Minority- and Women-Owned Business Enterprises mandate",
+      "Focused on underserved New York communities",
       "Measurable local hiring and wealth building",
       "Neighborhood stability and catalytic capital",
       "Seeded by carried interest from our institutional strategies",
     ],
     metrics: [
-      { value: "51%+", label: "MWBE mandate" },
+      { value: "New York", label: "Community focus" },
       { value: "Catalytic", label: "Capital multiplier" },
       { value: "Local", label: "Wealth building" },
     ],
@@ -191,7 +190,7 @@ export const DIFFERENTIATORS = [
   },
   {
     title: "Absolute transparency",
-    body: "Monthly and quarterly reporting, annual Big Four audits, and real-time access for institutional partners.",
+    body: "Monthly and quarterly reporting, annual independent audits, and real-time access for institutional partners.",
   },
 ];
 
@@ -203,7 +202,7 @@ export const GOVERNANCE_STANDARDS = [
   },
   {
     title: "Rigorous Oversight",
-    body: "Annual audits conducted by Big Four firms. Comprehensive third-party administration. Independent valuation committees on illiquid positions.",
+    body: "Annual audits conducted by an independent auditor. Comprehensive third-party administration. Independent valuation committees on illiquid positions.",
   },
   {
     title: "Aligned Interests",

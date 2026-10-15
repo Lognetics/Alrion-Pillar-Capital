@@ -32,7 +32,7 @@ export default function ReportsPage() {
           <SectionHeading
             eyebrow="Report Library"
             title={<>Three documents, one transparent record.</>}
-            intro="Each strategy is a separate Delaware Limited Partnership. Its financial statements are audited annually by a Big Four firm and supported by comprehensive third-party administration."
+            intro="Each strategy is a separate Delaware Limited Partnership. Its financial statements are audited annually by an independent auditor and supported by comprehensive third-party administration."
           />
         </Reveal>
 
@@ -65,7 +65,7 @@ export default function ReportsPage() {
           <p className="mt-14 max-w-3xl text-sm leading-relaxed text-slate-strong/65">
             Certified copies of any filing are provided to institutional partners
             through our investor relations team. Financial statements are audited
-            annually by a Big Four firm, with comprehensive third-party
+            annually by an independent auditor, with comprehensive third-party
             administration across every Limited Partnership.
           </p>
         </Reveal>

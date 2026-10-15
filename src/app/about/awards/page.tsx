@@ -9,7 +9,7 @@ import { GOVERNANCE_STANDARDS } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Recognition & Standards",
   description:
-    "ALRION Pillar Capital holds every strategy to an institutional standard: Big Four annual audits, independent third-party administration, independent valuation and independent governance across four Delaware Limited Partnerships.",
+    "ALRION Pillar Capital holds every strategy to an institutional standard: Independent annual audits, independent third-party administration, independent valuation and independent governance across four Delaware Limited Partnerships.",
 };
 
 export default function AwardsPage() {

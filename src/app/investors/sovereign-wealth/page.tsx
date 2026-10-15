@@ -81,7 +81,7 @@ export default function SovereignWealthPage() {
                 Sovereign capital carries national significance, and our governance
                 is built accordingly. Each strategy is a separate Delaware Limited
                 Partnership with its own investment committee and risk framework,
-                audited annually by a Big Four firm, with independent valuation
+                audited annually by an independent auditor, with independent valuation
                 committees on illiquid positions.
               </p>
               <p>

@@ -26,7 +26,7 @@ export function WhoWeAre() {
           <Reveal delay={0.1}>
             <p className="mt-8 text-lg leading-relaxed text-slate-strong/85">
               Alrion Pillar Capital is an institutional alternative investment
-              platform established in 2024 and headquartered in New York. Rather than
+              platform headquartered in New York. Rather than
               stretch a single product across misaligned markets, we operate four
               autonomous strategies, each a separate Delaware Limited Partnership
               with its own investment committee and risk framework.

@@ -253,7 +253,7 @@ export default function ProcessPage() {
             },
             {
               title: "Independent assurance",
-              body: "Annual audits conducted by Big Four firms and comprehensive third-party administration stand behind every figure we report.",
+              body: "Annual audits conducted by an independent auditor and comprehensive third-party administration stand behind every figure we report.",
             },
             {
               title: "Deliberate realization",

@@ -131,13 +131,14 @@ const sections: LegalSection[] = [
     heading: "Regulatory Status",
     body: (
       <p>
-        Entities within the {FIRM.short} group may be authorized or registered
-        with, and supervised by, financial-services regulators in the
-        jurisdictions in which they operate. The availability of products and
-        services, and the regulatory protections that apply, vary by jurisdiction
-        and by investor classification. Reference to any regulatory status does
-        not imply endorsement of, or any guarantee regarding, our products or
-        performance.
+        Alrion Pillar Capital Management, LLC serves as the investment manager
+        to certain private investment funds. The Investment Manager operates in
+        reliance on the private-fund adviser exemption and is not registered
+        with the U.S. Securities and Exchange Commission as an investment
+        adviser. Registration status is subject to change, and additional
+        information will be provided to prospective investors upon request.
+        Reference to any regulatory status does not imply endorsement of, or any
+        guarantee regarding, our products or performance.
       </p>
     ),
   },

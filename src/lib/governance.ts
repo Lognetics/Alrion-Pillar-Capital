@@ -212,7 +212,7 @@ export const REPORTING_CADENCE: CadenceItem[] = [
 ];
 
 /* Report library. Report types only, no invented figures. Each
-   strategy is an independent Delaware LP audited by a Big Four firm
+   strategy is an independent Delaware LP audited by an independent auditor
    with comprehensive third-party administration. */
 
 export type ReportDoc = {
@@ -230,7 +230,7 @@ export const REPORT_LIBRARY: ReportDoc[] = [
   {
     label: "Audited Financial Statements",
     type: "PDF",
-    description: "Financial statements for each Limited Partnership, audited annually by a Big Four firm.",
+    description: "Financial statements for each Limited Partnership, audited annually by an independent auditor.",
   },
   {
     label: "ESG Report",

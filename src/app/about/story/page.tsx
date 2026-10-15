@@ -10,7 +10,7 @@ import { MILESTONES } from "@/lib/about";
 export const metadata: Metadata = {
   title: "Our Story",
   description:
-    "ALRION Pillar Capital was conceived and launched in 2024 in New York as four independent Delaware Limited Partnerships, a platform, not a product, built on Independence by Design and Conviction by Discipline.",
+    "ALRION Pillar Capital was conceived in New York as four independent Delaware Limited Partnerships, a platform, not a product, built on Independence by Design and Conviction by Discipline.",
 };
 
 export default function StoryPage() {
@@ -21,7 +21,7 @@ export default function StoryPage() {
         title={
           <>
             Conceived and launched
-            <span className="text-gilt"> in 2024.</span>
+            <span className="text-gilt"> in New York.</span>
           </>
         }
         intro="ALRION Pillar Capital was designed from the outset as a platform, not a product: four autonomous strategies, one rigorous framework, and a singular standard of fiduciary care."
@@ -40,7 +40,7 @@ export default function StoryPage() {
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                In {FIRM.established}, {FIRM.short} was conceived in New York
+                {FIRM.short} was conceived in New York
                 around a single conviction: that serious allocators deserve a
                 platform where independence is engineered into the structure and
                 conviction is earned through discipline.
@@ -66,7 +66,7 @@ export default function StoryPage() {
         <Reveal>
           <SectionHeading
             eyebrow="Milestones"
-            title={<>A platform, established in 2024.</>}
+            title={<>A platform, built deliberately.</>}
             intro="Each step reflected one idea: four autonomous strategies, one rigorous framework of fiduciary care."
           />
         </Reveal>

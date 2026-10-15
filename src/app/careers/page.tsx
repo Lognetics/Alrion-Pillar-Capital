@@ -164,7 +164,7 @@ export default function CareersPage() {
               },
               {
                 title: "Impact that matters",
-                body: "The chance to align your work with the Community Equity Fund's mandate to invest in Minority- and Women-Owned Business Enterprises.",
+                body: "The chance to align your work with the Community Equity Fund's mandate to invest in underserved New York communities.",
               },
             ]}
           />

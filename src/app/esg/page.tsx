@@ -27,7 +27,7 @@ export default function EsgPage() {
             <span className="text-gilt"> governance.</span>
           </>
         }
-        intro="ALRION Pillar Capital is a 2024 platform of four independent Delaware Limited Partnerships. Our approach to ESG is modest and concrete: sound governance in how each strategy is run, and real impact through the Community Equity Fund."
+        intro="ALRION Pillar Capital is a New York platform of four independent Delaware Limited Partnerships. Our approach to ESG is modest and concrete: sound governance in how each strategy is run, and real impact through the Community Equity Fund."
         crumbs={[{ label: "ESG" }]}
       />
 
@@ -85,7 +85,7 @@ export default function EsgPage() {
               },
               {
                 title: "Social",
-                body: "Through the Community Equity Fund, we direct capital toward economic opportunity in historically underserved communities, with a mandate weighted toward Minority- and Women-Owned Business Enterprises.",
+                body: "Through the Community Equity Fund, we direct capital toward economic opportunity in historically underserved communities in New York.",
               },
               {
                 title: "Governance",
@@ -123,7 +123,6 @@ export default function EsgPage() {
           eyebrow="Community Equity Fund"
           title={<>Impact expressed through investment, not charity.</>}
           bullets={[
-            "A mandate weighted 51%+ toward MWBE enterprises",
             "Focused on underserved markets in New York",
             "Seeded by carried interest from the institutional strategies",
             "Measured against wealth, employment and capital catalysis",
@@ -171,7 +170,7 @@ export default function EsgPage() {
           eyebrow="Accountability"
           title={<>Honest reporting, held to the same standard as our financials.</>}
           bullets={[
-            "Annual audits conducted by Big Four firms",
+            "Annual audits conducted by an independent auditor",
             "Comprehensive third-party administration",
             "Independent valuation committees on illiquid positions",
             "Governance considerations documented in our reporting",

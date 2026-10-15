@@ -99,7 +99,7 @@ export default function EconomicOutlookPage() {
                 impact standards that hold the platform together.
               </p>
               <p>
-                Established in 2024 and based in New York, ALRION Pillar Capital
+                Based in New York, ALRION Pillar Capital
                 is a platform of four independent Delaware LP strategies. This
                 edition is organized around a simple idea: that autonomy and a
                 shared standard of discipline are what let each strategy do its

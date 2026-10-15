@@ -4,7 +4,7 @@
    built to serve, tied to the four independent Delaware LP
    strategies, the real fund terms, governance standards and
    alignment. No AUM, track record, scale or global claims:
-   Alrion is a 2024 platform operating from a single New York
+   Alrion is a platform operating from a single New York
    office. Only verifiable facts appear here.
    ============================================================ */
 
@@ -127,7 +127,7 @@ export const TAILORED_ACCESS = [
 export const IMPACT_RETURNS = [
   {
     title: "Impact through investment",
-    body: "The Community Equity Fund LP is a model proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York, with a 51%+ Minority- and Women-Owned Business Enterprises mandate.",
+    body: "The Community Equity Fund LP is a model proving that underserved markets represent some of the most compelling risk-adjusted opportunities in New York.",
   },
   {
     title: "Measured, not asserted",
@@ -139,7 +139,7 @@ export const IMPACT_RETURNS = [
   },
   {
     title: "Independent governance",
-    body: "Like every strategy, it is a separate Delaware Limited Partnership with its own investment committee and risk framework, audited annually by a Big Four firm.",
+    body: "Like every strategy, it is a separate Delaware Limited Partnership with its own investment committee and risk framework, audited annually by an independent auditor.",
   },
 ];
 
@@ -162,6 +162,6 @@ export const ENDOWMENT_MODEL = [
   {
     no: "04",
     title: "Rigorous oversight",
-    body: "Annual Big Four audits, comprehensive third-party administration and independent valuation committees on illiquid positions give boards the assurance their fiduciary duty demands.",
+    body: "Annual independent audits, comprehensive third-party administration and independent valuation committees on illiquid positions give boards the assurance their fiduciary duty demands.",
   },
 ];

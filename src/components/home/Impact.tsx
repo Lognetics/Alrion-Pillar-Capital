@@ -20,8 +20,8 @@ export function Impact() {
               The Community Equity Fund LP is built on a simple conviction: that
               underserved markets represent some of the most compelling
               risk-adjusted opportunities in New York. Seeded by carried interest
-              from our institutional strategies, it operates under a 51%+ Minority-
-              and Women-Owned Business Enterprise mandate.
+              from our institutional strategies, it directs capital toward
+              underserved communities across New York.
             </p>
           </Reveal>
           <Reveal delay={0.15}>

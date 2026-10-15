@@ -13,7 +13,7 @@ import { FIRM, DIFFERENTIATORS, GOVERNANCE_STANDARDS } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Who We Are",
   description:
-    "ALRION Pillar Capital is an institutional alternative investment platform established in 2024 in New York, comprising four independent Delaware Limited Partnerships unified by one rigorous framework of fiduciary care.",
+    "ALRION Pillar Capital is an institutional alternative investment platform headquartered in New York, comprising four independent Delaware Limited Partnerships unified by one rigorous framework of fiduciary care.",
 };
 
 export default function AboutPage() {
@@ -44,7 +44,7 @@ export default function AboutPage() {
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
                 {FIRM.name} is an institutional alternative investment platform,
-                a platform, not a product. Established in {FIRM.established} in
+                a platform, not a product. Headquartered in
                 New York, it comprises four independent Delaware Limited
                 Partnerships, each with its own investment committee and risk
                 framework.
@@ -99,13 +99,13 @@ export default function AboutPage() {
           <Reveal className="lg:col-span-5">
             <SectionHeading
               eyebrow="Our Story"
-              title={<>Conceived and launched in 2024.</>}
+              title={<>Conceived as a platform, not a product.</>}
             />
           </Reveal>
           <Reveal delay={0.1} className="lg:col-span-7">
             <div className="space-y-6 text-lg leading-relaxed text-slate-strong/85">
               <p>
-                {FIRM.name} was conceived and launched in {FIRM.established} in
+                {FIRM.name} was conceived in
                 New York around a single conviction: that serious allocators
                 deserve a platform where independence is engineered into the
                 structure and conviction is earned through discipline.
@@ -195,7 +195,7 @@ export default function AboutPage() {
               },
               {
                 title: "Rigorous oversight",
-                body: "Annual Big Four audits, third-party administration and independent valuation committees on illiquid positions.",
+                body: "Annual independent audits, third-party administration and independent valuation committees on illiquid positions.",
               },
               {
                 title: "Absolute transparency",
@@ -275,7 +275,7 @@ export default function AboutPage() {
           {[
             {
               title: "Governance",
-              body: "Independent governance, Big Four audits and third-party administration that give our partners institutional assurance.",
+              body: "Independent governance, independent audits and third-party administration that give our partners institutional assurance.",
               href: "/governance",
               label: "Explore governance",
             },

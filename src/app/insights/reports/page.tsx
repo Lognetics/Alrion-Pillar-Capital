@@ -31,7 +31,7 @@ export default function ReportsPage() {
             <span className="text-gilt"> archive.</span>
           </>
         }
-        intro="Our reporting in one place: quarterly investor letters, annual reviews and impact reports, grouped by year since the platform launched in 2024."
+        intro="Our reporting in one place: quarterly investor letters, annual reviews and impact reports, grouped by year."
         crumbs={[{ label: "Insights", href: "/insights" }, { label: "Reports" }]}
       />
 

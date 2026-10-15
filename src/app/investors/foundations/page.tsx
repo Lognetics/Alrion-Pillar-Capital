@@ -121,7 +121,7 @@ export default function FoundationsPage() {
               },
               {
                 q: "How is the Community Equity Fund structured?",
-                a: "It is a separate Delaware Limited Partnership with its own investment committee and risk framework, carrying a 51%+ Minority- and Women-Owned Business Enterprises mandate and audited annually by a Big Four firm.",
+                a: "It is a separate Delaware Limited Partnership with its own investment committee and risk framework, focused on underserved New York markets and audited annually by an independent auditor.",
               },
               {
                 q: "How does the platform support a long horizon?",

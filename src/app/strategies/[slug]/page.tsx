@@ -163,8 +163,8 @@ const DETAIL: Record<
   "community-equity": {
     criteria: [
       {
-        title: "MWBE mandate",
-        body: "The fund operates under a 51%+ Minority- and Women-Owned Business Enterprise mandate, directing capital where it is most catalytic.",
+        title: "Community mandate",
+        body: "The fund focuses on underserved communities in New York, directing capital where it is most catalytic.",
       },
       {
         title: "Risk-adjusted conviction",
@@ -194,7 +194,7 @@ const DETAIL: Record<
       },
       {
         q: "What is the investment mandate?",
-        a: "A 51%+ Minority- and Women-Owned Business Enterprise mandate, built on the conviction that underserved markets offer compelling risk-adjusted opportunities in New York.",
+        a: "A community-focused mandate, built on the conviction that underserved markets offer compelling risk-adjusted opportunities in New York.",
       },
       {
         q: "How is success measured?",

@@ -114,7 +114,7 @@ export const SUBSCRIPTION_STEPS: SubStep[] = [
     detail: [
       "Monthly reporting for liquid strategies",
       "Quarterly deep-dive reviews for private markets",
-      "Audited annual reports by a Big Four firm",
+      "Audited annual reports by an independent auditor",
     ],
   },
 ];
@@ -249,7 +249,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     items: [
       {
         q: "How often will I receive reporting?",
-        a: "Reporting follows the strategy. Liquid strategies carry monthly reporting protocols, and private markets receive quarterly deep-dive reviews. Institutional partners are given real-time access through the secure portal, with annual audits conducted by a Big Four firm.",
+        a: "Reporting follows the strategy. Liquid strategies carry monthly reporting protocols, and private markets receive quarterly deep-dive reviews. Institutional partners are given real-time access through the secure portal, with annual audits conducted by an independent auditor.",
       },
       {
         q: "Can I access my documents at any time?",

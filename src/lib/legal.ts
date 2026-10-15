@@ -48,4 +48,4 @@ export const DISCLOSURES: Disclosure[] = [
 ];
 
 export const INVESTOR_PORTAL_URL =
-  "https://www.apexgroup.com/private-credit-strategies-and-solutions/?utm_source=google_ads&utm_medium=paid_search&utm_term=private_credit_microsite&utm_campaign=2026_L2_PC01_Strategies+%26amp%3Bamp%3B+Solutions_Global_NA01_T306_Microsite&utm_source=google&utm_medium=cpc&utm_campaign=Apex_Search_LG_Private_Debt_Multi_2025&utm_content=179106351778&utm_term=private%20credit%20fund%20admin&utm_location=9073502&utm_device=c&gad_source=1&gad_campaignid=22443659484&gbraid=0AAAAA-pN7Y7B2w5F0zAxZ2ahBmf5pFFGS&gclid=CjwKCAjwpK3SBhASEiwAtV1SPCy5qZrqWKZWECYPyG2q6mYP-jxSXFxYhBfz1A8TYaec0_76jmJXYxoCDTQQAvD_BwE";
+  "https://auth.sso.one-constellation.com/login";

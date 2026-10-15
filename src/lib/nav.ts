@@ -67,7 +67,7 @@ export const NAV: NavSection[] = [
       },
     ],
     feature: {
-      eyebrow: "Est. 2024 · New York",
+      eyebrow: "Headquartered in New York",
       title: "Independence by design",
       blurb:
         "Four independent Delaware Limited Partnerships, unified by a single standard of institutional discipline.",
@@ -140,7 +140,7 @@ export const NAV: NavSection[] = [
       },
     ],
     feature: {
-      eyebrow: "51%+ MWBE mandate",
+      eyebrow: "Community Equity Fund LP",
       title: "Catalysis, not just contribution",
       blurb:
         "A model proving that underserved markets can be some of the most compelling risk-adjusted opportunities in New York.",

@@ -24,14 +24,7 @@ const PRESS_RELEASES = [
     category: "Governance",
     title:
       "Firm appoints independent third-party administration and commits to annual audits",
-    body: "The platform engages comprehensive third-party fund administration and Big Four audits, with independent valuation committees on illiquid positions.",
-  },
-  {
-    date: "November 2024",
-    category: "Community Equity",
-    title:
-      "Community Equity Fund formalizes its MWBE mandate",
-    body: "The impact strategy commits a majority of its capital to Minority- and Women-Owned Business Enterprises, seeded by carried interest from the institutional strategies.",
+    body: "The platform engages comprehensive third-party fund administration and independent audits, with independent valuation committees on illiquid positions.",
   },
   {
     date: "December 2024",

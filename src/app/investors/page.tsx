@@ -220,7 +220,7 @@ export default function InvestorsPage() {
           bullets={[
             "Monthly reporting for liquid strategies",
             "Quarterly deep-dive reviews for private markets",
-            "Annual Big Four audits and third-party administration",
+            "Annual independent audits and third-party administration",
             "Independent governance on every Delaware LP",
           ]}
         >
@@ -263,7 +263,7 @@ export default function InvestorsPage() {
               },
               {
                 q: "How is my capital protected and governed?",
-                a: "Each strategy is a separate Delaware Limited Partnership with its own investment committee and risk framework. Annual Big Four audits, comprehensive third-party administration and independent valuation committees on illiquid positions underpin every figure we share.",
+                a: "Each strategy is a separate Delaware Limited Partnership with its own investment committee and risk framework. Annual independent audits, comprehensive third-party administration and independent valuation committees on illiquid positions underpin every figure we share.",
               },
               {
                 q: "How do I begin the subscription process?",

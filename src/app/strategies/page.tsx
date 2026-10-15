@@ -164,7 +164,7 @@ export default function StrategiesPage() {
               "Liquid macro exposure through the Hedge Fund LP",
               "Infrastructure growth capital through the Private Equity LP",
               "Frontier venture capital from Seed to Series A",
-              "Catalytic community investment under a 51%+ MWBE mandate",
+              "Catalytic community investment in underserved New York markets",
             ]}
           >
             <p>
@@ -389,7 +389,7 @@ export default function StrategiesPage() {
               },
               {
                 title: "Independent oversight",
-                body: "Annual audits conducted by Big Four firms, comprehensive third-party administration and independent valuation committees on illiquid positions.",
+                body: "Annual audits conducted by an independent auditor, comprehensive third-party administration and independent valuation committees on illiquid positions.",
               },
               {
                 title: "Governance assurance",

@@ -2,7 +2,7 @@
    About-section content: founding timeline, leadership team,
    investment committee, advisory board and recognition & standards.
    All copy is faithful to ALRION Pillar Capital's stated positioning:
-   a platform, not a product, established 2024 in New York as four
+   a platform, not a product, headquartered in New York as four
    independent Delaware Limited Partnerships. Team members shown are
    representative and illustrative pending final disclosure. No AUM,
    track record, scale or global footprint is claimed.
@@ -15,26 +15,25 @@ export type Milestone = {
   tag?: string;
 };
 
-/* The platform was conceived and launched in 2024. We do not portray
-   a multi-year history before that founding. */
+/* The founding sequence of the platform. */
 export const MILESTONES: Milestone[] = [
   {
-    year: "2024",
+    year: "01",
     title: "A platform, not a product",
     tag: "Founding",
     body: "ALRION Pillar Capital is conceived in New York around a single conviction: Independence by Design, Conviction by Discipline. The platform is designed as four autonomous strategies bound by one rigorous framework of fiduciary care.",
   },
   {
-    year: "2024",
+    year: "02",
     title: "Four independent Delaware LPs",
     tag: "Structure",
     body: "The four strategies are established as separate Delaware Limited Partnerships, each with its own investment committee and risk framework: a Hedge Fund LP, a Private Equity LP, a Venture Capital LP and a Community Equity Fund LP.",
   },
   {
-    year: "2024",
+    year: "03",
     title: "One standard of governance",
     tag: "Governance",
-    body: "From the outset, the platform adopts institutional governance: annual Big Four audits, comprehensive third-party administration, independent valuation committees on illiquid positions and significant GP commitments across every fund.",
+    body: "From the outset, the platform adopts institutional governance: annual independent audits, comprehensive third-party administration, independent valuation committees on illiquid positions and significant GP commitments across every fund.",
   },
 ];
 
@@ -97,7 +96,7 @@ export const PRINCIPLES: Principle[] = [
   {
     no: "05",
     title: "Rigorous oversight",
-    body: "Annual Big Four audits, comprehensive third-party administration and independent valuation committees on illiquid positions hold every strategy to an institutional standard of governance.",
+    body: "Annual independent audits, comprehensive third-party administration and independent valuation committees on illiquid positions hold every strategy to an institutional standard of governance.",
   },
   {
     no: "06",
@@ -136,7 +135,7 @@ export const VALUES: Value[] = [
   {
     glyph: "T",
     title: "Transparency",
-    body: "We report what we do. Monthly and quarterly reporting, annual Big Four audits and real-time access for institutional partners are foundations, not features.",
+    body: "We report what we do. Monthly and quarterly reporting, annual independent audits and real-time access for institutional partners are foundations, not features.",
   },
   {
     glyph: "R",
@@ -167,9 +166,9 @@ export const SENIOR_LEADERSHIP: LeadershipRole[] = [
   { role: "Chief Investment Officer, Private Equity", reporting: "Chairs the APEI Fund I Investment Committee" },
   { role: "Chief Investment Officer, Global Macro", reporting: "Chairs the Macro strategy Investment Committee" },
   { role: "Head of Venture Capital", reporting: "Chairs the VC strategy Investment Committee" },
-  { role: "Head of the Community Equity Fund", reporting: "MWBE mandate stewardship" },
+  { role: "Head of the Community Equity Fund", reporting: "Community mandate stewardship" },
   { role: "Chief Operating Officer", reporting: "Operations, HR and vendor management" },
-  { role: "Chief Compliance Officer", reporting: "Regulatory oversight, AML/KYC, Form ADV" },
+  { role: "Chief Compliance Officer", reporting: "Regulatory oversight, AML/KYC, compliance policies" },
   { role: "Chief Financial Officer / Controller", reporting: "Finance and audit liaison" },
   { role: "Head of Investor Relations", reporting: "LP communications, Juniper Square" },
 ];
@@ -201,7 +200,7 @@ export const INVESTMENT_COMMITTEES: CommitteeRow[] = [
   {
     strategy: "Community Equity Fund LP",
     committee: "Community Investment Committee",
-    composition: "Head of the Community Equity Fund, plus an independent community-development expert and an independent MWBE finance practitioner.",
+    composition: "Head of the Community Equity Fund, plus an independent community-development expert and an independent community-finance practitioner.",
   },
 ];
 
@@ -262,7 +261,7 @@ export const ADVISORY_BOARD: AdvisoryFocus[] = [
   },
   {
     focus: "Community Development Finance",
-    discipline: "MWBE / CDFI leader in the New York market",
+    discipline: "CDFI leader in the New York market",
   },
   {
     focus: "Legal & Regulatory Counsel",
@@ -288,8 +287,8 @@ export type Standard = {
    invented. Emphasis on audits, administration and governance. */
 export const RECOGNITION_STANDARDS: Standard[] = [
   {
-    title: "Big Four annual audits",
-    body: "Every strategy is audited annually by a Big Four firm, an independent external check on the platform's financial statements and controls.",
+    title: "Independent annual audits",
+    body: "Every strategy is audited annually by an independent auditor, an independent external check on the platform's financial statements and controls.",
   },
   {
     title: "Independent administration",
